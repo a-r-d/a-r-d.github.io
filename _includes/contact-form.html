@@ -1,0 +1,75 @@
+<div class="contact-form-container">
+  <h3>Contact Me Quickly</h3>
+  <form class='form' id='contact-form'>
+      <div class='form-group'>
+          <label>Message</label>
+          <textarea name='message' id='input-message' required class='form-control'></textarea>
+      </div>
+      <div class='form-group'>
+          <label>Reply Email</label>
+          <input type='email' name='email' id='input-email' required class='form-control'/>
+      </div>
+      <div class='form-group'>
+          <input type='submit' value='submit' name='submit' class='btn btn-primary' class='form-control' id='form-submit'/>
+      </div>
+      <div class='form-group' >
+          <div id='contact-form-result-success' class="alert alert-success" role="alert" style='display:none;'>
+              Thanks! I'll be in touch shortly.
+          </div>
+          <div id='contact-form-result-failure' class="alert alert-danger" role="alert" style='display:none;'>
+              Whoops, looks like there was some problem. Why not email (aaron@ard.ninja) instead?
+          </div>
+      </div>
+  </form>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+
+        function clearForm() {
+            $('#input-email').val('');
+            $('#input-message').val('');
+        }
+
+        function success() {
+            $('#contact-form-result-success').show();
+            $('#form-submit').prop('disabled',false);
+        }
+
+        function failure() {
+            $('#contact-form-result-failure').show();
+            $('#form-submit').prop('disabled',false);
+        }
+
+        var url = 'https://forms.nanodolphin.com/api/forms/submit/Nd2wASr?apiKey=t2gnYJ01V7cLbAmJezn0H731eOJV7VVLeR366Vxx';
+        $('#contact-form').submit(function(event){
+            event.preventDefault();
+            var data = {
+                email: $('#input-email').val(),
+                message: $('#input-message').val()
+            };
+            $('#contact-form-result-success').hide();
+            $('#contact-form-result-failure').hide();
+            $('#form-submit').prop('disabled',true);
+
+            $.ajax({
+                url: url,
+                data: data,
+                type: 'POST'
+            }).done(function(data){
+                if(data.message === 'success') {
+                    clearForm();
+                    success();
+                } else {
+                    console.error('Failure on form submit', data);
+                    failure();
+                }
+            }).error(function(error){
+                console.error('Error on form submit:', error);
+                failure();
+            });
+        });
+    });
+</script>
+</div>
