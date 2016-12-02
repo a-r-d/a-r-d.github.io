@@ -11,11 +11,9 @@ categories:
 - cryptocurrency
 ---
 
-[![tbalogo8](http://blog.a-r-d.me/wp-content/uploads/2014/06/tbalogo8-300x115.gif)](http://blog.a-r-d.me/wp-content/uploads/2014/06/tbalogo8.gif)
-
+![tba logo](/images/blog/tba-1.gif)
 
 ## Background
-
 
 A little over a year ago I created a site called [Trollboxarchive.com](http://trollboxarchive.com) along with the help of my friend John Hoey. The idea was to log the chat records from the chat window on Btc-e and figure out when the "whales" were making big trades. Fontas (an infamous pump and dump trader) quickly became the focus of the site and today still remains the most searched user on the site.
 

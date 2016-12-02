@@ -1,5 +1,5 @@
 ---
-author:Aaron Decker
+author: Aaron Decker
 comments: false
 date: 2016-08-26 22:08:06+00:00
 layout: post
@@ -9,7 +9,7 @@ title: Generating Ideas For Software Projects
 wordpress_id: 439
 ---
 
-![ideas](/blog/es6.jpg)
+![ideas](/images/blog/ideas.jpg)
 
 Almost every day I try to think of ideas for the next thing I want to build. Specifically, for the past year or so I have been really focused on coming up with a good, focused, high-quality SAAS app that I can build.
 

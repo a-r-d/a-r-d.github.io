@@ -1,5 +1,5 @@
 ---
-author:Aaron Decker
+author: Aaron Decker
 comments: false
 date: 2016-01-09 22:15:26+00:00
 layout: post
@@ -13,10 +13,8 @@ categories:
 
 There is a npm module called [console-stamp](https://www.npmjs.com/package/console-stamp) that is pretty nice and simple - whenever you print using the global 'console' methods it prefixes everything with a timestamp in whatever format you specify. Well, I was curious how to do this and it is something I would describe as easy but not simple unless you are very familiar with "Function.prototype.apply". The method I'm going to show you is actually adapted from [Secrets of the JavaScript Ninja](http://www.amazon.com/gp/product/193398869X/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=193398869X&linkCode=as2&tag=ultralightgea-20&linkId=2LEOR3OFOCROOM4F)![](http://ir-na.amazon-adsystem.com/e/ir?t=ultralightgea-20&l=as2&o=1&a=193398869X). It is a simple two step process:
 
-  * 1. create a "wrap" method that will call a given method with a "wrapper" method you define.
-  * 2. Run the "wrap" method on the function you want to wrap and define the wrapper you will apply around it.
-
-
+  1. create a "wrap" method that will call a given method with a "wrapper" method you define.
+  2. Run the "wrap" method on the function you want to wrap and define the wrapper you will apply around it.
 
 
 [(JSBin example of the following code)](https://jsbin.com/dacunogedo/1/edit?js,console)

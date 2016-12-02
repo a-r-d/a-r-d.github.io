@@ -1,5 +1,5 @@
 ---
-author:Aaron Decker
+author: Aaron Decker
 comments: false
 date: 2016-01-03 19:01:59+00:00
 layout: post

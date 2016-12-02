@@ -1,5 +1,5 @@
 ---
-author:Aaron Decker
+author: Aaron Decker
 comments: false
 date: 2016-09-24 19:14:15+00:00
 layout: post
@@ -12,6 +12,8 @@ tags:
 - node
 - npm
 ---
+
+![npm scripts](/images/blog/npm-scripts-black.png)
 
 When using npm you probably know all about npm install and some of the flags for global installation and saving dependencies. If you publish packages you probably know a few more. But I want to talk a little bit about the mechanics of how npm scripts really work and why you should use them. Using npm scripts ultimately makes it so that you can stop installing npm packages globally.
 

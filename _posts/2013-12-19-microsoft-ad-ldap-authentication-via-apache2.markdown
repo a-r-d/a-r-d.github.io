@@ -87,8 +87,6 @@ function authAD( $usr, $pass ){
 	$ad = "YOUR DOMAIN CONTROLLER IP";
 	$cxn = ldap_connect($ad);
 	$domain = "YOUR DOMAIN\\";
-	//echo "got cxn  
-";
 
 	if( $usr == "" || $pass == "" ){
 	    $message = "username / pass not set";
