@@ -1,5 +1,5 @@
 ---
-author: a-r-d
+author:Aaron Decker
 comments: false
 date: 2016-09-09 00:12:31+00:00
 layout: post
@@ -8,6 +8,8 @@ slug: version-control-git-new-developers
 title: Version Control and Git For New Developers
 wordpress_id: 462
 ---
+
+![git](/images/blog/git.png)
 
 I'm teaching a Java 101 class as an Adjunct at Cincinnati State every Wednesday night this semester and I decided I would post the class demos I use up on GitHub each week. When I asked the class if they knew what Github was only a few hands went up. When I asked the class if they knew what version control was, basically the same few hands went up. Based on that, I felt compelled to write up this intro.
 

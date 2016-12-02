@@ -1,5 +1,5 @@
 ---
-author: a-r-d
+author:Aaron Decker
 comments: false
 date: 2016-04-23 23:58:17+00:00
 layout: post
@@ -69,13 +69,3 @@ I believe that there will always be plenty of software work, but I don't believe
 Maybe a better solution is to be an expert in platform customization. Recently the most successful work I have done has involved customizing Shopify sites for small E-Commerce outfits. There are a myriad of things that store owners would like to do that are not easily done with a base Shopify install, but can be accomplished through clever configurations, webhooks, and customized apps (which are Shopify store plugins essentially).
 
 If as a freelancer you are just acting as a technical resource to manage the admin panel of a Wix.com or Shopify site, you are still going to add value for your client. Especially the type of client that has an aversion to complicated interfaces, computers, or technology in general. But is this a highly skilled occupation anymore? Certainly the level of training required in order to navigate and admin panel, wire up navigation links and copy and paste a Google Analytics code is much lower than what it takes design, build, and deploy a 100% custom site for a client. It seems only natural that less skilled workers will move into this market and charge a commensurately lower rate. And if you cannot provide any value for your pricing premium, then how can highly skilled developer begin to compete in that kind of market?
-
-
-
-
-
-
-
-
-
-

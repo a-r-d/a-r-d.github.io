@@ -1,5 +1,5 @@
 ---
-author: a-r-d
+author:Aaron Decker
 comments: false
 date: 2016-07-03 16:10:49+00:00
 layout: post
@@ -8,6 +8,8 @@ slug: web-push-notifications-web-workers
 title: Web Push Notifications with Web Workers
 wordpress_id: 407
 ---
+
+
 
 Did you know that you can now send push notifications to a browser even when the user is no longer on the page? The [notification API](https://developer.mozilla.org/en-US/docs/Web/API/notification) allows you to pop up OS level notifications from JavaScript. With [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) you are able to register a worker permanently in a browser that will handle these notifications offline. I'm going to outline how to do this with Google Chrome and Google Cloud Messaging.
 

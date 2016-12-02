@@ -1,5 +1,5 @@
 ---
-author: a-r-d
+author:Aaron Decker
 comments: false
 date: 2016-09-19 16:16:12+00:00
 layout: post
@@ -9,7 +9,7 @@ title: Finding Freelance Development Work
 wordpress_id: 468
 ---
 
-[![neourban hipster desktop](http://ard.ninja/blog/wp-content/uploads/2016/09/Freelance-300x200.jpg)](http://ard.ninja/blog/wp-content/uploads/2016/09/Freelance-e1474301311180.jpg)
+![freelancers](/images/blog/freelance.jpg)
 
 
 ### Why Write About Finding Freelance Work?

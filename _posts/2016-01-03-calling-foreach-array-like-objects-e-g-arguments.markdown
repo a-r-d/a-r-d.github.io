@@ -1,5 +1,5 @@
 ---
-author: a-r-d
+author:Aaron Decker
 comments: false
 date: 2016-01-03 19:01:59+00:00
 layout: post
@@ -39,7 +39,7 @@ ALSO FYI arrow syntax is now in Chrome so you can make your iife like this:
 
 {% highlight javascript %}
 
-// Cool 
+// Cool
 (() => {
     // write your code in the iife here
 })();

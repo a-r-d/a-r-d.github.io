@@ -1,5 +1,5 @@
 ---
-author: a-r-d
+author:Aaron Decker
 comments: false
 date: 2016-10-18 12:27:17+00:00
 layout: post
@@ -8,6 +8,8 @@ slug: yarn-vs-npm-one-week
 title: Yarn vs npm one week in
 wordpress_id: 506
 ---
+
+![yarn package manager](/images/blog/yarn.jpg)
 
 If you hadn't heard, last week Facebook open sourced a new javascript package manager called [yarn](https://yarnpkg.com/). It is awesome.
 

@@ -1,5 +1,5 @@
 ---
-author: a-r-d
+author:Aaron Decker
 comments: false
 date: 2016-08-07 20:16:48+00:00
 layout: post
@@ -8,6 +8,8 @@ slug: 3-things-first-call-freelancer
 title: The First 3 Things to Discuss With a Prospective Freelance Web Developer
 wordpress_id: 418
 ---
+
+![freelancers](/images/blog/freelance.jpg)
 
 There are 3 main things you should discuss as soon as possible when looking for a web developer for freelance on your next project.
 

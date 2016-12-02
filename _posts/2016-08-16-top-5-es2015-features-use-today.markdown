@@ -1,5 +1,5 @@
 ---
-author: a-r-d
+author:Aaron Decker
 comments: false
 date: 2016-08-16 01:12:55+00:00
 layout: post
@@ -8,6 +8,8 @@ slug: top-5-es2015-features-use-today
 title: 5 ES2015 Features You Should Use Today
 wordpress_id: 425
 ---
+
+![es2015](/images/blog/es6.jpg)
 
 ES2015 (formerly known as ES6 and short for ECMAScript 2015) is one of the latest specifications for JavaScript, the components of which are almost entirely implemented in the latest versions of Node 6, Chrome, Firefox, and more.
 

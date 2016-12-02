@@ -1,5 +1,5 @@
 ---
-author: a-r-d
+author:Aaron Decker
 comments: false
 date: 2016-04-24 00:30:10+00:00
 layout: post
@@ -21,5 +21,3 @@ Anyway, when I got home I googled the book title and found this:
 https://leanpub.com/computer-science-for-self-taught-programmers/feedback
 
 Well, it looks like he never wrote the book! So I am going to do it instead! It will be a very easy introduction and discussion of all of the common concepts and it should be a good primer for more in depth self study. I want to book to have a conversational tone and be full of practical example and analogies to help readers relate. I'll make sure to update this post as I make my way through the process.
-
-
