@@ -80,7 +80,7 @@ apt-get install php5-ldap
 
 An equivalent login would be:
 
-{% highlight php5 %}
+{% highlight javascript %}
 
 function authAD( $usr, $pass ){
 	global $message;

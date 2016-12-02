@@ -19,7 +19,7 @@ Object.defineProperty() is a very interesting ES5 method that allows you to add 
 
 Here is an example of this in action. This object has a method for adding properties that can be come constants, not on the global namespace, and we can then freeze this container when we are done if we like.
 
-[javascript]
+{% highlight javascript %}
 
 const ConstContainer = {
     add: (k,v) => {
@@ -45,4 +45,4 @@ console.log(ConstContainer.KEY1);
 // when done, you can freeze to counter all further mutability:
 Object.freeze(ConstContainer);
 
-[/javascript]
+{% endhighlight %}

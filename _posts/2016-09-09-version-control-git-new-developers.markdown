@@ -21,24 +21,11 @@ Version lets you collaborate with other developers. _Git_, which is probably the
 
 _Github_ is an online git hosting platform. They make it super easy to share Git repositories and collaborate with others. They have workflows that are designed to make it painless. In fact, the steps are so simple I can outline them here:
 
-
-
- 	
   1. Find a project you want to work on
-
- 	
   2. Fork the project (this creates a copy for you)
-
- 	
   3. Modify your copy of the project
-
- 	
   4. Submit a "pull request", which lets the original owner review your changes and merge them into the original project.
-
- 	
   5. Pull back the merged version from the original owner and repeat!
-
-
 
 
 If you are new developer it is hard to understate how important it is to learn a version control system. Version control (and likely Git), is something **you will use every single day at work**. So it makes sense to become proficient at this before you even start working. I would strongly advise every new developer to create a Github account and play around with learning how git works, and maybe even collaborate with somebody on a project to get a feel for how pull requests work.
@@ -48,5 +35,3 @@ Lastly, let me just mention that git can be hard! You don't have to use it from 
 I'll leave everyone with this great tutorial from Github:
 
 https://try.github.io/levels/1/challenges/1
-
-

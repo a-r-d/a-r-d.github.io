@@ -40,7 +40,7 @@ Template strings (also known as _template literals_) allow you to perform string
 
 [![template-string](http://ard.ninja/blog/wp-content/uploads/2016/08/template-string-300x44.png)](http://ard.ninja/blog/wp-content/uploads/2016/08/template-string.png)
 
-**5. New Object Syntax **
+**5. New Object Syntax**
 
 I'm going to cheat on #5 here and throw in a bunch of new syntax related to manipulating objects because it is all so cool. This includes Destructuring, Object property shorthands, the spread operator, and the new class declaration syntax. Destructuring, in particular, can be very nice and you will quickly find yourself thinking to apply it in all sorts of convenient ways. Check out the example below:
 [![destructuring](http://ard.ninja/blog/wp-content/uploads/2016/08/destructuring-300x156.png)](http://ard.ninja/blog/wp-content/uploads/2016/08/destructuring.png)
@@ -52,5 +52,3 @@ Next, I want to show a quick example of object property shorthand and use of the
 
 
 There are too many new features in ES2015 to detail in one short blog post, but [here are some free egghead.io videos ](https://egghead.io/courses/learn-es6-ecmascript-2015)that can take this introduction a bit further.
-
-

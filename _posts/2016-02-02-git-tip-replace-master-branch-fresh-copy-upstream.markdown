@@ -11,9 +11,9 @@ categories:
 - git
 ---
 
-Sometimes for whatever reason you screw up and get your local master branch into a nasty inconsistent state. Maybe it was an accidental merge or accidental commits but you just want to start over. Here is how to replace your local master branch with a fresh copy from upstream. 
+Sometimes for whatever reason you screw up and get your local master branch into a nasty inconsistent state. Maybe it was an accidental merge or accidental commits but you just want to start over. Here is how to replace your local master branch with a fresh copy from upstream.
 
-[bash]
+{% highlight bash %}
 # you cannot delete the branch you are on, so move to something else.
 git checkout           
 
@@ -28,6 +28,6 @@ git checkout -b master upstream/master
 
 # force push to origin, it will blow away your old master
 git push origin master -f               
-[/bash]
+{% endhighlight %}
 
 There are easier ways to do this, but conceptually this is, in my opinion, easy to follow and it cleans up your remote as well (if you accidentally pushed a dirty branch).

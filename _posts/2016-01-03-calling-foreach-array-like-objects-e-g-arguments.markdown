@@ -13,7 +13,7 @@ categories:
 
 I am readying through "Secrets of A JavaScript Ninja" right now and learning tons of helpful little tricks. The coolest thing I saw in there recently was the section on array-like objects, e.g. "arguments". So it is pretty simple - all of the array methods exist on Array.prototype and you can use the function method "call" and "apply" on these. Surprisingly this works great, so now you can do forEach, slice, ect on your arguments objects even though it is not an array.
 
-[javascript]
+{% highlight javascript %}
 (() => {
 	function callMe() {
 		// slice the "Arguments as an array"
@@ -32,12 +32,12 @@ I am readying through "Secrets of A JavaScript Ninja" right now and learning ton
 	console.log('Foreach on arguments: ');
 	callMeIter(1,2,3,4);
 })();
-[/javascript]
+{% endhighlight %}
 
 
 ALSO FYI arrow syntax is now in Chrome so you can make your iife like this:
 
-[javascript]
+{% highlight javascript %}
 
 // Cool 
 (() => {
@@ -50,6 +50,6 @@ ALSO FYI arrow syntax is now in Chrome so you can make your iife like this:
 })();
 
 
-[/javascript]
+{% endhighlight %}
 
 That looks way cooler right? I think so...
