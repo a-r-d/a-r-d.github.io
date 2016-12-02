@@ -227,8 +227,8 @@ Once we have both indexes built we may want to merge them:
 ```
 
 Now lets do a test search- I have indexed about a gigabyte of chat records from a popular bitcoin-related website.
-```
 
+```
 ./search bitcoin
 
 displaying matches:
@@ -260,8 +260,6 @@ index 'membersdelta': query 'bitcoin ': returned 0 matches of 0 total in 0.000 s
 
 words:
 1. 'bitcoin': 0 documents, 0 hits
-
-
 ```
 
 Excellent so basic search is working. What next? We need to get the indexer pulling in our changes. I will start ./searchd and then run the indexer only on our delta.

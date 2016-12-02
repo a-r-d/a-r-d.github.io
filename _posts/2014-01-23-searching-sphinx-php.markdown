@@ -13,7 +13,7 @@ Searching Sphinx from PHP is fairly simple, however the search syntax is a littl
 
 Here is a [good link detailing extended search in sphinx](http://www.sanisoft.com/blog/2011/03/07/extended-query-syntax-in-sphinx-search-engine/).
 
-{% highlight php %}
+{% highlight php5 %}
 
 function basicSphinxSearch(
   $qry, $field_name, $page, $per_page, $only_historical){

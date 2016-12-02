@@ -20,20 +20,16 @@ Previously I looked at how you can use Apache2 as a reverse proxy with SSL to ex
 It is actually quite do-able although the config takes some effort. First you will want to enable the module "mod_authnz_ldap". If using ubunutu you can do:
 
 ```
-
 sudo a2enmod authnz_ldap
-
 ```
 
 Now that that is done lets take stock your your AD Domain. Let's say that your company is called "Mr Waffles" and your domain was called "MRWAFFLES" and then the FQDN was set up as mrwaffles.ad.com on your Active Directory server. This means your base DN is likely "DC=mrwaffles, DC=ad, DC=com". Okay, now your users are perhaps stored under Organization Unit "Users" ("OU=Users"). So this would make the search container: "OU=Users,DC=mrwaffles, DC=ad, DC=com". To Recap:
 
 ```
-
 Domain: MRWAFFLES
 FQDN: mrwaffles.ad.com
 Base Dn: "DC=mrwaffles,DC=ad,DC=com"
 User container: "OU=Users,DC=mrwaffles,DC=ad,DC=com"
-
 ```
 
 
@@ -54,45 +50,37 @@ Alright, now that we know what our AD Server looks like we can continue. Persona
 
 
 ```
+Order deny,allow
+Deny from All
 
+AuthBasicProvider ldap
+AuthType Basic
+AuthName "MR Waffles Network Auth Required"
 
+AuthzLDAPAuthoritative off
+AuthLDAPURL "ldap://domain-controller-ip-here:389/ou=Users,dc=mrwaffles,dc=ad,dc=com?sAMAccountName?sub?(objectClass=*)"    
 
-                Order deny,allow
-                Deny from All
+AuthLDAPBindDN "mrwaffles\\authuser"
+AuthLDAPBindPassword "authuserpass"
 
-                AuthBasicProvider ldap
-                AuthType Basic
-                AuthName "MR Waffles Network Auth Required"
+Require valid-user
+Satisfy any
 
-                AuthzLDAPAuthoritative off
-                AuthLDAPURL "ldap://domain-controller-ip-here:389/ou=Users,dc=mrwaffles,dc=ad,dc=com?sAMAccountName?sub?(objectClass=*)"    
-
-                AuthLDAPBindDN "mrwaffles\\authuser"
-                AuthLDAPBindPassword "authuserpass"
-
-                Require valid-user
-                Satisfy any
-
-                ProxyPass  http://internal-ip-here/
-                ProxyPassReverse  http://internal-ip-here/
-
-
+ProxyPass  http://internal-ip-here/
+ProxyPassReverse  http://internal-ip-here/
 ```
-
 
 One more note. This is just basic auth, not form based so it has some downsides of course. Also note when you login you just put in username and pass, not domain prefix, not email, just username.
 
 You may also be interested in see how you do this with PHP. First install the module you need:
 
 ```
-
 apt-get install php5-ldap
-
 ```
 
 An equivalent login would be:
 
-{% highlight php %}
+{% highlight php5 %}
 
 function authAD( $usr, $pass ){
 	global $message;
