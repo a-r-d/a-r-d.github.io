@@ -1,0 +1,43 @@
+<h1>Big-O for interview questions.</h1>
+I am currently reading the book <a href="http://www.amazon.com/gp/product/1118261364/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1118261364&amp;linkCode=as2&amp;tag=ultralightgea-20&amp;linkId=QGY6MP7WKNASQ4IB">Programming Interviews Exposed: Secrets to Landing Your Next Job</a>. It is actually pretty great so far and straight to the point. They went over Big-O run-time analysis in a just a couple of pages and I thought it was helpful and worth distilling here. Essentially for this blog post I will touch on simple <a href="http://en.wikipedia.org/wiki/Time_complexity">time complexity</a>.
+
+I am also slowly working through an algorithms textbook (<a href="http://www.amazon.com/gp/product/0262033844/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0262033844&amp;linkCode=as2&amp;tag=ultralightgea-20&amp;linkId=BG3WS6PFSCK5S3ZX">Introduction to Algorithms, 3rd Edition</a>) and I am finding the derivations when doing runtime analysis to be very intense. I have mentioned here before that I don't have a CS degree and I am working very hard when I can to fill in my knowledge gaps and I found the explanations in the interviews book to be great if a little bit simplistic.
+<h4 id="constantruntime">Constant run-time</h4>
+This will be written as <strong>O(1)</strong> because all constant factors are dropped from a Big-O run-time representation. The constant factor will differ across systems and environments but essentially it is some constant does not depend on the size of the input into a function. A really silly example for constant running time would be the following:
+<pre><code>function getLast(arr) {
+    return arr[arr.length - 1];
+}</code></pre>
+<span style="font-size: 19px; font-weight: 900; letter-spacing: 0.13333em; line-height: 1.10526; text-transform: uppercase;">Linear run-time - O(n)</span>
+
+Linear run-time does depend on the size of the input and it increases linearly as the size of the input increases. This is probably pretty efficient but there are run-times that are faster than linear. Obviously, constant run time will be faster than a linear run time but there are others. For example <a href="http://en.wikipedia.org/wiki/Binary_search_algorithm">binary search is very fast</a> - it is <strong>O(log(n))</strong> which <a href="https://www.google.com/search?q=log%28x%29">if you look a the graph</a> has very favorable asymptotic behavior.
+
+A rather stupid example of linear run time is a single loop over an entire array of n elements as the input to a function:
+<pre><code>function getLastLinear(arr) {
+    for(var i=0; i &lt; arr.length; i++){
+        if(i == arr.length - 1){
+            return arr[i];
+        }
+    }
+}</code></pre>
+<h4 id="quadraticruntimeon2">Quadratic run-time - O(n^2)</h4>
+Quadratic run-time is the next obvious case to look at here. Again we can model this very simply as two nested loops over an array of n elements as the input the function. Quadratic run-time is not favorable at all. If you have an application that runs many operations in quadratic time then everytime you double the size of your database it will be four times slower as a result. This is terrible.
+
+Again, a very pointless function to illustrate. It must loop over the entire array <strong>n * n </strong>times.
+<pre><code>function getLastQuadratic(arr) {
+    for(var i=0; i&lt;arr.length;i++){
+        for(var ii=0; arr.length; ii++){
+            if(i == arr.length - 1 &amp;&amp;
+                ii == arr.length - 1){
+                    return arr[ii];
+                }
+        }
+    }
+}</code></pre>
+<h4 id="linearithmictimeonlogn">Linearithmic time - O(n*log(n))</h4>
+We should throw this is because it is the very fastest possible comparison sort max run-time. <a href="http://en.wikipedia.org/wiki/Heapsort">Heap sort</a> and <a href="http://en.wikipedia.org/wiki/Merge_sort">merge sort</a> both have this run-time profile.
+<h4 id="howtoderive">How to derive</h4>
+This can be complex but at its roots the way to do it is to express the number of operations an algorithm performs in terms of the size of input (n). After that you remove all the lower order terms and the constant factors. If you had a large quadratic polynomial perhaps you simplified it down into <strong>O(n^2)</strong>.
+
+I think for most people it will be good know the basics and memorize a few common cases. I can't imagine being asked to do a derivation in a simple software development interview. I think being asked to comment on the run-time and say, "this is probably linear time" is pretty good.
+<h4 id="bestaverageandworstcase">Best, average and worst-case</h4>
+When people ask for a Big-O run-time analysis they typically want the worst-case. However, it is interesting to note that the best case can be very different. Bubble sort is a very simplistic but slow comparison sort. It has a worst-case and average-case of<strong>O(n^2)</strong> which is pretty bad. However the best-case runs at linear time <strong>O(n)</strong>, which is better than some very fast comparison sorts. The best-case occurs when the list is already sorted and bubble sort is great at checking for this quickly.
