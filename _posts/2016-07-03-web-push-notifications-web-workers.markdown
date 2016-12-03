@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/web-push-notifications-web-workers/
 slug: web-push-notifications-web-workers
 title: Web Push Notifications with Web Workers
 wordpress_id: 407
+description: Recently I did some experimenting with Web Workers and in-browser push notifications
 ---
 
 

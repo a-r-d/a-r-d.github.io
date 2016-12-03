@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/wrap-console-log-place-prefix/
 slug: wrap-console-log-place-prefix
 title: How to wrap console.log in-place with a prefix
 wordpress_id: 358
+description: Wrapping console.log so that you can add timestamps, script names, whatever else to node logs.
 categories:
 - javascript
 ---

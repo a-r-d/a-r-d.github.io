@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/6-months-pair-programming/
 slug: 6-months-pair-programming
 title: 6 months of pair programming
 wordpress_id: 488
+description: A six month retrospective on how pair programming every day work has been
 ---
 
 ![pair programming](/images/blog/pairing.jpg)

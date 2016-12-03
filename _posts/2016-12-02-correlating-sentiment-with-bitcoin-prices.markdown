@@ -6,10 +6,10 @@ layout: post
 link: http://ard.ninja/blog/correlating-sentiment-with-bitcoin-prices/
 slug: correlating-sentiment-with-bitcoin-prices
 title: Correlating Sentiment with Bitcoin Prices
-wordpress_id: 506
+description: Is it possible to correlate bitcoin prices from chat logs on a bitcoin exchange?
 ---
 
-##What is Sentiment and how can I correlate it with bitcoin prices?
+### What is Sentiment and how can I correlate it with bitcoin prices?
 
 I have been wanting to write about this for a long time. I have several years worth of chat logs from the [btc-e bitcoin exchange](https://btc-e.com), as well as price data, and I want to try to see if they correlate.
 
@@ -20,7 +20,7 @@ I have long suspected that you could predict when a given cryptocurrency will se
 I have been frustrated by not being able to explore this unique opportunity more thoroughly, because I have strong gut feeling that it should be possible to find some leading indicator of price change. There must be some way to predict prices just by listening to and analyzing what people are saying in aggregate.
 
 
-##Neural network based classification problem.
+### Neural network based classification problem.
 
 I just started studying neural networks recently, which I am going to use to tackle this problem, so now is the perfect time.
 

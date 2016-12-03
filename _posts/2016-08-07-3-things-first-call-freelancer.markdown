@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/3-things-first-call-freelancer/
 slug: 3-things-first-call-freelancer
 title: The First 3 Things to Discuss With a Prospective Freelance Web Developer
 wordpress_id: 418
+description: I talk about scope of work, ballparking budget, and time constraints as the 3 things you need to discover immediately
 ---
 
 ![freelancers](/images/blog/freelance.jpg)

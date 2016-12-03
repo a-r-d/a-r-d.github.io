@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/realtek-alc1150-codec-intel-point-h-hd-audio-linux/
 slug: realtek-alc1150-codec-intel-point-h-hd-audio-linux
 title: Gigabyte GA-H170-GAMING 3 motherboard Audio and Linux
+description: An annoying troubleshooting experience where I learned about ALSA
 wordpress_id: 338
 categories:
 - Linux

@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/version-control-git-new-developers/
 slug: version-control-git-new-developers
 title: Version Control and Git For New Developers
 wordpress_id: 462
+description: Why version control and especially git is important for new developers to learn.
 ---
 
 ![git](/images/blog/git.png)

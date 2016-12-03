@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/increasing-commoditization-downmarket-web-developmen
 slug: increasing-commoditization-downmarket-web-development
 title: The increasing commoditization of downmarket web development
 wordpress_id: 386
+description: what to do about wix, squarespace, weebly and whatever else.
 categories:
 - Web Development
 ---
@@ -19,8 +20,6 @@ categories:
 
 
 <blockquote>To commoditize is the act of making a process, good or service easy to obtain by making it as uniform, plentiful and affordable as possible.</blockquote>
-
-
 
 
 ### Wix, Squarespace, Weebly, Shopify, Wordpress, ect.

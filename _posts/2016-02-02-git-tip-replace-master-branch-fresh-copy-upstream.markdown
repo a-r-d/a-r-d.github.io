@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/git-tip-replace-master-branch-fresh-copy-upstream/
 slug: git-tip-replace-master-branch-fresh-copy-upstream
 title: 'git tip: replace your master branch with a fresh copy from upstream'
 wordpress_id: 367
+description: some git commands to remove a borked local branch and check out a fresh copy from upstream
 categories:
 - git
 ---

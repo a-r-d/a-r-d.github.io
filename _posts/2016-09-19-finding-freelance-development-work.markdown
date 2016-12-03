@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/finding-freelance-development-work/
 slug: finding-freelance-development-work
 title: Finding Freelance Development Work
 wordpress_id: 468
+description: A quick overview on where to start in finding high quality clients
 ---
 
 ![freelancers](/images/blog/freelance.jpg)

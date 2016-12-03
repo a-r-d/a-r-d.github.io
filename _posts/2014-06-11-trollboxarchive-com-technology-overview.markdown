@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/trollboxarchive-com-technology-overview/
 slug: trollboxarchive-com-technology-overview
 title: Trollboxarchive.com Technology overview
+description: I talk about how I made fulltext search work on Trollboxarchive
 wordpress_id: 302
 categories:
 - cryptocurrency

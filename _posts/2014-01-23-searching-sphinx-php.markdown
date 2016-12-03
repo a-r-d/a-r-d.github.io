@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/searching-sphinx-php/
 slug: searching-sphinx-php
 title: Searching Sphinx From PHP
+description: Using Sphix with PHP and setting up indexes
 wordpress_id: 287
 ---
 

@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/full-text-search-sphinx-mysql-innodb/
 slug: full-text-search-sphinx-mysql-innodb
 title: Full text search with Sphinx and MySQL InnoDB
+description: Configuring Sphinx to pull data directly from MySQL tables.
 wordpress_id: 276
 ---
 

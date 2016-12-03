@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/javascript-constants-using-object-defineproperty/
 slug: javascript-constants-using-object-defineproperty
 title: JavaScript constants using Object.defineProperty
+description: I was working on a project with hundreds of globals right on the window object, and trying to convince them this was bad
 wordpress_id: 354
 categories:
 - javascript

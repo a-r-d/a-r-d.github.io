@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/fun-semicolons-javascript/
 slug: fun-semicolons-javascript
 title: Fun with semicolons in JavaScript
+description: Stray semicolons in JavaScript and cause unexpected code execution
 wordpress_id: 333
 categories:
 - javascript

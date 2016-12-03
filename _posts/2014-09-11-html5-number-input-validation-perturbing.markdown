@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/html5-number-input-validation-perturbing/
 slug: html5-number-input-validation-perturbing
 title: HTML5 Number Input validation is perturbing
+description: HTML5 gives you element.validity for numbers
 wordpress_id: 311
 ---
 

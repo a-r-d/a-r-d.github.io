@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/how-npm-scripts-really-work/
 slug: how-npm-scripts-really-work
 title: How npm scripts really work
 wordpress_id: 476
+description: Why you should be using npm scripts instead of globally install javascript build tools
 tags:
 - javascript
 - node

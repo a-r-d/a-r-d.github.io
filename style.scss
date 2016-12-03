@@ -5,7 +5,7 @@
 // IMPORTS
 //
 
-@import "reset";
+//@import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
@@ -21,13 +21,6 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -287,3 +280,17 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+nav {
+  background-color: #e3f2fd;
+}
+
+.date-format-color {
+  font-style: italic;
+  color: #888 !important;
+  text-align: center;
+}
+
+.collection-item .title {
+  font-weight: 900;
+}

@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/yarn-vs-npm-one-week/
 slug: yarn-vs-npm-one-week
 title: Yarn vs npm one week in
 wordpress_id: 506
+description: My thoughts on yarn vs npm after using yarn for a week.
 ---
 
 ![yarn package manager](/images/blog/yarn.jpg)

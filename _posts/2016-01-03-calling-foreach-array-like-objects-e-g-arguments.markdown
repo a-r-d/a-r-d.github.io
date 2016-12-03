@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/calling-foreach-array-like-objects-e-g-arguments/
 slug: calling-foreach-array-like-objects-e-g-arguments
 title: Calling "forEach" on array-like objects (e.g. arguments).
+description: An example of good thing I learned from "Secrets of a JavaScript ninja"
 wordpress_id: 344
 categories:
 - javascript

@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/android-4-1-4-2-gpu-rendering-dom-repainting/
 slug: android-4-1-4-2-gpu-rendering-dom-repainting
 title: Android 4.1 and 4.2, GPU rendering and DOM not repainting
+description: tl;dr - CSS "translate3d" is buggy on certain android versions
 wordpress_id: 314
 ---
 

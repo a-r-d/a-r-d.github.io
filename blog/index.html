@@ -1,18 +1,64 @@
 ---
 layout: default
 ---
-
+<script src="/scripts/isotope.pkgd.min.js"></script>
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <div class='iso-grid'>
+    {% for post in site.posts %}
 
-      <div class="entry">
-        {{ post.excerpt }}
+    <div class='iso-grid-item'>
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </span>
+          <p class='date-format-color'>{{ post.date | date: '%B %d, %Y' }}</p>
+          <p>{{ post.description }}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </div>
       </div>
+    </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+    {% endfor %}
+  </div>
+  <style>
+  .iso-grid-item {
+    width: 100%;
+    float: left;
+    /*padding-right: 15px;
+    padding-bottom: 15px;*/
+    border: 5px solid #fff;
+  }
+
+  @media (min-width: 600px) {
+    .iso-grid-item {
+      width: 49%;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .iso-grid-item {
+      width: 33%;
+    }
+  }
+  @media (min-width: 1800px) {
+    .iso-grid-item {
+      width: 25%;
+    }
+  }
+  </style>
+  <script>
+  $('.iso-grid').isotope({
+    // options...
+    itemSelector: '.iso-grid-item',
+    percentPosition: true,
+    masonry: {
+      // use element for option
+      columnWidth: '.iso-grid-item'
+    }
+  });
+  </script>
 </div>

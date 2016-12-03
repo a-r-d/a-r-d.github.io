@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/microsoft-ad-ldap-authentication-via-apache2/
 slug: microsoft-ad-ldap-authentication-via-apache2
 title: Microsoft AD LDAP authentication via Apache2
+description: Doing LDAP auth directly with Apache and PHP, its actually pretty easy
 wordpress_id: 244
 categories:
 - Active Directory

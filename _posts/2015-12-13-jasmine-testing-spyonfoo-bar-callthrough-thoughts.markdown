@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/jasmine-testing-spyonfoo-bar-callthrough-thoughts/
 slug: jasmine-testing-spyonfoo-bar-callthrough-thoughts
 title: Jasmine - spyOn().and.callThrough() argument mutability
+description: I made a pull request to Jasmine to add a feature to spies. 
 wordpress_id: 327
 categories:
 - javascript

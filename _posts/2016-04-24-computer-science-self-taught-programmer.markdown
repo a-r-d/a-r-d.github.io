@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/computer-science-self-taught-programmer/
 slug: computer-science-self-taught-programmer
 title: Computer Science for the Self Taught Programmer
 wordpress_id: 396
+description: Thinking about writing a little E-Book for new developers.
 categories:
 - computer science
 - ebooks

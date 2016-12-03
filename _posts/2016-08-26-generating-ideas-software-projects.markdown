@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/generating-ideas-software-projects/
 slug: generating-ideas-software-projects
 title: Generating Ideas For Software Projects
 wordpress_id: 439
+description: Ideas on how to come up with ideas for software projects and products
 ---
 
 ![ideas](/images/blog/ideas.jpg)

@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/making-npm-install-faster/
 slug: making-npm-install-faster
 title: Making npm install faster
 wordpress_id: 402
+description: A couple of ways to make npm install run a bit faster on your builds.
 categories:
 - javascript
 - npm

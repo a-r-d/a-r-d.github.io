@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/mongodb-full-text-search-oddities/
 slug: mongodb-full-text-search-oddities
 title: MongoDB Full-text Search Default Oddities
+description: tl;dr - MongoDB does OR and doesn't order results by score by default
 wordpress_id: 324
 categories:
 - mongodb
@@ -19,8 +20,6 @@ Recently I decided to use MongoDB's full-text search indexing feature for a data
 
 
 ### Oddly, MongoDB does 'OR' on multi-word queries
-
-
 
 So there are a few oddities in the default options when it comes to MongoDB fulltext search. First, the way you specify which fields on your collection to index is different in that there can only be one full text index on each collection. So while you can index multiple fields, there is only one index you can search on per collection.
 

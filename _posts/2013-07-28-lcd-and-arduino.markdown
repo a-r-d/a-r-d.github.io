@@ -6,6 +6,7 @@ layout: post
 link: http://ard.ninja/blog/lcd-and-arduino/
 slug: lcd-and-arduino
 title: LCD and Arduino
+description: My experiments with buying a little 20x4 LCD screen to use with an arduino
 wordpress_id: 222
 ---
 

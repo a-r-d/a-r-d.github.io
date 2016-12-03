@@ -7,6 +7,7 @@ link: http://ard.ninja/blog/top-5-es2015-features-use-today/
 slug: top-5-es2015-features-use-today
 title: 5 ES2015 Features You Should Use Today
 wordpress_id: 425
+description: top 5 es2015 features I think you will get the most benefit from.
 ---
 
 ![es2015](/images/blog/es6.jpg)
