@@ -45,15 +45,12 @@ I believe, more than ever, the answer is NO! Even in great numbers it is impossi
 
 You may think that there is great money in this for the platform owners, however even Shopify, arguably the best online shop builder at the time of writing this, and one that charges a substantial monthly subscription fee for the site owners must be wildly profitable. However, Shopify has not turned a profit since going public! Check it out:
 
-
-
-[![shopify](http://ard.ninja/blog/wp-content/uploads/2016/04/shopify.png)](http://ard.ninja/blog/wp-content/uploads/2016/04/shopify.png)
-
+![shopify](/images/blog/shopify.png)
 
 
 So if even Shopify is not making money how are the even cheaper web platform owners doing? Let's look at Wix.com - their plans are quite cheap at only $10-$15 a month for a reasonable amount of functionality.
 
-[![wix](http://ard.ninja/blog/wp-content/uploads/2016/04/wix.png)](http://ard.ninja/blog/wp-content/uploads/2016/04/wix.png)
+![wix](/images/blog/wix.png)
 
 Yes, Wix.com is losing money too, and they are losing it hand over fist in fact. In 2015 they lost $51 million dollars on $204 million dollars in revenue. They had only $149 million in assets and $153 million in liabilities at year end (2015). So even these online property builders are competing so aggressively with each other they are incurring huge losses. I can't comment on Squarespace, as they are still private, but they seem to still be in the process of raising additional venture funding. I'm sure the picture is similar.
 

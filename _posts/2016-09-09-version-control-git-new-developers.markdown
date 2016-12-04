@@ -18,7 +18,7 @@ Arguably one of the most important tools you will use as a developer is your ver
 
 If you are a new developer just learning how to program you are probably still transferring your class assignment files around on flash drives or some file sharing system. **Version control solves this problem and so much more**. Version control can serve as a way to store code, preserve history, and even act as a backup system for your programs. Most people also integrate their version control into their build and deployment system in an automated way so that they can use version control to deploy new versions of their code to production.
 
-What else?
+### What else?
 
 Version lets you collaborate with other developers. _Git_, which is probably the most popular version control system used today, is used widely in the industry and makes working with others on the same codebase fantastically easy. I won't go into the gritty details here, but imagine that you and another developer are working on the same code base, apart, and then after a few days you need to merge your changes back together combine your project once again. Git gives you great workflows to help accomplish this feat, mostly automatically too.
 

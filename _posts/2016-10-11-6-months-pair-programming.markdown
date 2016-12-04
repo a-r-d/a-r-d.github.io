@@ -28,7 +28,7 @@ Another serious upside is that for the most part when the entire team is pair pr
 Usually, mistakes are caught quickly. When two people are running the logic in their heads as it is being written the outcome is that a lot fewer bugs are actually committed. And, on this particular project, I can honestly say this is just about the cleanest code I have ever worked on at a jobsite.
 
 
-###The downsides
+### The downsides
 
 While pair programming is pretty great for solving problems (debugging, refactoring, and ops tasks generally) I don't actually think pair programming is good for writing code. Firstly, when you code and pair program it is very hard to ["flow"](https://en.wikipedia.org/wiki/Flow_(psychology) or get "in the zone". In fact, I miss getting into the flow state so dearly that I often go home and write code or write blog posts with much more enthusiasm than I used to because it allows me to feel that mindset.
 
@@ -37,14 +37,14 @@ There is something about getting in the zone that is just so intellectually sati
 Secondly, it is actually pretty slow for writing code. If one person starts to get going they have to stop and explain to the other what they are doing as they do it. Otherwise, your counterpart will just start checking email or updating documentation and that is not really the point of pair programming.
 
 
-###Agreeing on Tools
+### Agreeing on Tools
 
 Another serious downside of pair programming is that everyone has to agree on tools. This is a huge deal to some and irrelevant to others. When I came onto the team I inflicted oh-my-zsh on everyone but when I wanted to use vim or vim-mode for our various editors I got some (obviously understandable) resistance. That slows me down because I'm used to those shortcuts. Alternatively, if you are used to using tmux (a terminal multiplexer) then suddenly your pair would have to agree to use tmux (and learn the commands for tmux) if you want to work together.
 
 Even simple things like git workflows can be really annoying when pair programming. For a couple of years now my git workflow has been: stage using tig (a command line git tool), then commit from the command line. I am used to doing it that way. However, if your pair wants to use git GUI tools in IntelliJ or some other third party tool, they may balk when you whip out tig.
 
 
-###How does it compare it to other activities?
+### How does it compare it to other activities?
 
 Programming is a creative endeavor in many ways. True, many programmers are mathy and often deeply analytical and traditionally we don't think of people like that as creative, but I disagree with that notion. Can you image "pair graphic design"? Or perhaps "pair creative writing"? That actually sounds like a recipe for complete disaster. However something like "pair bench chemistry" sounds fairly reasonable, every step will be double checked. Working in pairs obviously is also optimal for things like piloting aircraft. I'm not sure where programming falls in this continuum of activities, but for me, I have been pleasantly surprised that pair programming has worked as well as it has.
 
