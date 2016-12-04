@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <title>Canvas Sprite Sheet Demo</title>
+
+    <style type="text/css">
+      *,html{
+        margin: 0;padding: 0;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body onload="setup();">
+    <canvas id="canvas"></canvas>
+    <div style='display:none'>
+      <img id='treeImg' src='./tree.png' width="20" height="20" />
+      <img id='bulbImg' src='./bulb.png' />
+    </div>
+    <script type="text/javascript">
+      /* GLOBAL */
+      window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+      var global_width = window.innerWidth,
+          global_height = window.innerHeight,
+          ratio = 1,
+          canvas = document.getElementById('canvas'),
+          ctx = canvas.getContext('2d'),
+          treeImg = document.getElementById('treeImg'),
+          bulbImg = document.getElementById('bulbImg'),
+          hero = new HeroState();
+
+
+      function HeroState() {
+        var state = {
+          x: global_width / 2,
+          y: global_height / 2,
+          height: 64,
+          width: 64,
+          position: [0, 0]
+        }
+
+        var iteration = 0;
+
+        function iter() {
+          iteration++;
+          if(iteration > 3) {
+            iteration = 0;
+          }
+        }
+
+        function nextDown() {
+          iter();
+          // set and x,y cropping cordinate on the sprite sheet.
+          state.position = [iteration * 64, 0];
+        }
+
+        function nextLeft() {
+          iter();
+          state.position = [iteration * 64, 64];
+        }
+
+        function nextRight() {
+          iter();
+          state.position = [iteration * 64, 128];
+        }
+
+        function nextUp() {
+          iter();
+          state.position = [iteration * 64, 64 * 3];
+        }
+
+        function move(x, y) {
+          state.x = x;
+          state.y = y;
+        }
+
+        return {
+          state: state,
+          nextUp: nextUp,
+          nextRight: nextRight,
+          nextLeft: nextLeft,
+          nextDown: nextDown,
+          move: move
+        };
+      }
+
+      function drawHero() {
+        var state = hero.state;
+        // ctx.drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
+        ctx.drawImage(bulbImg,
+          state.position[0], state.position[1],
+          state.width, state.height,
+          state.x, state.y,
+          state.width, state.height
+        );
+      }
+
+      function drawTrees() {
+        var size = 20, space = 40, i = 0, ii = 0;
+        // i = x
+        for(i = 0; i < global_width; i += size + space) {
+          // ii = y
+          for(ii = 0; ii < global_height; ii += size + space) {
+            ctx.drawImage(treeImg, i, ii, size, size);
+          }
+        }
+      }
+
+      document.addEventListener('keydown', function(event) {
+        var code = event.keyCode;
+        var codes = [37, 38, 39, 40]
+        var state = hero.state;
+        console.log('hero state: ', state);
+
+        var moveBy = 10;
+        var map = {
+          '37': function() {
+            // left
+            hero.move(state.x - moveBy, state.y);
+            hero.nextLeft();
+          },
+          '38': function() {
+            // up
+            hero.move(state.x, state.y - moveBy);
+            hero.nextUp();
+          },
+          '39': function() {
+            // right
+            hero.move(state.x + moveBy, state.y);
+            hero.nextRight();
+          },
+          '40': function() {
+            // down
+            hero.move(state.x, state.y + moveBy);
+            hero.nextDown();
+          },
+        }
+
+        if(codes.indexOf(code) !== -1) {
+          event.preventDefault();
+          console.log('Pressed: ', code);
+          map[ code ]();
+        }
+      });
+
+
+      ////////////////////////////////////////////////
+      /* SETUP */
+      function setup(){
+        if (ctx){
+          init();
+          requestAnimationFrame(update);
+          window.addEventListener('resize', rescale);
+          rescale();
+        }
+      }
+      function rescale(){
+        global_width = window.innerWidth;
+        global_height = window.innerHeight;
+        if(ctx.webkitBackingStorePixelRatio < 2) ratio = window.devicePixelRatio || 1;
+        canvas.setAttribute('width', global_width*ratio);
+        canvas.setAttribute('height', global_height*ratio);
+        draw();
+      }
+      /* INIT */
+      function init(){
+        draw();
+      }
+      /* DRAW */
+
+      function draw(){
+        ctx.save();
+        ctx.scale(ratio, ratio);
+        // Execute your draw specific functions between the lines to enable high-dpi drawing
+        // ---------------------------------------------------------------------------------
+        drawTrees();
+        drawHero();
+        // ---------------------------------------------------------------------------------
+        ctx.restore();
+      }
+      /* UPDATE */
+      function update(){
+
+        ctx.clearRect(0, 0, global_width, global_height);
+        drawTrees();
+        drawHero();
+
+        requestAnimationFrame(update);
+      }
+    </script>
+  </body>
+</html>
