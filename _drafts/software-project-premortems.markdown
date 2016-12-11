@@ -1,0 +1,41 @@
+---
+author: Aaron Decker
+comments: true
+date: 2016-12-10
+layout: post
+slug: softwre-project-premortems
+title: Software Project Premortems
+description: Applying the idea of a "premortem" to your side projects and opportunities at work
+---
+
+
+## Doing "premortems" for software projects
+
+I'm currently reading the fantastic book "Thinking Fast and Slow" by the Nobel Laureate Daniel Kahneman. In the book he discusses many things, but in the section on optimism and over-confidence he introduces the idea of the "__premortem__". It is just as it sounds: the inverse of a postmortem analysis. In his words here is the prompt:
+
+__“Imagine that we are a year into the future. We implemented the plan as it now exists. The outcome was a disaster. Please take 5 to 10 minutes to write a brief history of that disaster.”__
+
+
+## Looking back, is there any project I would not have done?
+
+Well, lots actually. I have done of a lot of side projects that could have benefited from a premortem, things which I would have abandoned sooner. In the past I have started many projects where I wrote a lot of code, had fully built prototypes, and then just did not know what to do next. I feel like premortems could have helped me a lot there.
+
+One project in particular, where I was building job tracking software for small contractors makes me cringe when I think back to it (I called it _JobMinder_). I could have easily foreseen the problems had I sat down and put in some thought. I didn't have a clear idea of who my customer was and what exactly I was building. I kept adding features before I even had a single beta tester. Then I slowly pursued beta tester companies with luke-warm enthusiasm for a while before losing interest myself.
+
+What was my target market? Who was my customer? Am I very interested in this idea? What is my acquisition strategy? What features will be in my MVP? How much time will this take? How will I work on this while I have a full time job? Is there a point at which I would quit to work on this full time? I hadn't answered any of these questions.
+
+If I had done a serious premortem, I could have solved these issues first, before plowing time into it, and  I would have changed my plan significantly. As it was I ended up with a ton of half-baked code and a lot of wasted time with nothing to show for it.
+
+
+## What about a "Bias for Action"?
+
+The one thing I don't like about the idea of a premortem is that they are so inherently pessimistic that they could cause you to give up on a idea that could be rather good. I think when most of us are on our deathbeds we will be regretting more things we didn't do as opposed to those we did. Anyway, that is at least the conclusion I have come to after reading many biographies recently. So I don't necessarily think it is ever good to discourage a bias for action.
+
+What I do think is that the premortem should not discourage you from doing a project, but it should make you focus on the rough edges and crystalize your plan a bit more before you start. However, I definitely think you should take risks when appropriate and doing a premortem should not discourage you from taking good risks. Although, I'm afraid that it could.
+
+
+## As a non-decision maker, should you do premortems at work?
+
+In my career right now I'm not in a position to kick off any major projects at the fortune 500 company I work at and probably never will be (especially since I'm just a consultant). You probably aren't either. Thats just the reality of life, few people are true decision makers at that level. And once management has made a decision on some project you are not going to change their minds.
+
+What you can decide is what train to board. I think you should do premortems of new projects before you join them at work, and probably the best way to do this is to get the opinions of a few of your co-workers. You are probably not in a position to understand what could make a project fail, but I bet that a lot of your co-workers are! If you find out something has a lot of serious risks, maybe you can avoid a potential layoff 6 months to a year down the line.
