@@ -9,13 +9,23 @@ description: Applying the idea of a "premortem" to your side projects and opport
 ---
 
 
+
 ## Doing "premortems" for software projects
 
 I'm currently reading the fantastic book "Thinking Fast and Slow" by the Nobel Laureate Daniel Kahneman. In the book he discusses many things, but in the section on optimism and over-confidence he introduces the idea of the "__premortem__". It is just as it sounds: the inverse of a postmortem analysis. In his words here is the prompt:
 
-__“Imagine that we are a year into the future. We implemented the plan as it now exists. The outcome was a disaster. Please take 5 to 10 minutes to write a brief history of that disaster.”__
+> “Imagine that we are a year into the future. We implemented the plan as it now exists. The outcome was a _disaster_. Please take 5 to 10 minutes to write a  brief history of that disaster.”
 
 The exercise is meant to make you seriously ponder all of the issues that could crop up and avoid "group think" and over confidence that comes with it once a course has been set. The thing is, I think you can apply it to your own side projects and plans on your own and it can be just as effective.
+
+
+
+## Software is complicated, estimating is hard, blah blah blah
+
+Everyone knows software is hard to estimate. It is difficult to predict which third-party API will cause your trouble and what last minute requirements the business will pile on. I'm a developer and I do side projects and freelance work, so I'm thinking on a very small scale here. I don't practice agile like I do at my day job, and I don't have planning meetings with myself.
+
+What a premortem can really help you do in a solo effort is to sit down and characterize all of the things that may not go your way and give you an opportunity to plan to respond to them before they become major hindrances. And If you can avoid something up front that will later become a maintenance nightmare that is worth plenty. So, I think sitting down and doing the exercise is worth the 5-10 minutes in the long run. In fact, you probably already do this and I'm just putting a name to it here and formalizing it.  
+
 
 
 
@@ -27,7 +37,7 @@ One project in particular, where I was building job tracking software for small 
 
 What was my target market? Who was my customer? Am I very interested in this idea? What is my acquisition strategy? What features will be in my MVP? How much time will this take? How will I work on this while I have a full time job? Is there a point at which I would quit to work on this full time? I hadn't answered any of these questions.
 
-If I had done a serious premortem, I could have solved these issues first, before plowing time into it, and  I would have changed my plan significantly. As it was I ended up with a ton of half-baked code and a lot of wasted time with nothing to show for it.
+If I had done a serious premortem, I could have thought about and potentially solved these issues first, before plowing time into it. I would have changed my plan significantly. As it was I ended up with a ton of half-baked code and a lot of wasted time with nothing to show for it.
 
 
 
