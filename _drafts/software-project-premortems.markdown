@@ -15,6 +15,9 @@ I'm currently reading the fantastic book "Thinking Fast and Slow" by the Nobel L
 
 __“Imagine that we are a year into the future. We implemented the plan as it now exists. The outcome was a disaster. Please take 5 to 10 minutes to write a brief history of that disaster.”__
 
+The exercise is meant to make you seriously ponder all of the issues that could crop up and avoid "group think" and over confidence that comes with it once a course has been set. The thing is, I think you can apply it to your own side projects and plans on your own and it can be just as effective.
+
+
 
 ## Looking back, is there any project I would not have done?
 
@@ -27,6 +30,7 @@ What was my target market? Who was my customer? Am I very interested in this ide
 If I had done a serious premortem, I could have solved these issues first, before plowing time into it, and  I would have changed my plan significantly. As it was I ended up with a ton of half-baked code and a lot of wasted time with nothing to show for it.
 
 
+
 ## What about a "Bias for Action"?
 
 The one thing I don't like about the idea of a premortem is that they are so inherently pessimistic that they could cause you to give up on a idea that could be rather good. I think when most of us are on our deathbeds we will be regretting more things we didn't do as opposed to those we did. Anyway, that is at least the conclusion I have come to after reading many biographies recently. So I don't necessarily think it is ever good to discourage a bias for action.
@@ -34,8 +38,9 @@ The one thing I don't like about the idea of a premortem is that they are so inh
 What I do think is that the premortem should not discourage you from doing a project, but it should make you focus on the rough edges and crystalize your plan a bit more before you start. However, I definitely think you should take risks when appropriate and doing a premortem should not discourage you from taking good risks. Although, I'm afraid that it could.
 
 
+
 ## As a non-decision maker, should you do premortems at work?
 
-In my career right now I'm not in a position to kick off any major projects at the fortune 500 company I work at and probably never will be (especially since I'm just a consultant). You probably aren't either. Thats just the reality of life, few people are true decision makers at that level. And once management has made a decision on some project you are not going to change their minds.
+In my career right now I'm not in a position to kick off any major projects at the fortune 500 company I work at and probably never will be (especially since I'm just a consultant). You probably aren't either. That's just the reality of life, few people are true decision makers at that level. And once management has made a decision on some project you are not going to change their minds.
 
-What you can decide is what train to board. I think you should do premortems of new projects before you join them at work, and probably the best way to do this is to get the opinions of a few of your co-workers. You are probably not in a position to understand what could make a project fail, but I bet that a lot of your co-workers are! If you find out something has a lot of serious risks, maybe you can avoid a potential layoff 6 months to a year down the line.
+What you can decide is what train to board. I think you should do premortems of new projects before you join them at work, and probably the best way to do this is to get the opinions of a few of your co-workers. You are probably not in a position to understand all of the externalities that could make a project fail, but I bet that some of your co-workers are. This is the wisdom of crowds. If you find out something has a lot of serious risks, maybe you can avoid a potential layoff 6 months to a year down the line.
