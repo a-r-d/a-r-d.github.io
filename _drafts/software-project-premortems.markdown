@@ -16,7 +16,7 @@ I'm currently reading the fantastic book "Thinking Fast and Slow" by the Nobel L
 
 > “Imagine that we are a year into the future. We implemented the plan as it now exists. The outcome was a _disaster_. Please take 5 to 10 minutes to write a  brief history of that disaster.”
 
-The exercise is meant to make you seriously ponder all of the issues that could crop up and avoid "group think" and over confidence that comes with it once a course has been set. The thing is, I think you can apply it to your own side projects and plans on your own and it can be just as effective.
+The exercise is meant to make you seriously ponder all of the issues that could crop up and avoid "group think" and over confidence that comes with it once a course has been set. The thing is, I think you can apply it to your own side projects and plans and it can be just as effective.
 
 
 
