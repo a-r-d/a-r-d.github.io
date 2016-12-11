@@ -26,6 +26,7 @@ Everyone knows software is hard to estimate. It is difficult to predict which th
 
 What a premortem can really help you do in a solo effort is to sit down and characterize all of the things that may not go your way and give you an opportunity to plan to respond to them before they become major hindrances. And If you can avoid something up front that will later become a maintenance nightmare that is worth plenty. So, I think sitting down and doing the exercise is worth the 5-10 minutes in the long run. In fact, you probably already do this and I'm just putting a name to it here and formalizing it.  
 
+<> SMART reference goes here
 
 
 
@@ -41,6 +42,15 @@ If I had done a serious premortem, I could have thought about and potentially so
 
 
 
+
+## As a non-decision maker, should you do premortems at work?
+
+In my career right now I'm not in a position to kick off any major projects at the fortune 500 company I work at and probably never will be (especially since I'm just a consultant). You probably aren't either. That's just the reality of life, few people are true decision makers at that level. And once management has made a decision on some project you are not going to change their minds.
+
+What you can decide is what train to board. I think you should do premortems of new projects before you join them at work, and probably the best way to do this is to get the opinions of a few of your co-workers. You are probably not in a position to understand all of the externalities that could make a project fail, but I bet that some of your co-workers are. This is the wisdom of crowds. If you find out something has a lot of serious risks, maybe you can avoid a potential layoff 6 months to a year down the line.
+
+
+
 ## What about a "Bias for Action"?
 
 The one thing I don't like about the idea of a premortem is that they are so inherently pessimistic that they could cause you to give up on a idea that could be rather good. I think when most of us are on our deathbeds we will be regretting more things we didn't do as opposed to those we did. Anyway, that is at least the conclusion I have come to after reading many biographies recently. So I don't necessarily think it is ever good to discourage a bias for action.
@@ -49,8 +59,9 @@ What I do think is that the premortem should not discourage you from doing a pro
 
 
 
-## As a non-decision maker, should you do premortems at work?
 
-In my career right now I'm not in a position to kick off any major projects at the fortune 500 company I work at and probably never will be (especially since I'm just a consultant). You probably aren't either. That's just the reality of life, few people are true decision makers at that level. And once management has made a decision on some project you are not going to change their minds.
+## What about prototyping?
 
-What you can decide is what train to board. I think you should do premortems of new projects before you join them at work, and probably the best way to do this is to get the opinions of a few of your co-workers. You are probably not in a position to understand all of the externalities that could make a project fail, but I bet that some of your co-workers are. This is the wisdom of crowds. If you find out something has a lot of serious risks, maybe you can avoid a potential layoff 6 months to a year down the line.
+I think there is a difference between fully committing to a new project and just working on a prototype. I don't think you should apply a premortem to a project that is merely exploratory in nature. Additionally building prototypes with few constraints can be extremely fulfilling, and for a programmer seems like one of the best ways to get into a ["flow"](https://en.wikipedia.org/wiki/Flow_(psychology)) state very easily.
+
+The trick may be to set some clear goals before you begin to prototype. Something like "use a generator so that I can prototype only feature X in a web app" may be good. Otherwise, you could get bogged down choosing a CSS framework or rolling a user Auth system. Getting bogged down in minutiae is not what you want to be doing in an exploratory phase.
