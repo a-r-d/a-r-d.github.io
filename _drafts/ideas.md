@@ -13,3 +13,5 @@
 - Being stuck on a maintenance mode project. How to make the best of it.
 - Duplication of code across microservices (i.e. dry is hard)
 - Diverging code bases in microservices (e.g. error handling, rest clients, logging)
+- If Agile is so great, why is Agile in practice always such a joke?
+- Making open offices suck less.
