@@ -29,7 +29,7 @@ Everyone knows software is hard to estimate. It is difficult to predict which th
 
 What a premortem can help you do in a solo effort is to sit down and characterize the things that may not go your way and give you an opportunity to plan to respond to them before they become major hindrances. And If you can avoid something up front that will later become a maintenance nightmare that is worth plenty. So, I think sitting down and doing the exercise is worth the 5-10 minutes in the long run. In fact, you probably already do this and I'm just putting a name to it here and formalizing it.  
 
-Actually there are plenty of formalized planning systems including [SMART criteria](https://en.wikipedia.org/wiki/SMART_criteria) and [SWOT analysis](https://en.wikipedia.org/wiki/SWOT_analysis), but the premortem is nice because it just one additional little thing you can do, regardless of your other processes.
+Actually I should mention here that there are plenty of formalized planning systems including [SMART criteria](https://en.wikipedia.org/wiki/SMART_criteria) and [SWOT analysis](https://en.wikipedia.org/wiki/SWOT_analysis), but the premortem is nice because it just one additional little thing you can do, regardless of your other processes.
 
 
 
