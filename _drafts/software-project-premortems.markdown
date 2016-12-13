@@ -1,13 +1,16 @@
 ---
 author: Aaron Decker
 comments: true
-date: 2016-12-10
+date: 2016-12-12
 layout: post
 slug: softwre-project-premortems
 title: Software Project Premortems
 description: Applying the idea of a "premortem" to your side projects and opportunities at work
 ---
 
+![climbing along the knife edge](/images/blog/erics/P7151495-Pano.jpg)
+
+> "Photo by Eric Wesseling"
 
 
 ## Doing "premortems" for software projects
