@@ -10,7 +10,7 @@ description: Is it possible to correlate bitcoin prices from chat logs on a bitc
 ---
 
 ![beach sand](/images/blog/erics/DSC_8316.jpg)
-    _photo by Eric Wesseling_
+_photo by [Eric Wesseling](https://www.instagram.com/ericwess/)_
 
 ## What is Sentiment and how can I correlate it with bitcoin prices?
 

@@ -9,7 +9,7 @@ description: Applying the idea of a "premortem" to your side projects and opport
 ---
 
 ![climbing along the knife edge](/images/blog/erics/P7151495-Pano.jpg)
-  _Photo by Eric Wesseling_
+  _Photo by [Eric Wesseling](https://www.instagram.com/ericwess/)_
 
 
 
