@@ -1,11 +1,11 @@
 ---
 author: Aaron Decker
 comments: true
-date: 2016-12-12
+date: 2016-12-17
 layout: post
-slug: making-open-offices-suck-less
-title: Making Open Offices Suck Less
-description: Some ideas about how to reduce the sucky aspects of open offices.
+slug: java-vs-dot-net-for-recruiters
+title: Java Vs .NET for recruiters
+description: Java vs .NET explained to recruiters
 ---
 
 ## What is the upside of understanding these technologies?
