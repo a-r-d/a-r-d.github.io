@@ -1,13 +1,15 @@
 ---
 author: Aaron Decker
 comments: true
-date: 2016-12-31
+date: 2016-12-17
 layout: post
 slug: my-2016-reading-list
 title: My 2016 Reading List
 description: Some of the over 50 books I read during 2016
 ---
 
+![colorado](/images/blog/erics/DSC_7719.jpg)
+  _Photo By Eric Wesseling_
 
 ## The recurring themes in over 50 books that I read this year
 

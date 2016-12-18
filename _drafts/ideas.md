@@ -1,3 +1,13 @@
+---
+author: Aaron Decker
+comments: true
+date: 2020-01-01
+layout: post
+slug: ideas
+title: ideas
+---
+
+
 ### Ideas for new posts
 
 - Shutting down TBA
