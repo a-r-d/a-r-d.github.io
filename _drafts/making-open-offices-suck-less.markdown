@@ -19,7 +19,8 @@ description: Some ideas about how to reduce the sucky aspects of open offices.
 Check out [this post by Yan Lhert](https://medium.com/@yanismydj/why-i-only-work-remotely-2e5eb07ae28f#.iqn3vmefy). He has a lot of good arguments about why he will only work remote now, and in large part it seems to be because of open offices. He links to an especially great [tweet by David Heinemeier Hansson (he created Ruby on Rails)](https://twitter.com/dhh/status/671953192947736576).
 
 > The open office plan is a tyrant of interruption, a deep loss of privacy, and the death of productivity 
-      _-DHH_
+      
+_-DHH_
 
 
 
