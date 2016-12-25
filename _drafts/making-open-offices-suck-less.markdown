@@ -43,11 +43,15 @@ Actually this one is pretty easy: over the ear headphones and some death metal. 
 
 ## Colds in the Fall and Winter
 
-Okay, aside from getting a flu shot, I don't have any ideas here. Open offices suck for this, they just do. Your co-workers with kids with get sick first and then bring it to work and infect everyone else. It always happens, so make sure to stock up on Sudafed and cough drops.
+Okay, aside from getting a flu shot, I don't have any ideas here. Open offices suck for this, they just do. Your co-workers with kids with get sick first and then bring it to work and infect everyone else. It always happens, so make sure to stock up on Sudafed and cough drops. In a good [New Yorker article Maria Konnikova](http://www.newyorker.com/business/currency/the-open-office-trap)* throws out some numbers related to how often workers get sick vs the number of workers in an open space. Unsurprisingly, there is a correlation.
+
+_* Unrelatedly Konnikova [wrote a great book on con artists](http://amzn.to/2hXdTQg) that you should read, it was entertaining and well researched._
 
 
 ## Be able to escape, at least for a bit
 
 Sometimes you need silence and no distractions, and modern offices don't allow that kind of luxury unless you are a C-level (I guess?). So what do you do? Work from home?
 
-I don't like to work from home for the same reason that I chose study in the library everyday in college rather than at home. Yes, I could study back in my room, but realistically there were more distractions. So for me, working from home does not seem like a great option, although for some people I bet working from home is a way to escape from the hectic office occasionally. The best option may be just stealing a huddle room.
+I don't like to work from home for the same reason that I chose study in the library everyday in college rather than at home. Yes, I could study back in my room, but realistically there were more distractions. So for me, working from home does not seem like a great option, although for some people I bet working from home is a way to escape from the hectic office occasionally.
+
+The best option may be stealing a huddle room. As I mentioned, I blocked my desk from the hallway with whiteboards, but that is more like a bandaid on a cut arterty. If you really need a moment of deep focus, stealing a meeting room is probably your best option.
