@@ -8,7 +8,7 @@ title: Algorithmic Trading Experiments With Cryptocurrency
 description: A summary of my attempts at algorithmic trading using various strategies on cryptocurrency exchanges.
 ---
 
-There are many fields where dilettantism cannot cause any harm. Algorithmic trading is not one of these. Because if you are writing a program to automatically make you money, you can just as easily write on to automatically lose you money. Remember what happened to [Knight Capital](https://en.wikipedia.org/wiki/Knight_Capital_Group)?
+There are fields where dilettantism cannot cause any harm. Algorithmic trading is not one of these. Because if you are writing a program to automatically make you money, you can just as easily write on to automatically lose you money. Remember what happened to [Knight Capital](https://en.wikipedia.org/wiki/Knight_Capital_Group)?
 
 ## My first naive attempts (mean reversion)
 
@@ -62,4 +62,4 @@ Ultimately, with this algorithm I never even got the trading side working. I jus
 
 ## In the future
 
-Trying all of these different strategies was intrinsically interesting, but also interesting as a software developer. It is not often you get to write code that so directly can make or lose money, and doing it instills in you a special level of attention to detail and carefulness. There were so many variables to consider with algorithmic trading code, and performance and timing became important as never before. That said, I wouldn't attempt it again unless I could do so on an exchange without the tyrannical shackles of percentage based trading fees. 
+Trying all of these different strategies was intrinsically interesting, but also interesting as a software developer. It is not often you get to write code that so directly can make or lose money, and doing it instills in you a special level of attention to detail and carefulness. There were so many variables to consider with algorithmic trading code, and performance and timing became important as never before. That said, I wouldn't attempt it again unless I could do so on an exchange without the tyrannical shackles of percentage based trading fees.
