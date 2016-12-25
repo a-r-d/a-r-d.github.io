@@ -23,7 +23,7 @@ So what you are doing is guessing that the market has some average price and you
 
 _Here is a diagram explaining trading on mean reversions (from quantopian)_
 
-![mean reversion](/images/blog/mean-reversion.png)
+![mean reversion](/images/blog/mean-reversion.png){: .center-image }
 
 This is actually what big market makers do on stock exchanges. Think about it: if you have some shares of AAPL and go to sell it, are you sure that you will have a buyer at that very instant? There may not be a specific buyer, but a market maker with deep pockets will step in to make sure there is liquidity, in exchange for a penny or so of profit. [The market maker makes money on the "spread"](http://www.investopedia.com/terms/m/marketmakerspread.asp), this difference between the lowest buy order on the books and the highest sell order on the books.  
 
@@ -38,7 +38,7 @@ The basic idea of MACD is pretty simple: you compute two moving averages, one lo
 
 _Here is one of the more clear images I could find demonstrating this:_
 
-![macd diagram](/images/blog/macd-diagram.gif)
+![macd diagram](/images/blog/macd-diagram.gif){: .center-image }
 
 Interestingly, the thesis behind momentum trading and the entire MACD strategy appears opposed to that of the idea of a mean reversion strategy. On one hand you are saying a market gains momentum in each direction, while on the other hand you are saying that the market should revert to the mean. However, in practice you are looking at very different time frames (on the order of seconds vs on the order of hours or days).
 
@@ -51,7 +51,7 @@ This is another strategy that I read about in [Irene Aldridge's book](http://amz
 
 The way this algorithm works is that you model many exchange rates between different currencies on an exchange as a graph, then using this datastructure you model each exchange rate as a weight and you look for "negative cycles" (in computer science parlance) through the graph. __In plain english this means that you try to find a path through a set of currencies where you end up with more money than what you started with__. So I could do this on Btc-e.com because there are multiple currencies on that exchange.
 
-![example bellman form cycle](/images/blog/example-forex-trade.jpg)
+![example bellman form cycle](/images/blog/example-forex-trade.jpg){: .center-image }
 
 You can guess again what kills you here: trading fees. It is a 0.3% fee to trade, and I need to make 3 trades through a cycle, __so the arbitrage has to give more than 0.9% total, which is a lot__. Secondly, these arbitrage opportunities are usually ephemeral: they last seconds a most, so you need to make all of the trades in the set of trades very fast.
 

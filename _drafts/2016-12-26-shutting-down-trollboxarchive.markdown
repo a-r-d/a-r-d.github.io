@@ -16,7 +16,7 @@ Around this time (2013) I went in on a venture with a couple of other bitcoin en
 
 One of these websites that we created was trollboxarchive.com. The site screen scraped the chat logs from btc-e.com as well as the price data, and I then made the data searchable and threw the website together in about a week or two ([I wrote in more detail here about how it evolved over time](http://www.ard.ninja/blog/trollboxarchive-com-technology-overview/)). It was pretty fun to build, and the site was getting a lot of traffic. Long story short, there isn't much traffic anymore probably for numerous reasons.
 
-![trollboxarchive traffic stats](/images/blog/tba-traffic-screencap.png)
+![trollboxarchive traffic stats](/images/blog/tba-traffic-screencap.png){: .center-image }
 
 
 ## Where did all of the traffic go?
@@ -25,11 +25,11 @@ Its deeply satisfying to see the 1 million pageviews number over the 3 years the
 
 A year or two ago Btc-e.com instituted a policy where you had to have $100 in your account to chat. That pretty quickly killed the community of people chatting, then they raised this to $1000 later, which further diminished the activity. At the same time, interest in cryptocurrency is not a the fever pitch that it once was. Check this google trends chart if you don't believe me:
 
-![google trends bitcoin](/images/blog/bitcoin_popularity.png)
+![google trends bitcoin](/images/blog/bitcoin_popularity.png){: .center-image }
 
 Additionally, you can see interest in the btc-e.com exchange has fallen precipitously too, whether that is due to other exchanges, or overall cryptocurrency interest is up to you to judge.
 
-![btc-e.com google trends](/images/blog/btce-traffic.png)
+![btc-e.com google trends](/images/blog/btce-traffic.png){: .center-image }
 
 
 
