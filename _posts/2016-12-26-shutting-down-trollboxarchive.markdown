@@ -1,7 +1,7 @@
 ---
 author: Aaron Decker
 comments: true
-date: 2016-12-21
+date: 2016-12-26
 layout: post
 slug: shutting-down-trollboxarchive
 title: Shutting Down Trollboxarchive
@@ -21,7 +21,7 @@ One of these websites that we created was trollboxarchive.com. The site screen s
 
 ## Where did all of the traffic go?
 
-Its deeply satisfying to see the 1 million pageviews number over the 3 years the site has been up. The highest month was around 60k pageviews, but recently it has been 1k to 2k pageviews per month. Previously, the costs were paid by advertisers (usually mining pools), or advertisements to our own affiliate sites, but now there just isn't enough traffic to do that. I did try to monetize the site with adsense (and to do that, unfortunately, I had to filter all of the profanity people love to use in the chat window) but it still only made about $40 all year. With the server at $80 / year and the domain renewal fees, and having to deal with backups and security updates, I figured it is time just to let it die, thus I am not going to renew my VPS this year on 12/27/2016.
+Its deeply satisfying to see the 1 million pageviews number over the 3 years the site has been up. The highest month was around 60k pageviews, but recently it has been 1k to 2k pageviews per month. Previously, the costs were paid by advertisers (usually mining pools), or advertisements to our own affiliate sites, but now there just isn't enough traffic to do that. I did try to monetize the site with adsense (and to do that, unfortunately, I had to filter all of the charming profanity people love to use in the chat window) but it still only made about $40 all year. With the server at $80 / year and the domain renewal fees, and having to deal with backups and security updates, I figured it is time just to let it die, thus I am not going to renew my VPS this year on 12/27/2016.
 
 A year or two ago Btc-e.com instituted a policy where you had to have $100 in your account to chat. That pretty quickly killed the community of people chatting, then they raised this to $1000 later, which further diminished the activity. At the same time, interest in cryptocurrency is not a the fever pitch that it once was. Check this google trends chart if you don't believe me:
 
@@ -35,7 +35,7 @@ Additionally, you can see interest in the btc-e.com exchange has fallen precipit
 
 ## TBA logos
 
-We went through a couple of logos and color schemes. My favorite tagline was "Where 4chan meets wallstreet", which I think was a clever remark someone must have made in The Trollbox itself at some point. So most of the logos ended up with that phrase in them. At some point John drew a troll in a box and that became the new logo, which we kept until the site shut down.
+We went through a couple of logos and color schemes. My favorite tagline was "Where 4chan meets wallstreet", which I think was a clever remark someone must have made in The Trollbox itself at some point. So most of the logos ended up with that phrase in them. At some point John (from Coincepts, who came up with the TBA idea to begin with) drew a troll in a box and that became the new logo, which we kept until the site shut down.
 
 ![tba where 4chan meets wallstreet](/images/blog/tbalogo8.gif) ![tba logo 2](/images/blog/tbalogo5.gif) ![tba coinmas donate](/images/blog/coinmas2.gif) ![archive original](/images/blog/archive.gif)
 
