@@ -50,3 +50,12 @@ I remember when I first started building the site it would crash often. Honestly
 Eventually I ended up with a system running Ubuntu server edition, Node.js, Sphinx, MariaDB, Nginx, cloudflare, and memcached for some cache help. While originally I started with a basic LAMP stack.
 
 So, thanks everyone.
+
+
+## John's Notes:
+
+Oh man, the trollbox. I miss the days before the $100 minimum for chat when the trollbox was the wild west of cryptocurrency. Now that the "good old days" of the unrestricted chat are over, it is time to turn out the lights and close down TBA for good. We've had a crazy three and a half years with all of you, through ups and downs and all the long stagnant inbetween times. I've met some cool people chatting in the trollbox, made a few friends along the way as well. "Hell, I even met my wife in the trollbox!" ... is something that you'd read on the trollbox. Thanks for all the time, energy and support you guys have given us over the years. A very special thanks to my partner in all of this, Aaron, who really took an intangible cluster of ideas I had and made this out of it all. Also for all the others who have contributed like StupidGoat and the administration at BTC-E. For anyone who donated, we stuck around this long in part from your support.
+
+Find us in the future and go see a Star Wars.
+
+-- _John_
