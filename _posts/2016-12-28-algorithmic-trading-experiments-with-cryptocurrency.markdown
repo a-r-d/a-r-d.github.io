@@ -54,7 +54,7 @@ Perhaps my expectations of profit margin were too high, or perhaps the fee was t
 
 This is another strategy that I read about in [Irene Aldridge's book](http://amzn.to/2inQmVl), and its actually currently used by many parties on real forex exchanges. I ended up making a Java library out of this one and [open sourcing it on Github](https://github.com/a-r-d/Bellman-Form-BTCe-Arbitrager).
 
-The way this algorithm works is that you model many exchange rates between different currencies on an exchange as a graph, then using this datastructure you model each exchange rate as a weight and you look for "negative cycles" (in computer science parlance) through the graph. __In plain english this means that you try to find a path through a set of currencies where you end up with more money than what you started with__. So I could do this on Btc-e.com because there are multiple currencies on that exchange.
+The way [this algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) works is that you model many exchange rates between different currencies on an exchange as a graph, then using this datastructure you model each exchange rate as a weight and you look for "negative cycles" (in computer science parlance) through the graph. __In plain english this means that you try to find a path through a set of currencies where you end up with more money than what you started with__. So I could do this on Btc-e.com because there are multiple currencies on that exchange.
 
 ![example bellman form cycle](/images/blog/example-forex-trade.jpg){: .center-image }
 
