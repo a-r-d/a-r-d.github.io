@@ -21,6 +21,6 @@ Whenever you are thinking of not going to that conference, meetup, or social out
 
 I think you can apply it to your specific career specialization, the vertical industry that you operate in, and finally your location. I don't know for sure, but I would suspect that there are more positive black swan opportunities for big data specialists working in finance in New York, than business management consultants in Caracas.
 
-Actually, Taleb goes on to state this explicitely:
+Actually, Taleb goes on to state this explicitly:
 
 > "This makes living in big cities invaluable because you increase the odds of serendipitous encounters - you gain exposure to the envelope of serendipity."
