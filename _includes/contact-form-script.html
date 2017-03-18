@@ -1,0 +1,47 @@
+<script>
+  $(document).ready(function(e) {
+      function clearForm() {
+          $('#input-email').val('');
+          $('#input-message').val('');
+      }
+
+      function success() {
+          $('#contact-form-result-success').show();
+          $('#form-submit').prop('disabled',false);
+      }
+
+      function failure() {
+          $('#contact-form-result-failure').show();
+          $('#form-submit').prop('disabled',false);
+      }
+
+      var url = 'https://forms.nanodolphin.com/api/forms/submit/Nd2wASr?apiKey=t2gnYJ01V7cLbAmJezn0H731eOJV7VVLeR366Vxx';
+      $('#contact-form').submit(function(event){
+          event.preventDefault();
+          var data = {
+              email: $('#input-email').val(),
+              message: $('#input-message').val()
+          };
+          $('#contact-form-result-success').hide();
+          $('#contact-form-result-failure').hide();
+          $('#form-submit').prop('disabled',true);
+
+          $.ajax({
+              url: url,
+              data: data,
+              type: 'POST'
+          }).done(function(data){
+              if(data.message === 'success') {
+                  clearForm();
+                  success();
+              } else {
+                  console.error('Failure on form submit', data);
+                  failure();
+              }
+          }).fail(function(error){
+              console.error('Error on form submit:', error);
+              failure();
+          });
+      });
+  });
+</script>

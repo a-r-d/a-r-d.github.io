@@ -1,12 +1,9 @@
 ---
 layout: default
 ---
-<script src="/scripts/isotope.pkgd.min.js"></script>
 <div class="posts">
-
   <div class='iso-grid'>
     {% for post in site.posts %}
-
     <div class='iso-grid-item'>
       <div class="card">
         <div class="card-content">
@@ -21,44 +18,6 @@ layout: default
         </div>
       </div>
     </div>
-
     {% endfor %}
   </div>
-  <style>
-  .iso-grid-item {
-    width: 100%;
-    float: left;
-    /*padding-right: 15px;
-    padding-bottom: 15px;*/
-    border: 5px solid #fff;
-  }
-
-  @media (min-width: 600px) {
-    .iso-grid-item {
-      width: 49%;
-    }
-  }
-
-  @media (min-width: 900px) {
-    .iso-grid-item {
-      width: 33%;
-    }
-  }
-  @media (min-width: 1800px) {
-    .iso-grid-item {
-      width: 25%;
-    }
-  }
-  </style>
-  <script>
-  $('.iso-grid').isotope({
-    // options...
-    itemSelector: '.iso-grid-item',
-    percentPosition: true,
-    masonry: {
-      // use element for option
-      columnWidth: '.iso-grid-item'
-    }
-  });
-  </script>
 </div>
