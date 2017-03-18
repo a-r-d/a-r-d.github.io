@@ -23,8 +23,8 @@ In keeping with my long term goals, I have been reading biographies of successfu
 
 I read some biographies this year, I'll list them in order of those I enjoyed the most first:
 
- 1. Warren Buffet - [Snowball](http://amzn.to/2gPe2AS) (Alice Shroeder)
- 2. John D. Rockefeller - [Titan](http://amzn.to/2hW7XYt) (Ron Chernov)
+ 1. Warren Buffet - [Snowball](http://amzn.to/2gPe2AS) (Alice Schroeder)
+ 2. John D. Rockefeller - [Titan](http://amzn.to/2hW7XYt) (Ron Chernow)
  3. Andrew Carnegie - [Andrew Carnegie](http://amzn.to/2hIYKjo) (David Nasaw)
  4. Steve Jobs - [Steve Jobs](http://amzn.to/2hJa2GN) - Yes, the _Isaacson_ one.
  5. Augustus Ceasar - [Augustus](http://amzn.to/2gZkZmm) - (Anthony Everitt, also read ["The Rise of Rome"](http://amzn.to/2i3ALKF) by him)
