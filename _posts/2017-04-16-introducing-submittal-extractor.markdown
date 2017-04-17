@@ -12,7 +12,7 @@ description: Submittal Extractor is a Saas application I have been building over
 
 ## Building a Product
 
-So I have been wanting to build a Saas app for some time now, and I figured the best way to do it would be to go directly to a potential customer and ask about what kind of problems they had that I could solve with software. Maybe that sounds naive, but that is what I did with Messer Construction. They told me about a problem that was pretty small in scope: it was slow and labor intensive to pull important information from architectural specification documents.
+So I have been wanting to build a Saas app for some time now, and I figured the best way to do it would be to go directly to a potential customer and ask about what kind of problems they had that I could solve with software. Maybe that sounds naive, but that is what I did with [Messer Construction](http://www.messer.com/). They told me about a problem that was pretty small in scope: it was slow and labor intensive to pull important information from architectural specification documents.
 
 Let me explain: when a General Contractor works on a large construction project they work with an architect that will provide a specification document. These specification documents are in something called "MasterFormat" and they are often between one and five thousand pages long. There are entries in this document called "Submittals" and they need to be pulled out to keep track of because they will require action to be taken.
 
@@ -34,10 +34,10 @@ So after I understood what the ask was, I got to work prototyping it to see how 
 
   1. You need to get the text from the PDF file.
   2. You need to programmatically recognize and extract the "Submittal" entries from the text.
-  3. You need to handle different variations on the MasterFormat spec, because apparently no two architects format these the same exact way!
+  3. You need to handle different variations on the MasterFormat spec because apparently no two architects format these the same exact way!
   4. You need to create an way for the user to submit documents and get their output.
 
-Ultimately the end result was that I could not be 100% accurate, but I could achieve more like 80% or 90% accuracy with 80% or 90% of documents. There was always be some crazy formatting the breaks the extractor, even though there was a spec that architects were supposed to follow.
+Ultimately the end result was that I could not be 100% accurate, but I could achieve more like 80% or 90% accuracy with 80% or 90% of documents. There will always be some crazy formatting that breaks the extractor, even though there was a spec that architects were supposed to follow.
 
 ## What is the output?
 
@@ -56,11 +56,13 @@ From the Excel file a project manager can the build what is called a "Submittal 
 
 ## The Productized Service Offering
 
-Unfortunately the extraction process still takes some human touch in that a user has to inspect the format of the document and choose the appropriate pattern matching parameters. I have not yet come up with a foolproof way to detect the format and automate this process. It only takes _me_ a few minutes to do, but I didn't want to expose this burdensome process to the user.
+Unfortunately, the extraction process still takes some human touch in that a user has to inspect the format of the document and choose the appropriate pattern matching parameters. I have not yet come up with a foolproof way to detect the format and automate this process. It only takes _me_ a few minutes to do, but I didn't want to expose this burdensome process to the user.
 
 Given that issue, I decided to offer a productized service: the customer submits a document, then I run it through the system and provide the result for a flat rate fee. Otherwise, each customer would need to be trained in how to use the software and if they did not choose the appropriate parameters they would possibly not be happy with the result (which would also be bad).
 
 Originally I built the application with a user login system thinking that users would purchase a subscription and login then perform their own extractions, but for now I have decided to focus on offering the a-la-carte document at a time service version.
+
+By the way [here is a link to the site](http://submittalextractor.com) for Submittal Extractor. You can see both the Productized Service offering, and the "Request Demo" or "Request Quote" for the enterprise style subscription product.
 
 
 ## More on the User Interface
@@ -93,4 +95,4 @@ And by the way, if you are reading this and you can help with software sales ple
 
 ## The Endgame
 
-In the end, does it make sense for me to try to run this product myself? It is a niche market and I don't have the resources to sell it aggressively but I can imagine it would be particularly useful packaged with bidding software or project management software. I'm interested in talking to construction software companies to try to do a partnership or to sell to directly and integrate this product into their suite of products. Again, if you know anybody and you are reading this, again, please get in touch.
+In the end, does it make sense for me to try to run this product by myself? It is a niche market and I don't have the resources to sell it aggressively but I can imagine it would be particularly useful packaged with bidding software or project management software. I'm interested in talking to construction software companies to try to do a partnership or to sell to directly and integrate this product into their suite of products. Again, if you know anybody and you are reading this, again, please get in touch.
