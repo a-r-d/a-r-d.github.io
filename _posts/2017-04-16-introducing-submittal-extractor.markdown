@@ -12,11 +12,18 @@ description: Submittal Extractor is a Saas application I have been building over
 
 ## Building a Product
 
-So I have been wanting to build a Saas app for some time now, and I figured the best way to do it would be to go directly to a potential customer and ask about what kind of problems they had that I could solve with software. Maybe that sounds naive, but that is what I did with [Messer Construction](http://www.messer.com/). They told me about a problem that was pretty small in scope: it was slow and labor intensive to pull important information from architectural specification documents.
+I have been wanting to build a business to business software product for some time now, and I figured the best way to do it would be to go directly to a potential customer and ask about what kind of problems they had that I could solve with software. Maybe that sounds naive, but that is what I did with [Messer Construction](http://www.messer.com/).
 
-Let me explain: when a General Contractor works on a large construction project they work with an architect that will provide a specification document. These specification documents are in something called "MasterFormat" and they are often between one and five thousand pages long. There are entries in this document called "Submittals" and they need to be pulled out to keep track of because they will require action to be taken.
+What I ended up with after about 6 months of weekends was [Submittal Extractor](https://submittalextractor.com/). In this post I'm going to explain how the product evolved from a prototype to something usable, that solves an actual problem, and has real customers.
 
-#### Let me give you an example of a Submittal:
+
+## The Problem
+
+Messer told me about a problem that was pretty small in scope: it was slow and labor intensive to pull important information from architectural specification documents.
+
+As background, when a General Contractor works on a large construction project they work with an architect that will provide a specification document. These specification documents are in something called "MasterFormat" (which is a standard) and they are often between one and five thousand pages long. There are entries in this document called "Submittals" and they need to be pulled out to keep track of because they will require action to be taken.
+
+#### Here's an example of a Submittal:
 
 ```
 1.3  SUBMITTALS
@@ -41,7 +48,7 @@ Ultimately the end result was that I could not be 100% accurate, but I could ach
 
 ## What is the output?
 
-After extracting all of these submittals the goal was tabulate them into a spreadsheet so they could be easily searched. So the program is doing the follow things:
+After extracting all of these submittals the goal was tabulate them into a spreadsheet so they could be more easily managed and ultimately imported into another system. So at a high level, the program is doing the follow things:
 
   1. Takes in a PDF
   2. Converts PDF to Text, extracts the data.
@@ -56,13 +63,15 @@ From the Excel file a project manager can the build what is called a "Submittal 
 
 ## The Productized Service Offering
 
-Unfortunately, the extraction process still takes some human touch in that a user has to inspect the format of the document and choose the appropriate pattern matching parameters. I have not yet come up with a foolproof way to detect the format and automate this process. It only takes _me_ a few minutes to do, but I didn't want to expose this burdensome process to the user.
+Unfortunately, the extraction process still takes some human touch in that a user has to inspect the format of the document and choose the appropriate pattern matching parameters. I have not yet come up with a foolproof way to detect the format and automate this process. It only takes me a few minutes to do, but I didn’t want to expose this burdensome process to the user.
 
-Given that issue, I decided to offer a productized service: the customer submits a document, then I run it through the system and provide the result for a flat rate fee. Otherwise, each customer would need to be trained in how to use the software and if they did not choose the appropriate parameters they would possibly not be happy with the result (which would also be bad).
+Given that issue, I decided to offer a _productized service_. A productized service a hybrid between a product and a service: the process is nearly uniform and automatable, but not completely.  
 
-Originally I built the application with a user login system thinking that users would purchase a subscription and login then perform their own extractions, but for now I have decided to focus on offering the a-la-carte document at a time service version.
+For the productized service the customer submits a document, then I run it through the system and provide the result for a flat rate fee. Otherwise, each customer would need to be trained in how to use the software and if they did not choose the appropriate parameters they would possibly not be happy with the result (which would also be bad).
 
-By the way [here is a link to the site](http://submittalextractor.com) for Submittal Extractor. You can see both the Productized Service offering, and the "Request Demo" or "Request Quote" for the enterprise style subscription product.
+Originally I built the application with a user login system thinking that users would purchase a subscription and login then perform their own extractions, but for now, I have decided to focus on offering the a-la-carte document at a time service version.
+
+By the way [here is a link to the landing page](http://submittalextractor.com) for Submittal Extractor. You can see both the Productized Service offering and the "Request Demo" or "Request Quote" for the enterprise style subscription product.
 
 
 ## More on the User Interface
