@@ -85,7 +85,7 @@ If I do a good job, and the customer gets what they want out of the process I wo
 
 ## Selling the Product
 
-The thing I didn't understand going into this project was how difficult it would be to reach customers. I have been trying a combination of cold-emailing, and posting on forums but so far the customers I have received have been  referred though Messer Construction.
+The thing I didn't understand going into this project was how difficult it would be to reach customers. I have been trying a combination of cold-emailing and posting on forums but so far the customers I have received have been  referred through Messer.
 
 Being a software developer without experience in sales or marketing I vastly underestimated how hard the actual hard part of this venture would be: reaching customers interested in my product. This is where the real learning comes in. The product is very specific and difficult to explain and there are few competing products so potential users don't even know this type of solution exists.
 
