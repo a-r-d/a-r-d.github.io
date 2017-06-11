@@ -1,6 +1,8 @@
 # Guidelines for Microservices.
 
-I think we can break these into two parts: things that are more like rules, and things that are more like suggestions or characteristics. 
+I read a couple of books on microservice recently and I wanted to summarize things here that I felt were common between them. 
+
+I think we can break these into two parts: characteristics that are more like rules or definitions, and others that are more like suggestions. Keeping this in mind, I'm going to start with things are especially imperative and end up with things that should read more like recomendations.
 
 ## Data Segregation
 
@@ -37,7 +39,16 @@ OR use a nonstandard application header like so:
 X-API-Version: 3
 ```
 
+## Use Aggressive Timeouts and Circuit Breakers
 
+Default timeouts on many HTTP client libraries are unnacceptably long. You should be using agressive timeouts in your microservice communication layer, and ideally use a circuit breaker library to help detect and isolate failures. Circuit breaker libraries like Hystrix from Netflix can help you set up fallbacks, alerting, and monitoring. If a dependency starts to run slow you should just let the calls fail, then alert about the failure. If API calls are taking greater than 500 ms (or, ideally 100 ms) for just about any process you have a serious problem. 
+
+Actually, if you have an API call that regularly takes more than 100 ms you may have a big problem. Here is a [really awesome talk by Ilya Grigorik of Google](https://youtu.be/Il4swGfTOSM?t=34m57s) that explains why you really only get 100 ms on the server side if you want to render a web page in 1000 ms (hint: network overhead and browser rendering is slow). 
+
+
+## When using a Circuit Breaker Fallback, your Fallback should never fail
+
+Ideally your fallback simply serves up static content when it fails, but if you expect to use your fallback, it should not do anything with a potential of failure. If you cannot make that work you should just skip the fallback and deal with the failure of the dependency. 
 
 
 
