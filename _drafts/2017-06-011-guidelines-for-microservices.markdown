@@ -55,9 +55,10 @@ Ideally your fallback simply serves up static content when it fails, but if you 
 
 ## Use semantic versioning
 
-Major version: you made an incompatible API change. This is a breaking change. 
-Minor version: you added backwards compatible functionality.
-Patch version: you made a backwards compatible bug fix.
+ - Major version: you made an incompatible API change. This is a breaking change. 
+ - Minor version: you added backwards compatible functionality.
+ - Patch version: you made a backwards compatible bug fix.
+
 
 ## When troubleshooting issues, remember the four golden signals.
 
