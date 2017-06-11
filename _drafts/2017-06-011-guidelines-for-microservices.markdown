@@ -59,15 +59,18 @@ Major version: you made an incompatible API change. This is a breaking change.
 Minor version: you added backwards compatible functionality.
 Patch version: you made a backwards compatible bug fix.
 
-
-## If you have a slow service analyze performance issues using data,
+## When troubleshooting issues, remember the four golden signals.
 
 Measure then try to fix. [Remember the four golden signals](https://landing.google.com/sre/book/chapters/monitoring-distributed-systems.html#xref_monitoring_golden-signals):
 
-  1. Latency
-  2. Traffi
+  1. Latency - measure response times
+  2. Traffic - measure req/sec, disk I/O, network I/O
+  3. Errors - measure rate of failures per request.
+  4. Saturation - measure how full the service is: measure CPU usage, Memory usage, Disk usage, server I/O all relative to saturation point.
 
-Measure how long response is taking, then measure how long each step in the call takes. Is most of the time spent in the database query? Is serialization taking longer than you might expect? How many queries or API calls are you making that you can cut down?
+## If you have a slow service analyze performance issues using data
+
+Again, measure then fix. Measure how long response is taking, then measure how long each step in the call takes. Is most of the time spent in the database query? Is serialization taking longer than you might expect? How many queries or API calls are you making that you can cut down?
 
 If the problem is in the database layer, use the EXPLAIN tool to understand the query, and look at other database specific metrics. Look at the size of the result set, and see if any complex logic is performed in processing the result. 
 
