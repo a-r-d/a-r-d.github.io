@@ -14,9 +14,9 @@ _photo by [Eric Wesseling](https://www.instagram.com/ericwess/)_
 
 ## What is Sentiment and how can I correlate it with bitcoin prices?
 
-I have been wanting to write about this for a long time. I have several years worth of chat logs from the [btc-e bitcoin exchange](https://btc-e.com), as well as price data, and I want to try to see if they correlate.
+I have been wanting to write about this for a long time. I have several years worth of chat logs from the "x" bitcoin exchange, as well as price data, and I want to try to see if they correlate.
 
-I have all this data due to running [The Trollbox Archive](http://trollboxarchive.com) since about 2013. The "trollbox" is what the chat window on the Btc-e exchange is affectionately referred to by regulars, however I have ceased to be regular, and never traded very actively begin with, though I did a lot of mining back when solo miners could do it profitably.
+I have all this data due to running [The Trollbox Archive](http://trollboxarchive.com) since about 2013. The "trollbox" is what the chat window on the "x" exchange is affectionately referred to by regulars, however I have ceased to be regular, and never traded very actively begin with, though I did a lot of mining back when solo miners could do it profitably.
 
 I have long suspected that you could predict when a given cryptocurrency will sell off or rise steeply by watching the chatter in the chatbox, but I have not been able to prove it. At one point I even had some queries running to pull out counts of the word "sell" and "buy" and plot it on a graph vs price, but at best I found only a lagging indicator. __Check out the (old) charts below for examples__.
 
