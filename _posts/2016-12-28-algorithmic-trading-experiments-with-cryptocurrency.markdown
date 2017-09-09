@@ -30,7 +30,7 @@ _Here is a diagram explaining trading on mean reversions (from quantopian)_
 
 This is actually what big market makers do on stock exchanges. Think about it: if you have some shares of AAPL and go to sell it, are you sure that you will have a buyer at that very instant? There may not be a specific buyer, but a market maker with deep pockets will step in to make sure there is liquidity, in exchange for a penny or so of profit. [The market maker makes money on the "spread"](http://www.investopedia.com/terms/m/marketmakerspread.asp), this difference between the lowest buy order on the books and the highest sell order on the books.  
 
-Anyway, I never made money doing this, and I don't think I ever did it long enough to study my results with any rigor. The main problem was that Btc-e.com (the exchange I wrote the bot for) charged a 0.3% fee per trade, so I had calculate that into my trades, which turned out to be prohibatively expensive, especially since I was only trying to profit off of tiny fluctuations.
+Anyway, I never made money doing this, and I don't think I ever did it long enough to study my results with any rigor. The main problem was that exchange "x" (the exchange I wrote the bot for) charged a 0.3% fee per trade, so I had calculate that into my trades, which turned out to be prohibatively expensive, especially since I was only trying to profit off of tiny fluctuations.
 
 
 ## Second attempt: A Moving Average Convergence Divergence bot
@@ -52,15 +52,15 @@ Perhaps my expectations of profit margin were too high, or perhaps the fee was t
 
 ## Third attempt: Bellman-Ford style currency arbitrage.
 
-This is another strategy that I read about in [Irene Aldridge's book](http://amzn.to/2inQmVl), and its actually currently used by many parties on real forex exchanges. I ended up making a Java library out of this one and [open sourcing it on Github](https://github.com/a-r-d/Bellman-Form-BTCe-Arbitrager).
+This is another strategy that I read about in [Irene Aldridge's book](http://amzn.to/2inQmVl), and its actually currently used by many parties on real forex exchanges. I ended up making a Java library out of this one.
 
-The way [this algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) works is that you model many exchange rates between different currencies on an exchange as a graph, then using this datastructure you model each exchange rate as a weight and you look for "negative cycles" (in computer science parlance) through the graph. __In plain english this means that you try to find a path through a set of currencies where you end up with more money than what you started with__. So I could do this on Btc-e.com because there are multiple currencies on that exchange.
+The way [this algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) works is that you model many exchange rates between different currencies on an exchange as a graph, then using this datastructure you model each exchange rate as a weight and you look for "negative cycles" (in computer science parlance) through the graph. __In plain english this means that you try to find a path through a set of currencies where you end up with more money than what you started with__. So I could do this on exchange "x" because there are multiple currencies on that exchange.
 
 ![example bellman form cycle](/images/blog/example-forex-trade.jpg){: .center-image }
 
 You can guess again what kills you here: trading fees. It is a 0.3% fee to trade, and I need to make 3 trades through a cycle, __so the arbitrage has to give more than 0.9% total, which is a lot__. Secondly, these arbitrage opportunities are usually ephemeral: they last seconds a most, so you need to make all of the trades in the set of trades very fast.
 
-One of my big annoyances was that I could not place a ["market" order](https://en.wikipedia.org/wiki/Order_(exchange)#Market_order) (fill the order at the current market price), btc-e only supported ["limit" orders](https://en.wikipedia.org/wiki/Order_(exchange)#Limit_order) (fill the order at a specific price). Well, if you place a limit order and it doesn't fill, then you must cancel it, and place the order again, and repeat this until you get your order to fill. I became very annoyed at having to deal with this, and the lag associated would kill the speed at which I could complete the trade cycles, even if I could control execution price a bit better.
+One of my big annoyances was that I could not place a ["market" order](https://en.wikipedia.org/wiki/Order_(exchange)#Market_order) (fill the order at the current market price), exchange "x" only supported ["limit" orders](https://en.wikipedia.org/wiki/Order_(exchange)#Limit_order) (fill the order at a specific price). Well, if you place a limit order and it doesn't fill, then you must cancel it, and place the order again, and repeat this until you get your order to fill. I became very annoyed at having to deal with this, and the lag associated would kill the speed at which I could complete the trade cycles, even if I could control execution price a bit better.
 
 Ultimately, with this algorithm I never even got the trading side working. I just wrote the code that would compute these negative cycles and realized it would not often to be profitable to make the trades.
 
