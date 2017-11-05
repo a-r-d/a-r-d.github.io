@@ -41,6 +41,8 @@ The actual site is here - [it's called "fpvbuildcalc.com"](http://www.fpvbuildca
  - [Part 8: React Redux tutorial - tooltip and detail view to products](https://youtu.be/EO1kFhuw01Y)
  - [Part 9: React Redux tutorial - routing and pages with react router dom](https://youtu.be/0EjgKL52_8o)
  - [Part 10: React Redux tutorial - deploying to S3 bucket](https://youtu.be/viEf5XBB0fw)
+ - [Part 11: React Redux tutorial - redux action to select multiple products](https://youtu.be/wOG_fYAuEgE)
+
 
 ## Where is the code?
 
