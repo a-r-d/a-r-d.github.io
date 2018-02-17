@@ -23,14 +23,14 @@ Actually there are a lot of problems to solve here, namely, how do you find a tr
 
 As it turns out, there are many ways to do this. The most common way probably being using moving averages or other [well known indicators](https://www.investopedia.com/articles/trading/12/using-trading-indicators-effectively.asp) designed to find trends. A moving average is simple: you just average the last n periods in a market to get the current value. E.g. a 50 day moving average is simply the average of the last 50 closing day prices of a given market. There are many types of moving averages but this is the main idea.
 
-In this blog post I am going to be using two sets of moving averages as the indicators, and when they cross I am going to use this as the buy or sell signal. This is the famous MACD (Moving Average Convergence Divergence). In fact in Covel's book many people say they simply use moving averages and he includes a paper that outlines how a simple moving average cross system beats many buy and hold strategy.
+In this blog post I am going to be using two sets of moving averages as the indicators, and when they cross I am going to use this as the buy or sell signal. This is the famous MACD [(Moving Average Convergence Divergence)](https://www.investopedia.com/terms/m/macd.asp). In fact in Covel's book many people say they simply use moving averages and he includes a paper that outlines how a simple moving average cross system beats many buy and hold strategies.
 
 
 ## OK, Second, How does one "Systematically Trade"?
 
 Systematic trading just means you develop a trading strategy that is rules based. You follow the rules of the system and implement it. This is algorithmic trading, with your rule set being the algorithm. You can implement the system manually or you can write a computer program to do it for you. Being an engineer I want to automate things and develop systems that make the right decisions without human input. So obviously I want to automate my system.
 
-The other advantage of automating your trading system is that it takes the temptation to override it out of it. Complete automation forces you to adhere to your system. I am an experienced investor but not much of a trader, so it is very advantageous to avoid this possible pitfall.
+The other advantage of automating your trading system is that it takes the temptation to override it out of it. Complete automation forces you to adhere to your system. I am an experienced investor but not much of an active trader, so it is very advantageous to avoid this possible pitfall.
 
 [Quantopian](https://www.quantopian.com/home) is a company that gives you a platform to build and backtest trading systems. Everything is in python and they have data for a lot of markets that goes back pretty far. I started out using Quantopian, but I ended up switching to [QuantConnect](https://www.quantconnect.com/), which is similar but actually has live trading. For a monthly fee QuantConnect will let you trade your algorithm live against your [Interactive Brokers](https://www.interactivebrokers.com) account. You can write your code in either Python or C# here.
 
@@ -70,7 +70,7 @@ Actually this is a good start: we kept up with the benchmark and suffered a 29% 
 
 ## SPY Only MACD, 50/150 Long only
 
-We are now going to do the same thing as above but just long only. That means no shorting, we just exit the market entirely when the trend is down. Everything else is the same (same code I just change "longOnly" to "True").
+We are now going to do the same thing as above but just long only. That means no shorting, we just exit the market entirely when the trend is down. Everything else is the same (same code I just change "longOnly" to "True"). You can clearly see in the chart in the period of the great recession where we exit the market and no trading takes place.
 
 ![SPY Only, Long and Only, No leverage](/images/blog/macd-backtests/spy-only-long-only-no-leverage.png){: .center-image }
 
@@ -124,10 +124,10 @@ This is just a quick summary of my initial explorations with trying to build a d
 
 2. __It only works if the market is trending__. See that 2015/2016 period where the market just chops sideways? Yeah, trend trading is no good when there is no trend. The trick may be to measure the strength of the trend and then figure out how to only trade in markets with "strong" trends (however you define that).
 
-3. __If you add leverage it works even better__. Because you are riding the big trends, the majority of the time your should be moving up with the market. It seems rather safe to use leverage. Covel talks about trend traders in his book using leverage commonly so this seems to be a valid conclusion.
+3. __If you add leverage it works even better__. Because you are riding the big trends, the majority of the time you should be moving up with the market. It seems rather safe to use leverage. Covel talks about trend traders in his book using leverage commonly so this seems to be a valid conclusion.
 
-4. __Long only works well on equities__. Equities tend up over the long term so long only maybe works pretty well. Much of Covel's book deals with commodity markets though, which are cyclical and don't trend up over the long term. So it makes sense to go short with other markets, but maybe not equities, since the markets seem to only _temporarily_ go down.
+4. __Long only works well on equities__. Equities tend up over the long term so long only maybe works pretty well. Much of Covel's book deals with commodity markets though, which are cyclical and don't trend up over the long term. So it makes sense to go short with other markets, but maybe not equities, since the markets seem to only _temporarily_ go down. I think it is important to remember that over the long run US Equities are a bet on the US economy as a whole.
 
-5. __It will take a lot more work to intelligently trade many assets simulataneously__. Just simply buying and holding in equal allocations is not very smart. We have to be smarter if want to efficiently use capital.
+5. __It will take a lot more work to intelligently trade many assets simulataneously__. Just simply buying and holding in equal allocations is not very smart. We have to be smarter if want to efficiently use capital. How can you identify the strongest trends and only buy into those? How can you avoid chop in the market? What should you do if you find that nothing is trending?
 
-6. __Even if you don't get any alpha, drawdown is minimized__. It is a pretty big advantage to avoid massive drawdowns during recessions. Trend following is pretty cool in this respect alone.
+6. __Even if you don't get any alpha, drawdown is minimized__. It is a pretty big advantage to avoid massive drawdowns during recessions. Trend following is pretty cool in this respect alone in that it preserves capital much better than buy and hold.
