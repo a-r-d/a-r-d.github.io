@@ -21,7 +21,7 @@ So trend following is different from the strategy you are using in your retireme
 
 Actually there are a lot of problems to solve here, namely, how do you find a trend? More specifically, how do you find a trend quick enough to buy into it, and how do you know when it is over so you can sell out of it before you lose too much money?
 
-As it turns out, there are many ways to do this. The most common way probably being using moving averages or other [well known indicators](https://www.investopedia.com/articles/trading/12/using-trading-indicators-effectively.asp) designed to find trends. A moving average is simple: you just average the last n periods in a market to get the current value. E.g. a 50 day moving average is simply the average of the last 50 closing day prices of a given market. There are many types of moving averages but this is the main idea.
+As it turns out, there are many ways to do this. The most common way probably being using moving averages or other [well known indicators](https://www.investopedia.com/articles/trading/12/using-trading-indicators-effectively.asp) designed to find trends. A moving average is simple: you just average the last n periods in a market to get the current value. E.g. a 50 day moving average is simply the average of the last 50 closing day prices of a given market. This is a ["Simple Moving Average"](https://www.investopedia.com/terms/s/sma.asp) and there are many types of moving averages but all are based on this idea fundamentally.
 
 In this blog post I am going to be using two sets of moving averages as the indicators, and when they cross I am going to use this as the buy or sell signal. This is the famous MACD [(Moving Average Convergence Divergence)](https://www.investopedia.com/terms/m/macd.asp). In fact in Covel's book many people say they simply use moving averages and he includes a paper that outlines how a simple moving average cross system beats many buy and hold strategies.
 
@@ -30,7 +30,7 @@ In this blog post I am going to be using two sets of moving averages as the indi
 
 Systematic trading just means you develop a trading strategy that is rules based. You follow the rules of the system and implement it. This is algorithmic trading, with your rule set being the algorithm. You can implement the system manually or you can write a computer program to do it for you. Being an engineer I want to automate things and develop systems that make the right decisions without human input. So obviously I want to automate my system.
 
-The other advantage of automating your trading system is that it takes the temptation to override it out of it. Complete automation forces you to adhere to your system. I am an experienced investor but not much of an active trader, so it is very advantageous to avoid this possible pitfall.
+The other advantage of automating your trading system is that it takes the temptation to override it away from you. Complete automation forces you to adhere to your system. I am an experienced investor but not much of an active trader, so it is very advantageous to avoid this possible pitfall.
 
 [Quantopian](https://www.quantopian.com/home) is a company that gives you a platform to build and backtest trading systems. Everything is in python and they have data for a lot of markets that goes back pretty far. I started out using Quantopian, but I ended up switching to [QuantConnect](https://www.quantconnect.com/), which is similar but actually has live trading. For a monthly fee QuantConnect will let you trade your algorithm live against your [Interactive Brokers](https://www.interactivebrokers.com) account. You can write your code in either Python or C# here.
 
@@ -40,7 +40,7 @@ My goal is to actually develop a good system that will trend trade several marke
 
 1. Beat the S&P500 over every 5 year period in backtesting
 2. Never have a yearly drawdown more than 25% (S&P500 routinely sees 50% drawdowns)
-3. Have a [Sharpe Ratio](https://www.investopedia.com/terms/s/sharperatio.asp) of greater than 1
+3. Have a [Sharpe Ratio](https://www.investopedia.com/terms/s/sharperatio.asp) of greater than 1 (outside of the scope of this post).
 4. Be exposed to many different markets (not just US equities primarily, which I am now)
 5. Have a strategy so general that is performs OK in nearly every market
 
@@ -49,11 +49,11 @@ The last goal is very important. If you are familiar with data science or machin
 
 ## Let's get going. Here is the basic strategy.
 
-As I mentioned before I am going to use moving averages. Specifically I will be using Exponential moving averages and look for a crossover between a short and long moving average period. It looks like this on a chart:
+As I mentioned before I am going to use moving averages. Specifically I will be using [Exponential Moving Averages](https://www.investopedia.com/terms/e/ema.asp) and look for a crossover between a short and long moving average period. An _exponential moving average_ is similar to a _simple moving average_ except that it is weighted to favor more recent time periods so you can pick up trend changes faster. __In the chart below I plot two moving averages at different time periods and we can see them cross.__
 
 ![Moving average crossover NVDA](/images/sma-ema-signals.png){: .center-image }
 
-The above is a chart of Nvidia stock over the past couple of months. I plotted a short exponential moving average and longer simple moving average. You can clearly see the crossover points occur and the trend change direction. I have the crossovers marked with "BUY" and "SELL", you can see how this would be profitable. It doesn't always work out that nicely, and the market doesn't always trend, but in trending markets this works well.
+The above is a chart of Nvidia stock over the past couple of months. I plotted a short exponential moving average and longer simple moving average. You can clearly see the crossover points occur and the trend change direction. When the shorter period is on top you buy, when the longer period is on top you sell. I have the crossovers marked with _"BUY"_ and _"SELL"_, you can see how this would be profitable. It doesn't always work out that nicely, and the market doesn't always trend, but in trending markets this works well.
 
 To be clear I may not end up using these indicators. But the following are experiments using the the [Exponential Moving Average as an indicator](https://www.investopedia.com/terms/e/ema.asp) or "EMA" from here on out.
 
