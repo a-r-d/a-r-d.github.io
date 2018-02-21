@@ -28,7 +28,7 @@ So trend following is different from the strategy you are using in your retireme
 
 Actually there are a lot of problems to solve here, namely, how do you find a trend? More specifically, how do you find a trend quick enough to buy into it, and how do you know when it is over so you can sell out of it before you lose too much money?
 
-As it turns out, there are many ways to do this. The most common way probably being using moving averages or other [well known indicators](https://www.investopedia.com/articles/trading/12/using-trading-indicators-effectively.asp) designed to find trends. A moving average is simple: you just average the last n periods in a market to get the current value. E.g. a 50 day moving average is simply the average of the last 50 closing day prices of a given market. This is a ["Simple Moving Average"](https://www.investopedia.com/terms/s/sma.asp) and there are many types of moving averages but all are based on this idea fundamentally.
+As it turns out, there are many ways to do this. The most common way probably being using moving averages or other [well known indicators](https://www.investopedia.com/articles/trading/12/using-trading-indicators-effectively.asp) designed to find trends. A moving average is simple: you just average the last _n_ periods in a market to get the current value. E.g. a 50 day moving average is simply the average of the last 50 closing day prices of a given market. This is a ["Simple Moving Average"](https://www.investopedia.com/terms/s/sma.asp) and there are many types of moving averages but all are based on this idea fundamentally.
 
 In this blog post I am going to be using two sets of moving averages as the indicators, and when they cross I am going to use this as the buy or sell signal. This is the famous MACD [(Moving Average Convergence Divergence)](https://www.investopedia.com/terms/m/macd.asp). In fact in Covel's book many people say they simply use moving averages and he includes a paper that outlines how a simple moving average cross system beats many buy and hold strategies.
 
@@ -103,7 +103,7 @@ We will slightly modify the algorithm now. I am going to have the system hold [T
 
 #### Results: every metric is increased
 
-From simply holding treasury bonds while we are out of the market our returns are greatly enhanced. Compounded annual return is a whopping __11.85%__. This is starting to hint at the magic of trend following. What if we hold something else in a strong uptrend? What if we can measure the strength of the uptrend and always be in the strongest trends? Regardless, this simple 2 ETF strategy seems to work very well if the market is a trending market.
+From simply holding treasury bonds while we are out of the market our returns are greatly enhanced. __Compounded annual return is up to 11.85% which beating returns for the S&P500__. This is starting to hint at the magic of trend following. What if we hold something else in a strong uptrend? What if we can measure the strength of the uptrend and always be in the strongest trends? Regardless, this simple 2 ETF strategy seems to work very well if the market is a trending market.
 
 
 ## CVX, DE, CAT, F - Trend Trade

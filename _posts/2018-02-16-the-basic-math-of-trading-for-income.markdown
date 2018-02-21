@@ -72,12 +72,12 @@ Expectancy is a formula.
 
 __E = ( Pw * Aw ) - (Pl * Al)__
 
-```
+{% highlight text %}
 Pw = Winning percentag
 Aw = Average Winner
 Pl = Losing Percentage
 Al = Average Loser
-```
+{% endhighlight %}
 
 ## An Example of Expectancy in a system
 
@@ -91,13 +91,13 @@ Here are the rules of a trend following strategy we will calculate expectations 
 
  The results of this system are as follows: 80% of the time stop gets triggered at an loss of 12% and 20% of the time the stop gets triggered at a win, with an average win of 50%. Bad win rate but high win percentage. Expectancy is as follows:
 
-```
+{% highlight text %}
     Let's say the bet is $10,000
 
   Expectancy = (($5000 return) * 25% winrate) - (($1200 loss) * 75% lossrate)
              = $1250 - $900
              = $350  per 10k trade on average
-```
+{% endhighlight %}
 
 So in this particular trade if you risk 10k on average you will make $350. But what if you can only do this once a month and you only have 100k in capital? That is only $3500 per month or $42,000 per year.
 
@@ -110,13 +110,13 @@ You probably need to do something more like this: look for a trade you can put o
 
 You trade intraday price fluctuations in small cap stocks, on average your win rate is 60% and you make 0.5% per win. When you lose or break even your average loss is 0.3% after fees and thanks to your tight stop losses.  
 
-```
+{% highlight text %}
     Each of this trades you trade with capital of $20,000
 
     Expectancy = ($100 return * 60% winrate) - ($60 loss * 40% lossrate)
                = $60 - $24
                = $36 per 20k trade on average
-```
+{% endhighlight %}
 
 Obviously that won't work unless you can trade that well 20 times per day. Will you have a setup to make this trade 20 times per day? Unlikely. So you really are going to want to risk more capital per trade. Realistically you need to do something like 100k and try to do it 5 times a day. Even then the market must cooperate **very** often, and what if this only works in raging bull markets?   
 
