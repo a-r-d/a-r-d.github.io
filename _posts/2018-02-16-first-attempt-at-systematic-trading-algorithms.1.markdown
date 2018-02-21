@@ -8,14 +8,21 @@ title: My First Attempt At Systematic Trading Algorithms
 description: My First Attempts at builiding a serious Systematic Trading Algorithm based on a long term trend following approach.
 ---
 
+![On a trail in maui](/images/blog/ridge-trail-1.jpg){: .center-image }
+_Photo taken at Waihee Ridge Trail, Maui_{: .center-image }
+
+
 Recently I read the book [Trend Following By Michael Covel](http://amzn.to/2C3dQgp) which is a wealth of knowledge
 and interviews on systematic traders using trend following approaches. I was so swayed by the data in the book that I decided I wanted to explore more and build some trend following systems with the goal of beating the S&P500 in backtesting.
 
 ## OK First, What is Trend Following?
 
-Trend following is an attempt to take a advantage of a feature of markets: they trend. In the book Covel backs this up with hundreds of years of historical data across many markets to prove it. I think most people would agree that markets do trend. I think most people would also agree (if they really think about it) that the entire U.S. retirement industry is built on the presumption that US equities will continue to trend up forever. Covel actually brings this into question as well, which I think is laudable and worth thought.
+Trend following is an attempt to take a advantage of a feature of markets: they trend. This means over periods of time a market moves consistently in one direction, rather than fluctuating randomly. In the book Covel backs this up with hundreds of years of historical data across many markets to prove it.
 
-So trend following is different from the strategy you are using in your retirement account, which is probably simply buy and hold. A particularly nice advantage of trend following is that is limits downside risk. So in 2008 your trend following strategy would have given you a sell signal and you would drawdown only 20% instead of 50%.  It would also indicate you should "short" the market (bet against it) and you would actually make money. Although, you can do a more simple long-only trend following strategy too.
+I think most people would agree that markets do trend. I think most people would also agree (if they really think about it) that the entire U.S. retirement industry is built on the presumption that US equities will continue to trend up forever. Covel actually brings this into question as well, which I think is laudable and worth thought.
+
+So trend following is different from the strategy you are using in your retirement account, which is probably simply buy and hold. A particularly nice advantage of trend following is that is limits downside risk. So in 2008 a trend following strategy would have given you a sell signal and you would drawdown (lose account value) only 20% instead of 50%. It would also indicate you should “short” the market (bet against it) and you would actually make money. Although, you can do a more simple long-only trend following strategy too.
+
 
 ## How does one "Trend Follow"?
 
@@ -120,7 +127,7 @@ So the algorithm didn't have any alpha but it didn't underperform. Even with the
 
 This is just a quick summary of my initial explorations with trying to build a dirt-simple trend following system. I will have more to follow up with this soon, but first I want to talk a bit about what we could learn from this exploration.
 
-1. __MACD 50 day short and 150 day long periods are good for SPY.__ I didn't show it but I tried a few other periods and shorter EMA periods didn't work too well. This makes sense because SPY is an index, it is a composite of 500 stocks. The signal is already pretty smoothed, so it won't switch trends very fast. Maybe if you trade a single tech stock you can use a shorter EMA period.
+1. __MACD 50 day short and 150 day long periods are good for SPY.__ I didn't show it but I tried a few other periods and shorter EMA periods didn't work too well. This makes sense because SPY is an index, it is a composite of 500 stocks. The signal is already pretty smoothed, so it won't switch trends very fast. Maybe if you trade a single tech stock you can use a shorter EMA period. Perhaps it doesn’t make sense to trade an index at all since we are really hoping for volatility.
 
 2. __It only works if the market is trending__. See that 2015/2016 period where the market just chops sideways? Yeah, trend trading is no good when there is no trend. The trick may be to measure the strength of the trend and then figure out how to only trade in markets with "strong" trends (however you define that).
 
@@ -128,6 +135,6 @@ This is just a quick summary of my initial explorations with trying to build a d
 
 4. __Long only works well on equities__. Equities tend up over the long term so long only maybe works pretty well. Much of Covel's book deals with commodity markets though, which are cyclical and don't trend up over the long term. So it makes sense to go short with other markets, but maybe not equities, since the markets seem to only _temporarily_ go down. I think it is important to remember that over the long run US Equities are a bet on the US economy as a whole.
 
-5. __It will take a lot more work to intelligently trade many assets simulataneously__. Just simply buying and holding in equal allocations is not very smart. We have to be smarter if want to efficiently use capital. How can you identify the strongest trends and only buy into those? How can you avoid chop in the market? What should you do if you find that nothing is trending?
+5. __It will take a lot more work to intelligently trade many assets simultaneously__. Just simply buying and holding in equal allocations is not very smart. We have to be smarter if want to efficiently use capital. How can you identify the strongest trends and only buy into those? How can you avoid chop in the market? What should you do if you find that nothing is trending?
 
 6. __Even if you don't get any alpha, drawdown is minimized__. It is a pretty big advantage to avoid massive drawdowns during recessions. Trend following is pretty cool in this respect alone in that it preserves capital much better than buy and hold.
