@@ -11,7 +11,14 @@ description: I break down some of the math of trading for a living to help me un
 ![In a hammock in Maui](/images/blog/hammock-baldwin-beach-2-sm.jpg){: .center-image }
 _Photo taken at Baldwin beach, Maui_{: .center-image }
 
-Right now I am working on building trading systems. For me, it has been helpful to understand the mindset of a professional trader, a person trying to take a living out of the market every day. This is what my automated system will be trying to achieve, so let's break down the numbers when thinking about trading for income.
+Right now I am working on building trading systems.
+
+In general I am looking to build specialized systems that don't scale. What do I mean by "don't scale"? Well when it comes to managing money the law of large numbers takes effect quickly. You cannot generate a high rate of return with a very large portfolio, you just cannot put enough money into small high risk trades that will be profitable. Luckily, I don't have a lot of money so I can do that things that _don't scale_.
+
+So, for example, with fifty-thousand dollars [you can trade VWAP fluctuations back and forth](https://www.investopedia.com/ask/answers/031115/what-common-strategy-traders-implement-when-using-volume-weighted-average-price-vwap.asp) in Nvidia stock all day long. If you have 1 billion dollars, you cannot buy that much Nvidia in a single day without sending the price up to the moon. So the momentum scalper can have a 200% return on investment yearly, while the large fund manager will struggle to achieve more than 10% consistently. 
+
+For me, it has been helpful to understand the mindset of a professional trader, a person trying to take a living out of the market every day. This is what my automated system will be trying to achieve, so let's break down the numbers when thinking about trading for income. And full disclosure here: I have not successfully done any of this __yet__, so this is just an exploration of the math, but I think I am on the right track.
+
 
 ## How many days can you trade, and how much should you make per day?
 
@@ -21,13 +28,10 @@ So let's say you want to make $500 per day. $500 per trading day ends up being $
 
 __$500 per day * 240 days per year = $120,000__
 
-That is enough for anybody to live off of well unless you live in San Francisco or New York, so it should be a satisfying goal for your trading system.
 
+## How much can you make per trade?
 
-## How much can you make per trade, and how much money does it take to do it?
-
-So this question is two fold and I think it helps to show it in a table. The first question is how much money can you make per trade? The second question would be how much money do you need to risk? The answer is of course it is a linear relationship between the amount of money you can make vs the amount you risk. 
-
+So the answer to this question is two-fold: how much capital do you have to risk, and what kind of return can you make on your trades? Below is a table I built to show the relationship between profits, position size, and percent return on a trade. 
 
 | Capital Risked vs. Pct Return  | 0.25% | 0.5% | 1 %  |  2%  |  4%  |  8%  |
 | ------------------------------ |:-----:|:----:|:----:|:----:|:----:|:----:|
@@ -43,22 +47,9 @@ So this question is two fold and I think it helps to show it in a table. The fir
 | __$200,000__                    | __$500__ |$1,000|$2,000|$4,000|$8,000|$16,000|
 
 
-So you can see on very small intraday moves (0.25% or so), you need a ton of capital to make a reasonable amount. I marked the line in bold where you would make $500 or more based on the capital you risk for the return you get. 
+I marked the line in bold where you would make $500 or more based on the capital you risk for the return you get. Initially, you can see on very small intraday moves (0.25% or so), you need a large amount of capital to see a reasonable return. Alternatively you may notice you can trade small when there is a lot of volatility but that likely increases downside risk as well, and you may not always be able to find the volatility when you need.
 
-This is why you probably shouldn't attempt day trading unless you have a decent bankroll. The math just doesn't work out. The market is usually fairly calm which means you can't always hope for big moves, but you need volatility to make a profit. If you are just trading small moves you need a ton of capital, and you need to be able to do it many times per week if not every day. So the pattern day-trader rule at 25k seems like a bit of a moot point when you look at this table, you need much more than 25k to be effective in generating real income. 
-
-
-## Putting the return rates in perspective
-
-All of this needs to be put into perspective to make sense of it. So relative to what indexing
-the S&P500 gives you, what do some of these returns look like? Well historically US equities 
-return something like 9% a year, and that is at the high end of the estimate. 
-
-Do you know what a daily 0.25% return rate looks like? So let's say you do don't compound the money at all. What do I mean by that? I mean every day you make 0.25% and you take out winnings. So you risk 200k every trading day (240) and you take out $500, you do that 240 times in a row successfully. __If you add all of these up without compounding, that is a 60% return rate year over year (240 * 0.0025 = 0.6).__ If you were to compound that daily the rate would be much higher.
-
-A 60% return rate is unheard of for a professional money manager. The best big money managers on their best streaks have been able to deliver something like 20% compounded over a decade. I'm talking about people like Peter Lynch, Warren Buffet, and George Soros here. 60% is more than 6x what the index yields passively investing. 
-
-However, don't forget you, you have a special advantage with a small bankroll (under $1 million) because you can trade small illiquid securities that move quickly. 
+This table is evidencce of why you probably shouldn't attempt day trading unless you have a decent bankroll. The math just doesn't work out. If you are just trading small moves you need to be well capitalized, and you need to be able to do it many times per week if not every day. So the [pattern day-trader rule at 25k](https://en.wikipedia.org/wiki/Pattern_day_trader) seems like a bit of a moot point when you look at this table, you need much more than 25k to be effective in generating real income. 
 
 
 ## Understanding Expectancy
@@ -73,7 +64,7 @@ Expectancy is a formula.
 __E = ( Pw * Aw ) - (Pl * Al)__
 
 {% highlight text %}
-Pw = Winning percentag
+Pw = Winning percentage
 Aw = Average Winner
 Pl = Losing Percentage
 Al = Average Loser
@@ -81,7 +72,7 @@ Al = Average Loser
 
 ## An Example of Expectancy in a system
 
-I will use a trend following strategy as an example. Markets are probably well described as fractal in nature so you can theoretically trend trade on any time scale. Day traders would probably call this "momentum scalping" you find something going up and you jump in and ride it. But many people are trend trading on a days to months scale. So here is an example on that timescale.
+I will use a trend following strategy as an example. Markets are probably well [described as fractal in nature](https://www.investopedia.com/terms/f/fractal-markets-hypothesis-fmh.asp) so you can theoretically trend trade on many different time scales, but for this example we will use an example of trend trading on a time scale of about a month. 
 
 Here are the rules of a trend following strategy we will calculate expectations for:
 
@@ -89,10 +80,10 @@ Here are the rules of a trend following strategy we will calculate expectations 
  2. You buy in and set a trailing stop loss 15% below your buy-in price. 
  3. You close the trade by letting the trailing stop get triggered
 
- The results of this system are as follows: 80% of the time stop gets triggered at an loss of 12% and 20% of the time the stop gets triggered at a win, with an average win of 50%. Bad win rate but high win percentage. Expectancy is as follows:
+ The results of this system are as follows: 80% of the time stop gets triggered at an average loss of 12% and 20% of the time the stop gets triggered at a win, with an average win of 50%. Bad win rate but high win percentage. Expectancy is as follows:
 
 {% highlight text %}
-    Let's say the bet is $10,000
+  Let's say the bet is $10,000
 
   Expectancy = (($5000 return) * 25% winrate) - (($1200 loss) * 75% lossrate)
              = $1250 - $900
@@ -146,6 +137,18 @@ If you have 100k I think it will be very difficult pull $500 a day on average ou
 If you ride up earnings day momentum you could potentially ride a 2% or 3% move in a short period of time. Do that with $20,000 and a tight stop and you could probably have a three or four hundred dollar expectancy (__again, assuming you have a high win rate and a tight stop__). It is probably reasonably safe to do this because with that much volume you won't get stopped out with a lot of slippage. That sounds like reasonably safe sizing, but I would love to hear feedback on that. 
 
 
+
+## Putting the return rates in perspective
+
+All of this needs to be put into perspective to make sense of it. So relative to what indexing
+the S&P500 gives you, what do some of these returns look like? Well historically US equities 
+return something like 9% a year, and that is at the high end of the estimate. 
+
+Do you know what a daily 0.25% return rate looks like? So let's say you don't compound the money at all. What do I mean by that? I mean every day you make 0.25% and you take out winnings. So you risk 200k every trading day (240) and you take out $500, you do that 240 times in a row successfully. __If you add all of these up without compounding, that is a 60% return rate year over year (240 * 0.0025 = 0.6).__ If you were to compound that daily the rate would be much higher.
+
+A 60% return rate is unheard of for a professional money manager. The best big money managers on their best streaks have been able to deliver something like 20% compounded over a decade. I'm talking about people like Peter Lynch, Warren Buffet, and George Soros here. 60% is more than 6x what the index yields passively investing. 
+
+The only way this is possible is with a [special edge](https://www.investopedia.com/articles/active-trading/022415/vital-importance-defining-your-trading-edge.asp) and a small amount of capital. Otherwise the law of large numbers applies and market outperformance becomes exponentially harder.
 
 
 
