@@ -11,6 +11,7 @@ description: My First Attempts at builiding a serious Systematic Trading Algorit
 ![On a trail in maui](/images/blog/ridge-trail-1.jpg){: .center-image }
 _Photo taken at Waihee Ridge Trail, Maui_{: .center-image }
 
+_note: I [republished this on HackerNoon.com](https://hackernoon.com/my-first-attempt-at-systematic-trading-algorithms-21a023d37d46)_
 
 Recently I read the book [Trend Following By Michael Covel](http://amzn.to/2C3dQgp) which is a wealth of knowledge
 and interviews on systematic traders using trend following approaches. I was so swayed by the data in the book that I decided I wanted to explore more and build some trend following systems with the goal of beating the S&P500 in backtesting.
