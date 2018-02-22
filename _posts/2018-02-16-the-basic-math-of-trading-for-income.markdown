@@ -15,9 +15,9 @@ Right now I am working on building trading systems.
 
 In general I am looking to build specialized systems that don't scale. What do I mean by "don't scale"? Well when it comes to managing money the law of large numbers takes effect quickly. You cannot generate a high rate of return with a very large portfolio, you just cannot put enough money into small high risk trades that will be profitable. Luckily, I don't have a lot of money so I can do that things that _don't scale_.
 
-So, for example, with fifty-thousand dollars [you can trade VWAP fluctuations back and forth](https://www.investopedia.com/ask/answers/031115/what-common-strategy-traders-implement-when-using-volume-weighted-average-price-vwap.asp) in Nvidia stock all day long. If you have 1 billion dollars, you cannot buy that much Nvidia in a single day without sending the price up to the moon. So the momentum scalper can have a 200% return on investment yearly, while the large fund manager will struggle to achieve more than 10% consistently. 
+So, for example, with fifty-thousand dollars [you could theoretically trade VWAP fluctuations back and forth](https://www.investopedia.com/ask/answers/031115/what-common-strategy-traders-implement-when-using-volume-weighted-average-price-vwap.asp) in Nvidia stock all day long and make a large profit. If you have 1 billion dollars, you cannot buy that much Nvidia in a single day without sending the price up to the moon. So a small portfolio can get a 200% return on investment yearly, while the large fund manager will struggle to achieve more than 10% consistently. 
 
-For me, it has been helpful to understand the mindset of a professional trader, a person trying to take a living out of the market every day. This is what my automated system will be trying to achieve, so let's break down the numbers when thinking about trading for income. And full disclosure here: I have not successfully done any of this __yet__, so this is just an exploration of the math, but I think I am on the right track.
+For me, it has been helpful to understand the mindset of an active trader, a person trying to take a living out of the market every day. This is what my automated system will be trying to achieve, so let's break down the numbers when thinking about trading for income. And full disclosure here: I have not successfully done any of this __yet__, so this is just an exploration of the math!
 
 
 ## How many days can you trade, and how much should you make per day?
@@ -57,7 +57,7 @@ This table is evidencce of why you probably shouldn't attempt day trading unless
 Okay, so above we are just trying to figure out how many **winning** trades it will take to get to 
 that yearly amount of money you want to draw. We actually need to know a few more things to figure out how much money we can draw off the account. 
 
-So firstly, not all trades will be winners. In fact, depending on your strategy the majority could be losers. Most strategies break down between mean reversion and trend following. In general mean reversion has a high win rate with a low payout. And trend following has a high payout with a low win rate. 
+So firstly, not all trades will be winners. In fact, depending on your strategy the majority could be losers. Most strategies can be categorized as "mean reversion" or "trend following". In general a good mean reversion strategy has a high win rate with a low payout. And trend following typically has a high payout with a low win rate. 
 
 Expectancy is a formula. 
 
@@ -93,11 +93,11 @@ Here are the rules of a trend following strategy we will calculate expectations 
 So in this particular trade if you risk 10k on average you will make $350. But what if you can only do this once a month and you only have 100k in capital? That is only $3500 per month or $42,000 per year.
 
 
-## How many trades can you put on in a day / year?
+## How often can you trade your strategy?
 
 The next question is this: if you have a trade that should have a positive expectancy you are going to want to do it as often as possible. But you only have a finite amount of capital and when you are in the trade the capital is allocated. So if you are doing long timeframe momentum trades maybe you can only 5 of these per year, and if you only have 1 winner a year you don't have a system that you can rely on for income. 
 
-You probably need to do something more like this: look for a trade you can put on a few times per day. It should have a low but positive expectancy. You are probably looking at very small price moves of 0.5% or less, so you need to trade really large. So let's pretend we are doing momentum scalping and check that out.
+You probably need to do something more like this: look for a trade you can put on a few times per day. It should have a low but positive expectancy. You are probably looking at very small price moves of 0.5% or less, so you need to trade really large. So let's pretend we are intraday trading a strategy that only takes a few minutes to execute when the setup is right.
 
 You trade intraday price fluctuations in small cap stocks, on average your win rate is 60% and you make 0.5% per win. When you lose or break even your average loss is 0.3% after fees and thanks to your tight stop losses.  
 
@@ -109,7 +109,7 @@ You trade intraday price fluctuations in small cap stocks, on average your win r
                = $36 per 20k trade on average
 {% endhighlight %}
 
-Obviously that won't work unless you can trade that well 20 times per day. Will you have a setup to make this trade 20 times per day? Unlikely. So you really are going to want to risk more capital per trade. Realistically you need to do something like 100k and try to do it 5 times a day. Even then the market must cooperate **very** often, and what if this only works in raging bull markets?   
+Obviously that won't work unless you can trade that well 20 times per day. Will you have a setup to make this trade 20 times per day? Unlikely (unless we are talking about an algorithm). So you really are going to want to risk more capital per trade. Realistically you need to do something like 100k and try to do it 5 times a day. Even then the market must cooperate **very** often, and what if this only works in raging bull markets?   
 
 If you don't have at least 100k or 200k it seems like it would be hard to make this work. Especially when you factor in expectancy and how often you will need to trade. 
 
@@ -123,7 +123,7 @@ You want to figure out some middle ground here.
 
 ## Risk, stop losses, position sizing, and correlation
 
-__Ideally, you should risk 1% of principal per trade.__ Many famous traders say something along these lines and it is [Ed Seykota's rule of thumb](http://www.seykota.com/tribe/risk/index.htm) which he has mentioned in several intervies. So if you have 100k only risk $1000 a trade. But does that mean you can trade 10k at a time with a 10% stop loss? I think so. The stop may get blown though and you get slippage down to 20% occassionally but that works out to be only 2% and it seems OK to risk 2% some of the time. 
+__Ideally, you should risk 1% of principal per trade.__ Many famous traders say something along these lines and it is [Ed Seykota's rule of thumb](http://www.seykota.com/tribe/risk/index.htm) which he has mentioned in several interviews. So if you have 100k only risk $1000 a trade. But does that mean you can trade 10k at a time with a 10% stop loss? I think so. The stop may get blown though and you get slippage down to 20% occassionally but that works out to be only 2% and it seems OK to risk 2% some of the time. 
 
 __It does not seem OK to risk 100k on a trade with a 1% stop loss!__ What if it blows though your stop so quickly you lose 5% before the order fills? This is _slippage_. Now you just lost 5k or 5% of your bankroll. And how about trades where you trade $1000 and can lose 90% or make 90%? That seems pretty safe as well, as long you don't a bunch of these open at the same time and they are all highly correleted. 
 
@@ -146,9 +146,9 @@ return something like 9% a year, and that is at the high end of the estimate.
 
 Do you know what a daily 0.25% return rate looks like? So let's say you don't compound the money at all. What do I mean by that? I mean every day you make 0.25% and you take out winnings. So you risk 200k every trading day (240) and you take out $500, you do that 240 times in a row successfully. __If you add all of these up without compounding, that is a 60% return rate year over year (240 * 0.0025 = 0.6).__ If you were to compound that daily the rate would be much higher.
 
-A 60% return rate is unheard of for a professional money manager. The best big money managers on their best streaks have been able to deliver something like 20% compounded over a decade. I'm talking about people like Peter Lynch, Warren Buffet, and George Soros here. 60% is more than 6x what the index yields passively investing. 
+A 60% return rate is unheard of for a professional money manager. The [best big money managers on their best streaks have been able to deliver something like 20% or 30% compounded over a decade](https://www.investopedia.com/university/greatest/peterlynch.asp). I'm talking about people like Peter Lynch, Warren Buffet, and George Soros here. 60% is more than 6x what the index yields passively investing. 
 
-The only way this is possible is with a [special edge](https://www.investopedia.com/articles/active-trading/022415/vital-importance-defining-your-trading-edge.asp) and a small amount of capital. Otherwise the law of large numbers applies and market outperformance becomes exponentially harder.
+The only way this is possible is [with a real edge](https://www.investopedia.com/articles/active-trading/022415/vital-importance-defining-your-trading-edge.asp) and a small amount of capital. Otherwise the law of large numbers applies and market outperformance becomes exponentially harder.
 
 
 
