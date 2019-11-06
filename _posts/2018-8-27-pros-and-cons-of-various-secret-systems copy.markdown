@@ -8,6 +8,9 @@ title: The Pros and Cons of Various Secret Storage Systems
 description: I talk pros and cons of various systems of how to get your secrets deployed to prod running your server!
 ---
 
+![Photo by Zbysiu Rodak on Unsplash](/images/blog/rodack-unsplash.jpg){: .center-image }
+_Photo by Zbysiu Rodak on Unsplash_{: .center-image }
+
 How do you deploy your secrets to your production server? There used to be many
 ways to do this, and now that most people are deploying using Docker containers
 and various orchestration systems there are even more!
