@@ -11,7 +11,7 @@ description: I talk about my experience of building a custom art commissions sit
 ![A Banner for the site I ended up building](/images/blog/starshine-banner-5.jpg){: .center-image }
 _A banner for the site I ended up building_{: .center-image }
 
-Late last year my girlfriend's side hustle was blowing up and she was spending a ton of time on administrative tasks, which of course with me being a software engineer made me want to help her automate everything.
+Late last year my girlfriend Meridith's side hustle was blowing up and she was spending a ton of time on administrative tasks, which of course with me being a software engineer made me want to help her automate everything.
 
 What was this side hustle you ask? __Pet Portraits__. She's a classically trained artist (she went to [RISD](https://en.wikipedia.org/wiki/Rhode_Island_School_of_Design)) working on her own art career but to pay the bills she ended up doing a ton of pet portrait commissions and it kept spreading via word of mouth. 
 
@@ -24,11 +24,11 @@ So let's think about the current ordering process. It goes something like this:
 
 ```
 > Customer: Hey I heard you do pet portraits, can you paint my dog? 
-> Girlfriend: Sure! Do you have a good photo?
+> Meridith: Sure! Do you have a good photo?
 > Customer: How about this photo?
-> ... *girlfriend explains the kind of photo she needs*
+> ... *Meridith explains the kind of photo she needs*
 > Customer: How much does it cost for size "x"?
-> ... *girlfriend gives pricing info for various sizes*
+> ... *Meridith gives pricing info for various sizes*
 > Customer: Can you mail it to this address?
 > ... *collects mailing address*
 > Customer: OK, how do I pay you?
@@ -57,8 +57,7 @@ I like to call myself a "full-stack developer", but I will admit my front-end sk
 
 I ended up going with MERN stack, and I used [Create React App](https://github.com/facebook/create-react-app) as my foundation. For my component library I chose [Ant Design](https://ant.design/) which I had never used before (and some of the docs are in Mandarin) but I don't mind a challenge. 
 
-I used Stripe for payments, AWS SES for email. Just set it all up on a single server on a cloud provider because there was not going to be a lot of traffic. Anyway, I've done all that stuff a million times that was not the hard part. 
-
+I used Stripe for payments, AWS SES for email. Just set it all up on a single server on a cloud provider because there was not going to be a lot of traffic. I just threw this thing up on a linux box behind an nginx server and Lets Encrypt was nice and easy to set up. Anyway, I've done all that stuff a million times that was not the hard part. 
 
 
 ## OK site is done right?
@@ -110,10 +109,22 @@ Doing the backend even took longer than I thought. The whole goal was to make th
 
 Ecommerce is a lot more complicated than it first appears. You have to collect a lot of information to successfully fulfill an order and there are lot of things that can go wrong. You have to effectively communicate to the user what you are selling and answer all of their questions or they will just bounce. I'm still [not sure I did that totally effectively in the landing page](https://www.starshinepetpainting.com/), but hey, that is a work in progress!
 
+## Pivoting to $30 Sketches
+
+One weekend in Novemeber we had the opportunity to do an in-person popup show at a local community market where Meridith decided to quick 20 minute sketches for $20. We called them "$20 Dog Doddles", well that was an enormous success, I don't think we had any downtime the whole weekend, and on an hourly basis this was just as profitable as doing more fully rendered paintings.
+
+We had acheived __product market fit__. So we redid the website and started to offer a $30 sketch option (to cover shipping) and the price point just makes the whole thing so attractive to a much wider audience. Here is a screenshot of the landing page for the $30 sketch option:
+
+![the new $30 option banner at the pet painting site](/images/blog/sketches.png){: .center-image }
+
+The other cool thing was since I built the site custom it was pretty trivial to lift any component I needed up one level and refactor the code to handle more order types and prices. In the update to the site I even put in a cool [timelapse background header video](https://www.starshinepetpainting.com) of Meridith drawing a dog. 
+
 ## So what did I learn?
 
-Anything you are selling these days needs to be optimized for social sharing. This takes a fair amount of work and experimenting. In-app-browsers are a huge pain, but facebook and instagram don't want the user to leave the app, so they are here to stay. You just have to deal with it and polyfill if you can.
+Anything you are selling these days needs to be optimized for social sharing. This takes a fair amount of work and experimenting. 
+
+__In-app-browsers are a huge pain__, but facebook and instagram don't want the user to leave the app, so they are here to stay. You just have to deal with it and polyfill if you can.
 
 Ecommerce sites are hard to make and they have a lot edge cases. But it was a good experience and now I have the ability to really customize the order process for this niche of custom commission pet painting.
 
-And yes, by the way, customers are successfully using the site! The business is still mostly word of mouth and there is a ton of competition in this space (who knew, right?), but this was always going to be just a boutique thing. And I think we are totally OK with that. 
+Finally I think another big lesson is that you need to __try different things until you find something that is really a hit__. The fully rendered portraits starting at $150 a commission (for just a small 5x7) are too expensive for most people, and the more stylized quick $30 sketch option appeals to a much wider audience. So by trying out these different ideas we figured out something that was still economical to produce but had a much wider appeal.
