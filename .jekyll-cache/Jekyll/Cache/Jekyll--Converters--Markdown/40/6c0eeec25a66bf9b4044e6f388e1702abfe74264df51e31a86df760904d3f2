@@ -1,2 +1,0 @@
-I"�<p>I work on a pretty large Angular project everyday at work that has a very polluted global namespace due to what I think are meant to be “constants”. Actually, the are just variables defined on the window object in all caps that contain a lot of strings and some numbers meant to be used as codes and other things like that. They could be overwritten at anytime so this is just a disaster waiting to happen.</p>
-:ET

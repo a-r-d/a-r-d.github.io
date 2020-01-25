@@ -1,2 +1,0 @@
-I"w<p>Did you know that using some CSS attributes on native android browsers will cause the browser to kick into a special GPU rendering mode? Did you know that this is buggy on android 4.1 and 4.2 and will cause certain areas of the DOM to not be repainted when they change? Well it appears to be true and is very very tricky to diagnose if you have a site laden with CSS.</p>
-:ET

@@ -1,2 +1,0 @@
-I"l<p>Previously I looked at how you can use Apache2 as a reverse proxy with SSL to expose applications inside of your firewall securely from one endpoint with a single SSL cert. Most corporate IT networks will be using a Windows domain controller so next you may be wondering how to secure your intranet pages using Microsoft AD LDAP authentication via Apache2.</p>
-:ET
