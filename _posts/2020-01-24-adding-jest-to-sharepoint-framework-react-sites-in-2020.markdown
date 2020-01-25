@@ -1,18 +1,11 @@
 ---
-templateKey: article-page
 author: Aaron Decker
-title: Adding Jest To Sharepoint Framework React Sites in 2020
+comments: true
+date: 2020-01-24
+layout: post
 slug: adding-jest-to-sharepoint-framework-react-sites-in-2020
-date: 2020-01-23T18:51:33.884Z
-cover: /img/blog/logo/react-cover-logo.png
-tags:
-  - react
-  - spfx
-  - jest
-  - typescript
-meta_title: Adding Jest To Sharepoint Framework React Sites in 2020
-meta_description: >-
-  I recently started working on a sharepoint framework react site using typescript and I wanted to add Jest tests. Here is how to do it.
+title: Adding Jest To Sharepoint Framework React Sites in 2020
+description: I recently started working on a sharepoint framework react site using typescript and I wanted to add Jest tests. Here is how to do it.
 ---
 
 I recently started a project where I had to work on a yeoman generated sharepoint framework react site. This is the Microsoft recommended way to create a webpart for Sharepoint Online build with React. 
@@ -28,41 +21,42 @@ This SPFX generator creates a hello world set up with React, TypeScript, Gulp, a
 
 ### First, install some more things:
 
-```bash
+
+{% highlight plain %}
 npm i --save-dev jest ts-jest @types/jest enzyme enzyme-adapter-react-16 @types/enzyme identity-obj-proxy
-```
+{% endhighlight %}
 
 ### Wire up jest in tsconfig.json
 
 Note: I'm just showing here what changed
 
-```json
+{% highlight json %}
 {
   "compilerOptions": {
     "types": ["jest"]
   }
 }
-
-```
+{% endhighlight %}
 
 ### Make a setupTests.ts file
 
 In this `setupTests.ts` file, we are going to set up the enzyme adapter
 
-```javascript
+{% highlight js %}
 import * as Enzyme from 'enzyme'
 import * as Adapter from 'enzyme-adapter-react-16'
 
 Enzyme.configure({
   adapter: new Adapter()
 })
-```
+{% endhighlight %}
+
 
 ### Configure Jest options in package.json
 
 These go in `package.json`, again just showing what changed.
 
-```json
+{% highlight json %}
 {
   "jest": {
     "setupFilesAfterEnv": ["<rootDir>src/setupTests.ts"],
@@ -78,14 +72,13 @@ These go in `package.json`, again just showing what changed.
     },
   }
 }
-
-```
+{% endhighlight %}
 
 ### If you want to add code coverage, here are some additional options
 
 These also go in `package.json`
 
-```json
+{% highlight json %}
 {
   "jest": {
     "collectCoverage": true,
@@ -104,7 +97,7 @@ These also go in `package.json`
     }
   }
 }
-```
+{% endhighlight %}
 
 Make sure to `.gitignore` the jest directory if you add this coverage config (`jest/`).
 
@@ -112,7 +105,7 @@ Make sure to `.gitignore` the jest directory if you add this coverage config (`j
 
 Here is an example test file (`src/components/example.test.tsx`). Note that I imported react and named it `.tsx` when I'm using enzyme.
 
-```javascript
+{% highlight js %}
 import * as React from 'react'
 import { shallow } from "enzyme";
 import { ExampleComponent } from './example.txt
@@ -123,7 +116,7 @@ describe('ExampleComponent test', () => {
     console.log(wrapper.debug())
   })
 })
-```
+{% endhighlight %}
 
 ## But wait, there is an issue with microsoft fabric!
 
@@ -131,7 +124,7 @@ I tried testing a React file where I imported the `Text` component from `office-
 
 It seems like these files are not being transformed and jest needs them transformed to run them. 
 
-```plain
+{% highlight plain %}
 Jest encountered an unexpected token
 
 This usually means that you are trying to import a file which Jest cannot parse, e.g. it's not plain JavaScript.
@@ -151,17 +144,17 @@ export * from './components/Text/index';
 ^^^^^^
 
 SyntaxError: Unexpected token export
-```
+{% endhighlight %}
 
 Unfortunately I had no luck. I was using these versions:
 
-```json
+{% highlight plain %}
 "jest": "^25.1.0",
 "ts-jest": "^25.0.0",
 "typescript": "^3.7.4",
 "@microsoft/sp-office-ui-fabric-core": "1.10.0",
 "react": "^16.12.0",
-```
+{% endhighlight %}
 
 ## Stumped...
 
