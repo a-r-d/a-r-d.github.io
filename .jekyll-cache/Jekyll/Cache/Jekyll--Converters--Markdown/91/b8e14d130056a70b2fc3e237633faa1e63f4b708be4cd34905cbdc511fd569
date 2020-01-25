@@ -1,0 +1,2 @@
+I"7<p>I have a react project at work that has a large dependency tree (due to webpack, babel and various testing frameworks) and it ends up taking a very long time to run npm install on our build server. It is now time to fix this! It turns out there are a lot of ways to make npm install faster and there is a lot of low-hanging fruit to be plucked first. I know this is a problem lots of people have when their projects start to become large and there are surprisingly a lot of ways to tackle this issue. Here are a few  things you can look at to speed things up.</p>
+:ET

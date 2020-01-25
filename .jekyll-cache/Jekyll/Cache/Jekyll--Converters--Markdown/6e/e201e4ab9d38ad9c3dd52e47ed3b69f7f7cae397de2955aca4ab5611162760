@@ -1,0 +1,90 @@
+I"I,<p>Searching Sphinx from PHP is fairly simple, however the search syntax is a little hard to get used to. I will show some examples to give you an idea of an easy way to use it, especially if you are only indexing a few fields out of your DB.</p>
+
+<p>Here is a <a href="http://www.sanisoft.com/blog/2011/03/07/extended-query-syntax-in-sphinx-search-engine/">good link detailing extended search in sphinx</a>.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">basicSphinxSearch</span><span class="p">(</span>
+  <span class="nx">$qry</span><span class="p">,</span> <span class="nx">$field_name</span><span class="p">,</span> <span class="nx">$page</span><span class="p">,</span> <span class="nx">$per_page</span><span class="p">,</span> <span class="nx">$only_historical</span><span class="p">){</span>
+
+  <span class="c1">// Connect to sphinx server</span>
+  <span class="nx">$sp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SphinxClient</span><span class="p">();</span>
+
+  <span class="c1">// Set the server</span>
+  <span class="nx">$sp</span><span class="o">-&gt;</span><span class="nx">SetServer</span><span class="p">(</span><span class="dl">'</span><span class="s1">localhost</span><span class="dl">'</span><span class="p">,</span> <span class="mi">3312</span><span class="p">);</span>
+
+  <span class="c1">// SPH_MATCH_ALL will match all words in the search term</span>
+  <span class="c1">// SPH_MATCH_EXTENDED2 will allow us to match specific fields only!</span>
+  <span class="k">if</span><span class="p">(</span> <span class="nx">$field_name</span> <span class="o">!=</span> <span class="kc">null</span> <span class="p">){</span>
+    <span class="nx">$sp</span><span class="o">-&gt;</span><span class="nx">SetMatchMode</span><span class="p">(</span><span class="nx">SPH_MATCH_EXTENDED2</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">$sp</span><span class="o">-&gt;</span><span class="nx">SetMatchMode</span><span class="p">(</span><span class="nx">SPH_MATCH_ALL</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// I will sort by ID descending rather than closest match.</span>
+  <span class="c1">// I am trying to get the latest match first.</span>
+  <span class="nx">$sp</span><span class="o">-&gt;</span><span class="nx">SetSortMode</span><span class="p">(</span><span class="nx">SPH_SORT_EXTENDED</span><span class="p">,</span> <span class="dl">'</span><span class="s1">@id DESC</span><span class="dl">'</span><span class="p">);</span>
+
+  <span class="c1">// Setting limits on the query- written for readability:</span>
+  <span class="k">if</span><span class="p">(</span> <span class="nx">$page</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="nx">$sp</span><span class="o">-&gt;</span><span class="nx">SetLimits</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">$per_page</span><span class="p">);</span>
+  <span class="k">else</span>
+    <span class="nx">$sp</span><span class="o">-&gt;</span><span class="nx">SetLimits</span><span class="p">(</span><span class="nx">$page</span> <span class="o">*</span> <span class="nx">$per_page</span><span class="p">,</span> <span class="nx">$page</span> <span class="o">*</span> <span class="nx">$per_page</span> <span class="o">+</span> <span class="nx">$per_page</span><span class="p">);</span>
+
+  <span class="c1">// We want an array with complete per match information including the document ids</span>
+  <span class="nx">$sp</span><span class="o">-&gt;</span><span class="nx">SetArrayResult</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+
+  <span class="c1">// Will we specify field or search whole index?</span>
+  <span class="nx">$sp_qry</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">$field_name</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">){</span>
+    <span class="nx">$sp_qry</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">@(</span><span class="dl">"</span><span class="p">.</span><span class="nx">$field_name</span><span class="p">.</span><span class="dl">"</span><span class="s2">) </span><span class="dl">"</span><span class="p">.</span><span class="nx">$qry</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">$sp_qry</span> <span class="o">=</span> <span class="nx">$qry</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// You have to specify both indexes if you want to search them!</span>
+  <span class="c1">// Check last blog post for example of how I set up the indexes.</span>
+  <span class="nx">$results</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nx">$only_historical</span> <span class="p">){</span>
+    <span class="nx">$results</span> <span class="o">=</span> <span class="nx">$sp</span><span class="o">-&gt;</span><span class="nx">Query</span><span class="p">(</span><span class="nx">$sp_qry</span><span class="p">,</span> <span class="dl">'</span><span class="s1">members membersdelta</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">$results</span> <span class="o">=</span> <span class="nx">$sp</span><span class="o">-&gt;</span><span class="nx">Query</span><span class="p">(</span><span class="nx">$sp_qry</span><span class="p">,</span> <span class="dl">'</span><span class="s1">members</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Returning empty arrays if we get no result or bad result (e.g. server error / down)</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">$results</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="nx">count</span><span class="p">(</span><span class="nx">$results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">array</span><span class="p">();</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">isset</span><span class="p">(</span><span class="nx">$results</span><span class="p">[</span><span class="dl">"</span><span class="s2">matches</span><span class="dl">"</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="nx">array</span><span class="p">();</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">count</span><span class="p">(</span><span class="nx">$results</span><span class="p">[</span><span class="dl">"</span><span class="s2">matches</span><span class="dl">"</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="nx">array</span><span class="p">();</span>
+
+  <span class="c1">// I will extract the arrays and build a query.</span>
+  <span class="c1">// I will do this because I will not index all of my rows</span>
+  <span class="c1">// and will need to consult MySQL for the full data.</span>
+  <span class="c1">// I will build and "in()" query from the ids.</span>
+  <span class="nx">$ids</span> <span class="o">=</span> <span class="nx">array</span><span class="p">();</span>
+  <span class="nx">foreach</span><span class="p">(</span> <span class="nx">$results</span><span class="p">[</span><span class="dl">"</span><span class="s2">matches</span><span class="dl">"</span><span class="p">]</span> <span class="k">as</span> <span class="nx">$res</span><span class="p">){</span>
+    <span class="nx">array_push</span><span class="p">(</span><span class="nx">$ids</span><span class="p">,</span> <span class="nx">$res</span><span class="p">[</span><span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">]);</span>
+  <span class="p">}</span>
+  <span class="nx">$ins</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+  <span class="nx">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="nx">$len</span> <span class="o">=</span> <span class="nx">count</span><span class="p">(</span><span class="nx">$ids</span><span class="p">);</span>
+  <span class="nx">foreach</span><span class="p">(</span> <span class="nx">$ids</span> <span class="k">as</span> <span class="nx">$id</span> <span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span> <span class="nx">$i</span> <span class="o">&lt;</span> <span class="nx">$len</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+      <span class="nx">$ins</span> <span class="p">.</span><span class="o">=</span> <span class="dl">"</span><span class="s2">$id,</span><span class="dl">"</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">$i</span> <span class="o">==</span> <span class="nx">$len</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+      <span class="nx">$ins</span> <span class="p">.</span><span class="o">=</span> <span class="dl">"</span><span class="s2">$id</span><span class="dl">"</span><span class="p">;</span>
+    <span class="nx">$i</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// write our In query that selects in() on the primary key, with an order by.</span>
+  <span class="nx">$final_qry</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">select * from table_name_here where id in($ins) order by created desc</span><span class="dl">"</span><span class="p">;</span>
+
+  <span class="c1">// I am using RedBean PHP in my example but you can use whatever here.</span>
+  <span class="nx">$rows</span> <span class="o">=</span> <span class="na">R</span><span class="p">::</span><span class="nx">getAll</span><span class="p">(</span><span class="nx">$final_qry</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">$rows</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Well this single function just about covers most of your use cases. You will either want to search Sphinx for a single word or multiple words on all of the indexed fields or you will want to specify one or more specific fields to search. I also deal with limit cases and paging. However keep in mind your pages will not go far- you have to increase “max_results” in searchd config to have more than the default 1000 results.</p>
+
+<p>In this example I’m also showing you how to search on multiple indexes with Sphinx as well as access the data you get back from the search results, which I promptly use to turn around and query MySQL.</p>
+:ET

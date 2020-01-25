@@ -1,0 +1,32 @@
+I"
+<p>So people always say that in JavaScript semicolons are optional but you had better use them anyway. The often cited case is the return statement.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">executing foo!</span><span class="dl">'</span><span class="p">)</span>
+
+  <span class="c1">// even though there is no semicolon, we just return immediately</span>
+  <span class="k">return</span>
+  <span class="p">{</span>
+    <span class="na">data</span><span class="p">:</span> <span class="dl">'</span><span class="s1">data</span><span class="dl">'</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">());</span></code></pre></figure>
+
+<p><a href="https://jsbin.com/qitewovuho/edit?js,console">Jsbin link</a>.</p>
+
+<p>In JavaScript you can make new code block “{ }” anywhere you want and it is perfectly valid, it will just execute when the code path hits it. Another funny thing is that for some reason an if without a body and semicolon following it is valid (e.g. “if(true);” will not throw any error). So if you bring these two things together you can get a weird thing like this:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">running foo...</span><span class="dl">'</span><span class="p">)</span>
+
+  <span class="k">if</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+  <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">code block in if statement executed</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">foo</span><span class="p">()</span></code></pre></figure>
+
+<p><a href="https://jsbin.com/kodejibowe/edit?js,console">jsbin link</a>.</p>
+:ET

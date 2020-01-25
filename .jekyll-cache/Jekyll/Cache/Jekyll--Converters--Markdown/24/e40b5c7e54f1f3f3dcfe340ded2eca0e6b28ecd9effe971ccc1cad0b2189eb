@@ -1,0 +1,162 @@
+I"C<p><img src="/images/blog/es6.jpg" alt="es2015" /></p>
+
+<p>ES2015 (formerly known as ES6 and short for ECMAScript 2015) is one of the latest specifications for JavaScript, the components of which are almost entirely implemented in the latest versions of Node 6, Chrome, Firefox, and more.</p>
+
+<h2 id="1-block-scope-with-let-and-const">1. Block scope with “let” and “const”</h2>
+
+<p>In JavaScript, a common source of errors in the code of new users has always been due to confusion about scope. Before <em>let</em> and <em>const,</em> when you declared a variable it would be hoisted to the top of the containing function declaration and exist throughout. Unlike in Java or C, you didn’t get a new scope inside of an <em>if</em> block or a <em>for</em> loop.</p>
+
+<p>Not anymore. When you declare variables with <em>let</em> or <em>const</em> they only exist in the block that you declared them. Ultimately, there is no reason to ever use <em>var</em> anymore, <em>let</em> and <em>const</em> should replace <em>var</em> completely.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// you use them just like "var"</span>
+<span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Hello</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">y</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">world!</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="c1">// let and const are block scoped</span>
+<span class="k">if</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">someVar</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">some value</span><span class="dl">"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// var would have been hoisted, but what happens when we do this?</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">someVar</span><span class="p">);</span>
+
+
+<span class="c1">// Remember that problem of what happens when pass a var iterator by ref in a loop?</span>
+<span class="c1">// use var in a loop, see what happens</span>
+<span class="kd">const</span> <span class="nx">refsVar</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">refsVar</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">i</span><span class="p">;</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="c1">// what do you get when you map over these functions?</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">refsVar</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">func</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">func</span><span class="p">();</span>
+<span class="p">}));</span>
+
+
+<span class="c1">// Using let fixes that issue.</span>
+<span class="c1">// use let in a loop, see what happens compared to above</span>
+<span class="kd">const</span> <span class="nx">refsLet</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">refsLet</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">j</span><span class="p">;</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="c1">// what do you get when you map over these functions?</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">refsLet</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">func</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">func</span><span class="p">();</span>
+<span class="p">}));</span></code></pre></figure>
+
+<h2 id="2-arrow-functions">2. Arrow functions</h2>
+
+<p>Arrow functions at first may appear just to be a new function declaration syntax, but they actually behave differently from traditional functions. In normal functions when you declare a function the value of “this” can be a little bit tricky because each function will create its own context.  Arrow functions don’t create their own context, so when you reference “this”, you will <em>ALWAYS</em> be referencing the parent function. Check out this example, which shows “this” clearly belonging the parent function.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">Animal</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">type</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">voice</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">voice</span><span class="p">;</span>
+
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`This classic function: the </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">type</span><span class="p">}</span><span class="s2"> says </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">voice</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+  <span class="p">},</span> <span class="mi">5</span><span class="p">)</span>
+
+  <span class="nx">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`This arrow function: the </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">type</span><span class="p">}</span><span class="s2"> says </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">voice</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+  <span class="p">},</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="p">}</span>
+
+<span class="c1">// What happens when you instantiate this ?</span>
+<span class="c1">// What happens when the arrow function runs ?</span>
+<span class="kd">const</span> <span class="nx">duck</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">({</span>
+  <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">duck</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">voice</span><span class="p">:</span> <span class="dl">'</span><span class="s1">quack</span><span class="dl">'</span>
+<span class="p">});</span></code></pre></figure>
+
+<h2 id="3-promises">3. Promises</h2>
+
+<p>Promises have been around for a while but only as features of libraries. Whether you used jQuery, Angular $q, bluebird, or something else, everyone had their own implementations of promises. Now promises are baked into the language and can be used without external dependencies. So whether you like to use Promises or Callbacks for your async control flow, now you don’t need to weigh bringing in another dependency to make the decision.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">resolve</span><span class="p">(</span><span class="dl">'</span><span class="s1">promise is done!</span><span class="dl">'</span><span class="p">)</span>
+    <span class="p">},</span> <span class="mi">100</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">);</span>
+
+<span class="c1">// Promise { &lt;pending&gt; }</span>
+
+<span class="nx">p1</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// the promise will resolve after 100 milliseconds</span>
+<span class="c1">//  -&gt; "promise is done!""</span></code></pre></figure>
+
+<h2 id="4-template-strings">4. Template Strings</h2>
+
+<p>Template strings (also known as <em>template literals</em>) allow you to perform string interpolation and define multiline strings as well as “tagging” (a way to modify the output of a template string with a function). To create a template string all you have to do is use backticks (<code class="highlighter-rouge"> </code>) instead of quote marks, and you will be able to do string interpolation rather than concatenation.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="p">[</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">var 1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">var 2</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">var 3</span><span class="dl">'</span><span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">interpolation</span> <span class="o">=</span> <span class="s2">`
+    1. </span><span class="p">${</span><span class="nx">x</span><span class="p">}</span><span class="s2">
+    2. </span><span class="p">${</span><span class="nx">y</span><span class="p">}</span><span class="s2">
+    3. </span><span class="p">${</span><span class="nx">z</span><span class="p">}</span><span class="s2">
+`</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">interpolation</span><span class="p">);</span>
+<span class="cm">/**
+  Looks like this, preserves formatting:
+
+    1. var 1
+    2. var 2
+    3. var 3
+
+**/</span></code></pre></figure>
+
+<h2 id="5-new-object-syntax">5. New Object Syntax</h2>
+
+<p>I’m going to cheat on #5 here and throw in a bunch of new syntax related to manipulating objects because it is all so cool. This includes Destructuring, Object property shorthands, the spread operator, and the new class declaration syntax. Destructuring, in particular, can be very nice and you will quickly find yourself thinking to apply it in all sorts of convenient ways. Check out the example below:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+
+<span class="kd">let</span> <span class="p">[</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">;</span>
+
+<span class="c1">// a=1, b=2, c=3</span></code></pre></figure>
+
+<p>Next, I want to show a quick example of object property shorthand and use of the spread operator:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// spread operator into an array</span>
+<span class="kd">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">];</span>
+<span class="kd">const</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">arr</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+
+<span class="c1">// now arr2 contains [1,2,3,4,5]</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// we need to create an object to demonstrate object property shorthand</span>
+<span class="kd">const</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Elon Musk</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">jobTitle</span><span class="p">:</span> <span class="dl">'</span><span class="s1">CEO</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">favoriteThing</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Rockets</span><span class="dl">'</span>
+<span class="p">}</span>
+
+<span class="c1">// destructure out these keys</span>
+<span class="kd">let</span> <span class="p">{</span> <span class="nx">jobTitle</span><span class="p">,</span> <span class="nx">favoriteThing</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">person</span><span class="p">;</span>
+
+<span class="c1">// Jeff bezos also happens to own a rocket company, so let's reuse those.</span>
+<span class="kd">const</span> <span class="nx">anotherPerson</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Jeff Bezos</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">jobTitle</span><span class="p">,</span>                 <span class="c1">// &lt;--- the key is the variable name, no need to write twice!</span>
+  <span class="nx">favoriteThing</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">anotherPerson</span><span class="p">);</span>
+<span class="c1">// { name: 'Jeff Bezos', jobTitle: 'CEO', favoriteThing: 'Rockets' }</span></code></pre></figure>
+
+<p>There are too many new features in ES2015 to detail in one short blog post, but <a href="https://egghead.io/courses/learn-es6-ecmascript-2015">here are some free egghead.io videos </a>that can take this introduction a bit further.</p>
+:ET

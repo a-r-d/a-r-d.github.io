@@ -1,0 +1,39 @@
+I"g<p>There is a npm module called <a href="https://www.npmjs.com/package/console-stamp">console-stamp</a> that is pretty nice and simple - whenever you print using the global ‘console’ methods it prefixes everything with a timestamp in whatever format you specify. Well, I was curious how to do this and it is something I would describe as easy but not simple unless you are very familiar with “Function.prototype.apply”. The method I’m going to show you is actually adapted from <a href="http://www.amazon.com/gp/product/193398869X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=193398869X&amp;linkCode=as2&amp;tag=ultralightgea-20&amp;linkId=2LEOR3OFOCROOM4F">Secrets of the JavaScript Ninja</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=ultralightgea-20&amp;l=as2&amp;o=1&amp;a=193398869X" alt="" />. It is a simple two step process:</p>
+
+<ol>
+  <li>create a “wrap” method that will call a given method with a “wrapper” method you define.</li>
+  <li>Run the “wrap” method on the function you want to wrap and define the wrapper you will apply around it.</li>
+</ol>
+
+<p><a href="https://jsbin.com/dacunogedo/1/edit?js,console">(JSBin example of the following code)</a></p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// you will call like: wrap(console, 'info', fn);</span>
+<span class="kd">function</span> <span class="nx">wrap</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="nx">method</span><span class="p">,</span> <span class="nx">wrapper</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// get reference to target method off the function (original method)</span>
+  <span class="kd">var</span> <span class="nx">fn</span> <span class="o">=</span> <span class="nx">object</span><span class="p">[</span><span class="nx">method</span><span class="p">];</span>
+  <span class="c1">// replace it with this new method:</span>
+  <span class="k">return</span> <span class="nx">object</span><span class="p">[</span><span class="nx">method</span><span class="p">]</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// apply the wrapper</span>
+    <span class="c1">// "[fn.bind(this)]" will actually just be the original method that will</span>
+    <span class="c1">// be an argument in your wrapper</span>
+    <span class="k">return</span> <span class="nx">wrapper</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="p">[</span><span class="nx">fn</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)].</span><span class="nx">concat</span><span class="p">(</span>
+        <span class="c1">// "arguments" will be args you call the wrapped method with.</span>
+        <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">))</span>
+      <span class="p">);</span>
+    <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="nx">wrap</span><span class="p">(</span><span class="nx">console</span><span class="p">,</span> <span class="dl">'</span><span class="s1">info</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">original</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// The first thing in arguments will be the original method,</span>
+    <span class="c1">// so let get rid of it in our copy</span>
+    <span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+
+    <span class="c1">// Apply the original method with the prefix as the first arg and the</span>
+    <span class="c1">// info message as the following args</span>
+    <span class="nx">original</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="p">[</span><span class="dl">'</span><span class="s1">test info prefix: </span><span class="dl">'</span><span class="p">].</span><span class="nx">concat</span><span class="p">(</span><span class="nx">args</span><span class="p">));</span>
+<span class="p">});</span>
+
+<span class="c1">// This will print --&gt; "test info prefix: test info message"</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="dl">'</span><span class="s1">test info message</span><span class="dl">'</span><span class="p">);</span></code></pre></figure>
+
+:ET

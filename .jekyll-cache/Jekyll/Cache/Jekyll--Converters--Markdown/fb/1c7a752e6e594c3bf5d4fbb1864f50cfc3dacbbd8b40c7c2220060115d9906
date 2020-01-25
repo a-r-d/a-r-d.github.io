@@ -1,0 +1,17 @@
+I"�<p>Did you know that you can now send push notifications to a browser even when the user is no longer on the page? The <a href="https://developer.mozilla.org/en-US/docs/Web/API/notification">notification API</a> allows you to pop up OS level notifications from JavaScript. With <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">Web Workers</a> you are able to register a worker permanently in a browser that will handle these notifications offline. I’m going to outline how to do this with Google Chrome and Google Cloud Messaging.</p>
+
+<p><a href="https://gist.github.com/a-r-d/44aeb60d60dccc5b35f5543db968fd81">Before I go into details, the sample code for all steps and components is here.</a></p>
+
+<h3 id="here-is-an-example-workflow-with-the-accompanying-diagram">Here is an example workflow, with the accompanying diagram.</h3>
+
+<ol>
+  <li>Browsers asks for permissions to send notification.</li>
+  <li>Register your web worker web worker.</li>
+  <li>When registration comes back, subscribe to push on the registration object.</li>
+  <li>when subscription endpoint comes back from the API, then you need to send this ID to your server.</li>
+  <li>Fire off push notifications to the endpoint id from your server (this is the push notification subscription ID).</li>
+  <li>Listen in your worker for “push” event and show messages.</li>
+</ol>
+
+<p><a href="http://i.imgur.com/qP5OiZc.png"><img src="http://i.imgur.com/qP5OiZc.png" alt="" /></a></p>
+:ET

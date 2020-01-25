@@ -1,0 +1,101 @@
+I"�<p><img src="/images/blog/react-native.jpg" alt="kubernetes" class="center-image" /></p>
+
+<h2 id="can-you-embed-react-native-into-larger-native-android-app">Can you embed React Native into larger native Android app</h2>
+
+<p>The answer is yes. It gets more complicated if you need to ship your React Native app
+component as just part of a larger application and have to deliver as only an AAR file, but
+still the answer is yes. The thing that is lacking is a good guide on how to do this.</p>
+
+<h2 id="background-info-and-application-structure">Background info and application structure.</h2>
+
+<p>So I work on a team that ships a small component of a larger mobile application. In fact, there
+other teams shipping other components too. The structure looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-plain" data-lang="plain">*Big Native Android Application*
+  | --&gt; lots of native code directly in the main app codebase.
+  |
+  ----&gt; Components from team A for feature X
+  |
+  ----&gt; Components from team B for feature Y
+  |
+  ----&gt; SDK from team C used by all other components</code></pre></figure>
+
+<p>If my team (Team A) wanted to be able to use React Native, we had to continue to ship our
+components exactly as before, via an AAR file. It is possible but there are some things to consider.</p>
+
+<h2 id="starting-from-the-react-native-tutorial">Starting from the React Native tutorial</h2>
+
+<p>I am going to start with the <a href="https://facebook.github.io/react-native/docs/integration-with-existing-apps.html">React Native tutorial</a> and correct things that will trip you up if you try this. There are 500 open issues and almost 200 open PRs on React Native as I write this. You will run into trouble, so here are things I encountered.</p>
+
+<p>Firstly, I did this in November of 2017. I found out that it is very important to lock down all of your dependency versions for everything. Here is what my package.json looks like:</p>
+
+<figure class="highlight"><pre><code class="language-plain" data-lang="plain">{
+  "dependencies": {
+    "react": "16.1.1",
+    "react-native": "0.50.3"
+  },
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/myapp/src/main/assets/index.android.bundle --assets-dest android/myapp/src/main/res"
+  }
+}</code></pre></figure>
+
+<h2 id="lock-your-dependencies-in-your-android-project">Lock your dependencies in your Android project.</h2>
+
+<p>A very serious error is made in the tutorial:</p>
+
+<figure class="highlight"><pre><code class="language-plain" data-lang="plain">dependencies {
+    ...
+    compile "com.facebook.react:react-native:+" // From node_modules (DONT DO THIS!!!!)
+}</code></pre></figure>
+
+<p>Seriously, don’t do the “+”. Lock it to a version. A much smarter thing to do is to lock it to version <code class="highlighter-rouge">0.50.3</code>, which is the version I have used in the package.json file.</p>
+
+<p>Why lock it down? I will tell you why. It is because if you misidentify the path to the node modules in the line
+in the maven config you will have major compilation issues. I did this exact thing because I made a directory inside of the “android” directory in my project.  Why does this break things? Well, it is because in Maven Central there is a very old version of
+React Native published (version 0.20.something) which is going to not compile. This is not easy to discover unless you list our the dependencies, because reffing to <code class="highlighter-rouge">node_modules</code> directory wrong will just fail silently!</p>
+
+<figure class="highlight"><pre><code class="language-plain" data-lang="plain">allprojects {
+    repositories {
+        maven {
+            // This is line that refs node modules I am talking about. If you
+            // have compile errors, you probably need another "../" in there somewhere.
+            url "$rootDir/node_modules/react-native/android"
+        }
+    }
+    ...
+}</code></pre></figure>
+
+<h2 id="setting-up-your-react-native-project-as-a-module">Setting up your React Native project as a module.</h2>
+
+<p>Actually this part went smoothly. I created a new module under my project and moved the
+code that loads my bundle and instantiates the React Native component  into this module.
+I think made the main runnable part of the app consume the module. The module produces and AAR file
+that include the activity that starts the React Native component as well as my bundled assets. You
+may have some trouble making sure that the javascript code bundle is included in the
+assets but this can be fixed with some entries in the gradle build file.</p>
+
+<h2 id="publish-react-native-to-your-maven-instance-for-your-apps-team">Publish React Native to your maven instance for your Apps team.</h2>
+
+<p>The goal is to be able to seamlessly hand off your components to your apps team so they
+can consume your project just like any other. Well in this case your apps team
+must now somehow consume the React Native android AAR file (version 0.50.3 was about 2.3 mb), which is a dependency of the
+AAR file you will ship.</p>
+
+<p><a href="https://github.com/facebook/react-native/issues/13094">React Native is not published to Maven Central anymore</a>. So you need to get them this exact library version.
+I had trouble trying to compile the dependencies into my module, and you probably wouldn’t want to do that anyway
+just in case another team is using React Native. My solution was to publish the React Native android
+library to our internal Maven repo so that the apps team could just pick that up automatically.</p>
+
+<h2 id="testing-it-out-on-a-device">Testing it out on a device.</h2>
+
+<p>Create a new project, then consume your published AAR module and try to instantiate the react activity.
+Just make sure to reference the React Native library in some way so that the one dependency will load.</p>
+
+<p>I had some trouble testing the application on actual device, however. I ended up making some modifications to my <code class="highlighter-rouge">build.gradle</code> file
+that had to do with making different APKs for different processor architecture. But I think the most important
+part of is to include this <code class="highlighter-rouge">react.gradle</code> file from node modules.</p>
+
+<figure class="highlight"><pre><code class="language-plain" data-lang="plain">apply from "../../node_modules/react-native/react.gradle"</code></pre></figure>
+
+:ET

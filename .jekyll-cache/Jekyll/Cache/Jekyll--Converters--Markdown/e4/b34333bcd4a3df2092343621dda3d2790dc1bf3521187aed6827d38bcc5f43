@@ -1,0 +1,35 @@
+I"<p>I am readying through “Secrets of A JavaScript Ninja” right now and learning tons of helpful little tricks. The coolest thing I saw in there recently was the section on array-like objects, e.g. “arguments”. So it is pretty simple - all of the array methods exist on Array.prototype and you can use the function method “call” and “apply” on these. Surprisingly this works great, so now you can do forEach, slice, ect on your arguments objects even though it is not an array.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+	<span class="kd">function</span> <span class="nx">callMe</span><span class="p">()</span> <span class="p">{</span>
+		<span class="c1">// slice the "Arguments as an array"</span>
+		<span class="k">return</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="kd">function</span> <span class="nx">callMeIter</span><span class="p">()</span> <span class="p">{</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Is forEach on args: </span><span class="dl">'</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">forEach</span><span class="p">);</span>
+
+		<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">iter</span><span class="p">){</span>
+			<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Iter on args: </span><span class="dl">'</span><span class="p">,</span> <span class="nx">iter</span><span class="p">);</span>
+		<span class="p">});</span>
+	<span class="p">}</span>
+
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">multiArgs sliced test: </span><span class="dl">'</span><span class="p">,</span> <span class="nx">callMe</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">));</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Foreach on arguments: </span><span class="dl">'</span><span class="p">);</span>
+	<span class="nx">callMeIter</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>
+<span class="p">})();</span></code></pre></figure>
+
+<p>ALSO FYI arrow syntax is now in Chrome so you can make your iife like this:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Cool</span>
+<span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// write your code in the iife here</span>
+<span class="p">})();</span>
+
+<span class="c1">// lame!</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// write your code in the iife here</span>
+<span class="p">})();</span></code></pre></figure>
+
+<p>That looks way cooler right? I think so…</p>
+:ET

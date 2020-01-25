@@ -1,0 +1,19 @@
+I"�<p>Sometimes for whatever reason you screw up and get your local master branch into a nasty inconsistent state. Maybe it was an accidental merge or accidental commits but you just want to start over. Here is how to replace your local master branch with a fresh copy from upstream.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># you cannot delete the branch you are on, so move to something else.</span>
+git checkout           
+
+<span class="c"># delete local master (if not fully merged do ‘-D’. In this case I did have to use capital D)</span>
+git branch <span class="nt">-d</span> master          
+
+<span class="c"># get changes from upstream master           </span>
+git fetch upstream master                
+
+<span class="c"># make a fresh master branch</span>
+git checkout <span class="nt">-b</span> master upstream/master   
+
+<span class="c"># force push to origin, it will blow away your old master</span>
+git push origin master <span class="nt">-f</span>               </code></pre></figure>
+
+<p>There are easier ways to do this, but conceptually this is, in my opinion, easy to follow and it cleans up your remote as well (if you accidentally pushed a dirty branch).</p>
+:ET

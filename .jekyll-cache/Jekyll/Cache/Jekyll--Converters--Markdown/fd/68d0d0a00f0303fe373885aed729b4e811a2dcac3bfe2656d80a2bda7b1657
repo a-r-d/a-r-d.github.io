@@ -1,0 +1,30 @@
+I" <p><img src="/images/blog/git.png" alt="git" /></p>
+
+<p>I’m teaching a Java 101 class as an Adjunct at Cincinnati State every Wednesday night this semester and I decided I would post the class demos I use up on GitHub each week. When I asked the class if they knew what Github was only a few hands went up. When I asked the class if they knew what version control was, basically the same few hands went up. Based on that, I felt compelled to write up this intro.</p>
+
+<p>Arguably one of the most important tools you will use as a developer is your version control system. Version control is so important it probably falls behind only the programming language, editor, and OS you are using.</p>
+
+<p>If you are a new developer just learning how to program you are probably still transferring your class assignment files around on flash drives or some file sharing system. <strong>Version control solves this problem and so much more</strong>. Version control can serve as a way to store code, preserve history, and even act as a backup system for your programs. Most people also integrate their version control into their build and deployment system in an automated way so that they can use version control to deploy new versions of their code to production.</p>
+
+<h3 id="what-else">What else?</h3>
+
+<p>Version lets you collaborate with other developers. <em>Git</em>, which is probably the most popular version control system used today, is used widely in the industry and makes working with others on the same codebase fantastically easy. I won’t go into the gritty details here, but imagine that you and another developer are working on the same code base, apart, and then after a few days you need to merge your changes back together combine your project once again. Git gives you great workflows to help accomplish this feat, mostly automatically too.</p>
+
+<p><em>Github</em> is an online git hosting platform. They make it super easy to share Git repositories and collaborate with others. They have workflows that are designed to make it painless. In fact, the steps are so simple I can outline them here:</p>
+
+<ol>
+  <li>Find a project you want to work on</li>
+  <li>Fork the project (this creates a copy for you)</li>
+  <li>Modify your copy of the project</li>
+  <li>Submit a “pull request”, which lets the original owner review your changes and merge them into the original project.</li>
+  <li>Pull back the merged version from the original owner and repeat!</li>
+</ol>
+
+<p>If you are new developer it is hard to understate how important it is to learn a version control system. Version control (and likely Git), is something <strong>you will use every single day at work</strong>. So it makes sense to become proficient at this before you even start working. I would strongly advise every new developer to create a Github account and play around with learning how git works, and maybe even collaborate with somebody on a project to get a feel for how pull requests work.</p>
+
+<p>Lastly, let me just mention that git can be hard! You don’t have to use it from the command line, but many people (myself included) do so exclusively. Don’t worry though, there are tons of GUI based git tools you can use if you want.</p>
+
+<p>I’ll leave everyone with this great tutorial from Github:</p>
+
+<p>https://try.github.io/levels/1/challenges/1</p>
+:ET
