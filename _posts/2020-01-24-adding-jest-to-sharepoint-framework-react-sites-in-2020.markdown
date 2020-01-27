@@ -146,7 +146,7 @@ export * from './components/Text/index';
 SyntaxError: Unexpected token export
 {% endhighlight %}
 
-Unfortunately I had no luck. I was using these versions:
+For the record these are the various versions of things I'm using:
 
 {% highlight plain %}
 "jest": "^25.1.0",
@@ -156,16 +156,23 @@ Unfortunately I had no luck. I was using these versions:
 "react": "^16.12.0",
 {% endhighlight %}
 
-## Stumped...
+## Finally found the issue
 
-I messed with it for hours and could not untangle the mess. 
+I googled something like "office-ui-fabric-react jest failing export * from" and I was eventually let to [this note in the documentation for fabric that notes they have multiple outputs you can switch between](https://github.com/OfficeDev/office-ui-fabric-react/blob/master/6.0_RELEASE_NOTES.md#lib-commonjs
+).  
 
-- I tried to to explicitly transform all `.js` and `.jsx` files with `babel-jest`. 
-- I tried the `ts-jest` preset [called "js-with-ts"](https://kulshekhar.github.io/ts-jest/user/config/). 
-- I tried to use `transformIgnorePatterns` on `node_modules/office-ui-fabric-react`.
+Sure enough for jest you need to use the `commonJs` variant, and fixing everything was as simple adding this to my jest config:
 
-A complicating factor is I think all of this stuff is written for unix systems and I was doing this on a Windows system. 
+{% highlight plain %}
+  moduleNameMapper: {
+    'office-ui-fabric-react/lib/(.*)$': 'office-ui-fabric-react/lib-commonjs/$1'
+  },
+{% endhighlight %}
 
-Things could be broken for all kind of reasons, but honestly I think that it is just plain complicated to wire up so many interlinked components with so many transformations going on. What code is actually running where? What needs to be transformed into what in order to run? It shouldn't be this hard... but it is. 
+## Final note
 
-So close but so far away! Guess I will go with the mocha setup the yeoman generator set up. 
+There is a pretty good sample repo here:
+[https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-jest-testing](https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-jest-testing)
+
+If you want to use that to get started (and then also use Fabric) you just need to make sure to add the module mapper I listed above. That should cover it (at least in January 2020).
+
