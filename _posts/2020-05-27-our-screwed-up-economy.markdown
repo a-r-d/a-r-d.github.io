@@ -39,7 +39,7 @@ But how did they double in a matter of a few years? I look up the [inflation rat
 
 This really started to bother me so I went down a rabbit hole learning about macro economics and what has been going on lately.
 
-Here is what I think: our economy in it's current state is what it is due to a complex mix of history, culture, and government but if I was to say there is one thing overall that can explain it that would be **credit**.
+Here is what I think: our economy in it's current state exists due to a complex mix of history, culture, and government. But, if I was to say there is one thing overall that can start to explain it that would be **credit**.
 
 America runs on **credit**. And by credit, I mean **debt**. We borrow money for everything:
 
@@ -61,7 +61,7 @@ This means everyone is tapped out effectively and just using their cashflow to p
 
 It also means lenders might be reluctant to lend to you if you already have too much debt and they will start charging higher interest rates. They might see you as a risk and so they require more of a "reward" to take that risk, so they jack the rates up.
 
-Eventually, this should self correct. People will borrow less, things will de-lever (debt will go down) and then we can start the cycle all over again.
+Eventually, this should self correct. People will borrow less, things will de-lever (debt will go down), interest rates will ebb and flow naturally and then we can start the cycle all over again.
 
 ## What if we want to avoid this painful cycle?
 
@@ -104,7 +104,7 @@ As it turns out, those small business owners don't own the buildings they operat
 
 Real estate is too expensive! You can maybe scrape together 100k to start a restaurant, but you can't get 2 million dollars to but the building you are going to open it in. Why was that building so expensive? Low interest rates pushing asset prices up.
 
-So now you just pay $5,000 a month in rent. Or maybe $10,000 a month in rent! It's a business afterall, you can afford it... That is until you have to shut your doors and the cashflow coming it drops to zero. How many months can you last with zero cashflow? Businesses everywhere are finding this out now.
+So now you just pay $5,000 a month in rent. Or maybe $10,000 a month in rent! It's a business, you can afford it... That is until you have to shut your doors and the cashflow coming in drops to zero. How many months can you last with zero cashflow? Businesses everywhere are finding this out now.
 
 ## What about the consequences for people?
 
