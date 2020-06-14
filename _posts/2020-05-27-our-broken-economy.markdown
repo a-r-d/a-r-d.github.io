@@ -3,7 +3,7 @@ author: Aaron Decker
 comments: true
 date: 2020-05-27
 layout: post
-slug: 2020-05-27-our-screwed-up-economy
+slug: 2020-05-27-our-broken-economy
 title: One Programmer's View Of Our Broken Economy
 description: Trying to understand our world one expensive city at a time.
 ---
@@ -46,16 +46,17 @@ America runs on **credit**. And by credit, I mean **debt**. We borrow money for 
 1. Paying for tuition
 2. Buying a car
 3. Buying a home
-4. Starting a business
-5. Expanding a business
+4. Repairing your home
+5. Starting a business
+6. Expanding a business
 
 The list goes on.
 
-Essentially all of this debt makes our economy grow faster and it can be good. Credit is a useful tool. You don't need to wait 10 years to save to buy a home, you can buy it now on credit. People who want to get an advanced education can do it even if their families don't have money. If you don't have the money to start a new business a bank might lend it to you.
+Essentially all of this debt [makes our economy grow faster and it can be good](https://academic.oup.com/qje/article-abstract/108/3/717/1881857?redirectedFrom=PDF). Credit is a useful tool. You don't need to wait 10 years to save to buy a home, you can buy it now on credit. People who want to get an advanced education can do it even if their families don't have money. If you don't have the money to start a new business a bank might lend it to you.
 
 ## But what happens when there is too much debt?
 
-Ah, well here is the rub. If you get too much debt built up in the system it can be difficult to add more and then growth slows.
+Ah, well here is the rub. If you get too much debt built up in the system it can be [difficult to add more and then growth slows](https://en.wikipedia.org/wiki/Debt_deflation).
 
 This means everyone is tapped out effectively and just using their cashflow to pay down debt they have accrued.
 
@@ -88,7 +89,7 @@ Yes, in Europe the regulators who control interest rates have been able to set t
 
 ## What are the consequences of avoiding deleveraging?
 
-Well, we are seeing it. We just continue to push asset prices higher and higher so that people, companies, and governments can take on more debt.
+Well, we are seeing it. We just continue to push asset prices higher and higher so that people, [companies](https://en.wikipedia.org/wiki/Corporate_debt_bubble), and [governments](https://tradingeconomics.com/united-states/government-debt-to-gdp) can take on more debt.
 
 We are so far down this rabbit hole and nobody knows where it ends. Do we just one day cancel all debts and start over? Do we try to inflate away the debt?
 
@@ -100,7 +101,7 @@ Actually, yes [we are doing that right now](https://www.federalreserve.gov/monet
 
 Let's circle back to debt and asset prices. When you have to shutter large parts of the economy for months (bars and restaurants) in a heavily credit driven system you get problems. Everyone is leveraged to hell and there is no room for cashflow to stop.
 
-As it turns out, those small business owners don't own the buildings they operate their businesses out of. They lease them from landlords. Why?
+As it turns out, those small business owners don't own the buildings they operate their businesses out of. [They lease them from landlords](https://www.marketplace.org/2020/04/01/i-cant-afford-rent-for-my-small-business-because-of-covid-19-what-can-i-do/). Why?
 
 Real estate is too expensive! You can maybe scrape together 100k to start a restaurant, but you can't get 2 million dollars to but the building you are going to open it in. Why was that building so expensive? Low interest rates pushing asset prices up.
 
@@ -115,7 +116,7 @@ Well, people are leveraged too after all. Most people have 4 kinds of loans:
 3. Home Loans
 4. Credit Card Loans
 
-Federal student loans were halted until September 2020. Also, federal home loans were mostly able to be deferred or modified for 6-12 months, so either September 2020, or April 2021.
+Federal student loans were [halted until September 30, 2020](https://www.forbes.com/sites/zackfriedman/2020/03/28/student-loans-payments-suspended/#7b87d7cf1b10). Also, federal home loans were mostly able to be deferred or modified for 6-12 months, so either September 2020, or April 2021.
 
 But what happens to car loans? Credit card loans? What happens when the deferment period ends?
 
@@ -125,10 +126,29 @@ Maybe we will modify everyone's 30 year mortgage to be a 40 year mortgage?
 
 Maybe we will just simply forgive all student loans?
 
+## What is likely to happen
+
+[After the crash of 1929 there was enormous deflation](https://economix.blogs.nytimes.com/2009/02/25/deflation-1929-vs-today/#:~:text=In%20the%20fall%20of%201929,percent%20from%20their%201929%20peak.). This resulted in people's debts actually growing relative to their earnings. Their money was worth more, but their paychecks were smaller. What didn't decrease was the nominal debt they owed on their mortgages. [The 30 mortgage was introduced in 1934](https://dqydj.com/history-30-year-mortgage-private-mortgage-insurance/) in wake of the resulting defaults.
+
+Economists, central banks, and governments have learned that deflationary spirals like this are painful so [they will do anything to avoid them](https://www.reuters.com/article/us-health-coronavirus-fed-clarida/feds-clarida-says-central-bank-has-tools-to-avoid-deflation-bbg-idUSKCN21V0VZ).
+
+As a result it seems likely that this time (as in 2009) central banks will increase [money supply](https://fred.stlouisfed.org/series/M2) (printing money), and governments [will create fiscal policies](https://www.forbes.com/sites/sarahhansen/2020/05/15/with-another-3-trillion-stimulus-package-on-the-line-heres-everything-the-government-has-done-to-rescue-the-economy-so-far/#33d06ad310e5) (spending money) in order to try to stave off deflation.
+
+While they might be able to stave off deflation, [it's unknown if they can create enough inflation](https://www.forbes.com/sites/johnmauldin/2020/04/16/bending-the-inflation-curve/#28f4b2d08c77) to reduce nominal debt loads. If inflation occurs in asset prices and wages, this effectively reduces debt loads on households.
+
+Here is an example - if you have 10% inflation, in theory your paycheck would grow 10% to keep pace, you house would become 10% more valuable, but your mortgage would still be the same fixed amount. Effectively, your debt would have been reduced 10% relative to everything else. Do this every year for 5 years and the problem is minimized. Although, [you might have other problems if you do this](https://www.washingtonpost.com/politics/2019/12/12/paul-volcker-won-his-fight-inflation-battle-regulate-big-finance-is-ongoing/).
+
+So it's likely that [central banks keep interest rates at zero](https://markets.businessinsider.com/news/stocks/federal-reserve-interest-rates-holds-near-zero-through-2022-fomc-2020-6-1029298397), do more quantitative easing, and governments do more stimulus and deficit spending. But it's very unclear what will happen as a result of all of this.
+
 ## Uncharted territory
 
 If it seems like rent is too expensive, and real estate is too expensive, and stocks are too expensive, and college is too expensive, and everything and everyone is a bit crazy right now... well I think it might be true.
 
-What do you do when everyone has borrowed as much as they can and interest rates are already at zero. Bailouts for everyone? Debt Jubilee? Mass money printing and inflation?
+What do you do when everyone has borrowed as much as they can and interest rates are already at zero? Bailouts for everyone? Debt Jubilee? Mass money printing and inflation?
 
-I don't think anybody knows where we are headed as a society now, or as a civilization, but I think it's important to explain where we are right now.
+I don't think anybody knows where we are headed as a society now, or as a civilization, but I think it's important to think about the situation we are in right now.
+
+Additional Reading:
+
+1. [Fixing the Debt Problem by Lyn Alden](https://www.lynalden.com/fixing-the-debt-problem/)
+2. [How the Economic Machine Works by Ray Dalio](https://economicprinciples.org/)
