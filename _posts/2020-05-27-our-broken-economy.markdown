@@ -19,7 +19,7 @@ I taught myself how to code and later ended up getting an associates degree afte
 
 I would have to move out there using my savings and figure it out hoping to get a job at a startup.
 
-## What the hell are these rent prices?
+## What are these crazy rent prices?
 
 What stopped me was looking at rent prices. I was paying \$500 a month for a decent apartment in my midwestern hometown slowly paying off my student loans.
 
@@ -33,9 +33,9 @@ But then later when I looked at San Francisco again, a 1 bedroom was now \$3000 
 
 But in the meantime home prices in my hometown had doubled! Sure, they went from 100k to 200k and not 500k to 1 million like in California, but because I kept thinking I would move away in the back of my mind I kept avoiding purchasing a home and "settling in".
 
-But how did they double in a matter of a few years? I look up the [inflation rate and it says it was never more than 2.1% this entire time period](https://www.usinflationcalculator.com/inflation/historical-inflation-rates/). What gives?
+But how did they double in a matter of a few years? I looked up the [inflation rate and it says it was never more than 2.1% this entire time period](https://www.usinflationcalculator.com/inflation/historical-inflation-rates/). What gives?
 
-## Why is rent so high? Why are home prices so high? What the hell?
+## Why is rent so high? Why are home prices so high? What gives?
 
 This really started to bother me so I went down a rabbit hole learning about macro economics and what has been going on lately.
 
@@ -87,15 +87,28 @@ Also, did you notice I threw in a **negative 1% mortgage**? Well, that can happe
 
 Yes, in Europe the regulators who control interest rates have been able to set them so low to avoid this painful debt deleveraging cycle for so long that they actually moved them into negative territory. At certain European banks you actually have to [pay a fee to save money in your savings account](https://www.bloomberg.com/news/articles/2019-12-03/german-banks-open-floodgates-to-negative-rates-for-all-savers).
 
+
 ## What are the consequences of avoiding deleveraging?
 
 Well, we are seeing it. We just continue to push asset prices higher and higher so that people, [companies](https://en.wikipedia.org/wiki/Corporate_debt_bubble), and [governments](https://tradingeconomics.com/united-states/government-debt-to-gdp) can take on more debt.
 
-We are so far down this rabbit hole and nobody knows where it ends. Do we just one day cancel all debts and start over? Do we try to inflate away the debt?
+We are so far down this rabbit hole and nobody knows where it ends. Do we just one day cancel all debts and start over? Do we try to inflate away the debt by printing money? Do we default? Do we try austerity? 
 
 Do we keep pushing this farther to the point where central banks start buying debt directly in order to keep the merry-go-round going?
 
 Actually, yes [we are doing that right now](https://www.federalreserve.gov/monetarypolicy/bst_recenttrends.htm) - the _buying debt_ thing, I mean.
+
+
+## Also, low interest rates encourage speculation.
+
+This is a known side effect of low interest rates. [Arguably this fueled the 2008 housing bubble](https://knowledge.wharton.upenn.edu/article/housing-bubble-real-causes/) (probably along with other government policies). Throughout recorded history [interest rates were almost always much higher](https://www.visualcapitalist.com/the-history-of-interest-rates-over-670-years/) than they are now. 
+
+Here is a nice quote from ["Manias, Panics and Crashes", 7th edition](https://amzn.to/34rKJ43) to illustrate this point historically. 
+
+> In France at the end of the Restoration and beginning of the July Monarchy - that is, between 1826 and 1832 - speculation was rife ... Landowners earned 2.25 to 3.75 percent on their assets; industrialists tried to earn 7 to 9 percent on their fixed investments, 2 to 4 percentage points more than the long-term interest rates. Merchants and speculators in raw materials sought returns in the range of 20 to 25 percent. Charles wilson noted that earlier the Dutch were converted from merchants into bankers (accused of idleness and greed); they developed habits of speculation __because of the decline in the rate of interest in Amsterdam to 2.5 percent.__ Large-scale conversions of public debt in the 1822 and 1824, and gain in 1888 led to a decline in the rate of interest and induced British investors to buy more foreign securities. Andreades observed that "When interest goes down, the English commercial world, unable to reduce its mode of life, deserts its usual business in favor of the more profitable, but on that very account more risky undertakings ... __speculation leads to disaster and must ultimately be borne by the central bank__"
+
+
+So just as in the early 1800's, that is how [the S&P just (in August 2020) set an all time high in the middle of a pandemic](https://www.cnbc.com/2020/08/21/markets-look-to-the-fed-again-to-build-on-sp-500-record-as-congress-continues-to-disappoint.html).
 
 ## The Consequences of the 2020 pandemic for small businesses.
 
@@ -136,15 +149,17 @@ As a result it seems likely that this time (as in 2009) central banks will incre
 
 While they might be able to stave off deflation, [it's unknown if they can create enough inflation](https://www.forbes.com/sites/johnmauldin/2020/04/16/bending-the-inflation-curve/#28f4b2d08c77) to reduce nominal debt loads. If inflation occurs in asset prices and wages, this effectively reduces debt loads on households.
 
-Here is an example - if you have 10% inflation, in theory your paycheck would grow 10% to keep pace, you house would become 10% more valuable, but your mortgage would still be the same fixed amount. Effectively, your debt would have been reduced 10% relative to everything else. Do this every year for 5 years and the problem is minimized. Although, [you might have other problems if you do this](https://www.washingtonpost.com/politics/2019/12/12/paul-volcker-won-his-fight-inflation-battle-regulate-big-finance-is-ongoing/).
+Here is an example - if you have 10% inflation, in theory your paycheck would grow 10% to keep pace, you house would become 10% more valuable, but your mortgage would still be the same fixed amount. Effectively, your debt would have been reduced 10% relative to everything else. Do this every year for 5 years and the problem is minimized. Although, [you might have other problems if you do this](https://www.washingtonpost.com/politics/2019/12/12/paul-volcker-won-his-fight-inflation-battle-regulate-big-finance-is-ongoing/). Among other things it would destroy the returns of bond holders which is how many many retirees fund their retirements. 
 
-So it's likely that [central banks keep interest rates at zero](https://markets.businessinsider.com/news/stocks/federal-reserve-interest-rates-holds-near-zero-through-2022-fomc-2020-6-1029298397), do more quantitative easing, and governments do more stimulus and deficit spending. But it's very unclear what will happen as a result of all of this.
+So it's likely that [central banks keep interest rates at zero](https://markets.businessinsider.com/news/stocks/federal-reserve-interest-rates-holds-near-zero-through-2022-fomc-2020-6-1029298397), do more quantitative easing, and governments do more stimulus and deficit spending. 
+
+But it's very unclear what will happen as a result of all of this. We did the same thing post 2008 and [saw little CPI inflation](https://fred.stlouisfed.org/series/FPCPITOTLZGUSA), but [asset prices sure did skyrocket](https://fred.stlouisfed.org/series/CSUSHPINSA). What will happen this time in the midst of both supply and demand shocks and an economy that is much more indebted and much less healthy overall? 
 
 ## Uncharted territory
 
-If it seems like rent is too expensive, and real estate is too expensive, and stocks are too expensive, and college is too expensive, and everything and everyone is a bit crazy right now... well I think it might be true.
+If it seems like rent is too expensive, and real estate is too expensive, and stocks are too expensive, and college is too expensive, and everything and everyone is a bit crazy right now... well I think it might be a bit true.
 
-What do you do when everyone has borrowed as much as they can and interest rates are already at zero? Bailouts for everyone? Debt Jubilee? Mass money printing and inflation?
+What do you do when everyone has borrowed as much as they can and interest rates are already at zero? [Well, we might have a solvency crisis rather than a liquidity crisis](https://www.wsj.com/articles/is-this-a-liquidity-crisis-or-a-solvency-crisis-it-matters-to-fed-11588239001). How do you solve that? Bailouts for everyone? Debt Jubilee? Mass money printing and inflation?
 
 I don't think anybody knows where we are headed as a society now, or as a civilization, but I think it's important to think about the situation we are in right now.
 
@@ -152,3 +167,4 @@ Additional Reading:
 
 1. [Fixing the Debt Problem by Lyn Alden](https://www.lynalden.com/fixing-the-debt-problem/)
 2. [How the Economic Machine Works by Ray Dalio](https://economicprinciples.org/)
+3. [WTF happened in 1971](https://wtfhappenedin1971.com/)
