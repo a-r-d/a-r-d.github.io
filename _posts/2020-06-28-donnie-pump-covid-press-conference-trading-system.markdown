@@ -5,7 +5,7 @@ date: 2020-06-28
 layout: post
 slug: 2020-06-28-donnie-pump-covid-press-conference-trading-system
 title: "\"Donnie Pump\" a Presidential Press Conference Trading System."
-description: A crucial mistake is selling people something they need, not what they want. Wants are what people seek out to purchase.
+description: For a while it seemed like everyday in March of 2020 there was a whitehouse press conference. This is an experiment building a system to help trade against this. 
 ---
 
 ![Screencap of the March 13th 2020 Rose Garden Press Conference](/images/blog/press-conf-screenshot-1.png){: .center-image }
