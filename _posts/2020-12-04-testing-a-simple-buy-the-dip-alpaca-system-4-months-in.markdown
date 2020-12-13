@@ -21,7 +21,7 @@ For my next experiment I wanted to build something I could just set loose in the
 
 So what is the simplest thing that can work and probably not go wrong? That's right - I decided on a "Buy The Dip" strategy. 
 
-So here is was I did. I programmed a very simple lambda function (I used Serverless framework and deployed to ASW Lambda) that would place limit orders below the current price of a given stock when triggered. 
+So here is was I did. I programmed a very simple lambda function (I used Serverless framework and deployed to AWS Lambda) that would place limit orders below the current price of a given stock when triggered. 
 
 ## The details:
 
