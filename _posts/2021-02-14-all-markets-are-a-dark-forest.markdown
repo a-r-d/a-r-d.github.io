@@ -1,9 +1,9 @@
 ---
 author: Aaron Decker
 comments: true
-date: 2020-02-14
+date: 2021-02-14
 layout: post
-slug: 2020-02-14-all-markets-are-a-dark-forest
+slug: 2021-02-14-all-markets-are-a-dark-forest
 title: All Markets Are A Dark Forest
 description: Examples of the Dark Forest idea of markets in both the stock market and in crypto markets. 
 ---
