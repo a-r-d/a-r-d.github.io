@@ -62,7 +62,7 @@ You could not have afforded to "miss" electricity. You could not have afforded t
 
 But now, things are different. Because of computing technological trends are happening much quicker. Essentially every technology ever invented can be re-invented. And as artificial intelligence gets better, these re-inventions can be yet again iteratively re-invented. 
 
-So taking these bets on emergining technologies is now easier: you can bet on multiple trends in a single lifetime because the length of technology trends has been reduced from 100 years to 20 or even 10 years. 
+So taking these bets on emerging technologies is now easier: you can bet on multiple trends in a single lifetime because the length of technology trends has been reduced from 100 years to 20 or even 10 years. 
 
 And you have to take a lot of bets because many of them (most of them?) will not end up making you money. But the ones that do should reward you with huge multiples. __So maybe this is the first time in history you can do this strategy in a single life time__. 
 
