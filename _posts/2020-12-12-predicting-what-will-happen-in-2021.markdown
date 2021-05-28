@@ -3,8 +3,8 @@ author: Aaron Decker
 comments: true
 date: 2020-12-12
 layout: post
-slug: 2020-12-12-predicting-what-will-happen-in-20201
-title: Predicting What Will Happen in 20201
+slug: 2020-12-12-predicting-what-will-happen-in-2021
+title: Predicting What Will Happen in 2021
 description: At this point the possibilities diverge so wildly it really is quite fascinating. 
 ---
 
