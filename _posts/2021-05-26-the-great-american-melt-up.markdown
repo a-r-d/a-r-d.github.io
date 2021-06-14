@@ -3,7 +3,7 @@ author: Aaron Decker
 comments: true
 date: 2021-05-26
 layout: post
-slug: 2021-05-10-the-great-american-melt-up
+slug: 2021-05-26-the-great-american-melt-up
 title: The Great American Melt Up
 description: I talk about the last 5 years and next 5 years looking at it through the lens of the 1920s and 1930s.
 ---
