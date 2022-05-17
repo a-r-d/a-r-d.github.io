@@ -18,7 +18,7 @@ How about during the pandemic? Just to name one example of many - how enlighteni
 
 ## Forces of Decentralization
 
-In the book Sobel's Daemon says it's trying to build a decentralized alternative to civilization before it collapses. What are some of thw strong forces of decentralization now? I'd argue there are several but they all stem from the internet.
+In the book Sobel's Daemon says it's trying to build a decentralized alternative to civilization before it collapses. What are some of the strong forces of decentralization now? I'd argue there are several but they all stem from the internet.
 
 The ones in particular I will single out are cryptocurrency networks. And it really only makes sense to talk about the very strongest crytpocurrency networks. Their value abides by [Metcalfe's Law](https://en.wikipedia.org/wiki/Metcalfe's_law) in many ways and the 2 networks that are very large in terms of node count and total value are Bitcoin and Ethereum.
 
