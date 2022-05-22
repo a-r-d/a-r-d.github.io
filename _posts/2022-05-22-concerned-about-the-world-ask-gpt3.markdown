@@ -4,7 +4,7 @@ comments: true
 date: 2022-05-22
 layout: post
 slug: 2022-05-22-concerned-about-the-world-ask-gpt3
-title: Concerned aboout the world? Ask GPT-3!
+title: Concerned about the world? Ask GPT-3!
 description: What does the AI oracle completion API have to say about the current state of things in the world?
 ---
 
@@ -59,6 +59,8 @@ here is what the computer god GPT-3 had to say:
 > 5. stockpile supplies. If things start to unravel, it will be important to have supplies on hand. This could include food, water, medicine, and other essential items.
 >
 > 6. stay informed. It is important to stay up-to-date on what is happening in the world. This will help you to be prepared for whatever may come.
+
+![prepare for war mini dall-e](/images/blog/dalle/prepare-for-war-dall-e-mini.png){: .center-image }
 
 ### Third Response
 
