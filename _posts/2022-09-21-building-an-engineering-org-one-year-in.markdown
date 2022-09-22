@@ -4,7 +4,7 @@ comments: true
 date: 2022-08-14
 layout: post
 slug: 2022-09-21-building-an-engineering-org-one-year-in
-title: Building a (software) engineering organization one year in
+title: Building a (software) engineering organization one year in.
 description: Lessons learned, pain points, and my developing management philosophy.
 ---
 
@@ -34,7 +34,7 @@ The KPIs, OKRs, and North Star metrics are easy to make fun of (especially when 
 
 ## Minimizing arguments and creating clarity
 
-If you tell your team something is a priority one day, and then tell them something else is a priority the next day you invite argument and push back. This is a huge mistake, and the tone, the priorities and direction needs to be both crystal clear and consistent.
+If you tell a direct report that **infrastructure change X** is a priority one day, and then tell them **user feature Y** is a priority the next day you invite argument and push back. This is a huge mistake, and the tone, the priorities and direction needs to be both crystal clear and consistent.
 
 I'm writing this both as an observation of what works and as a goal state (it's incredibly hard to stay consistently on message as a leader but it's hugely undermining to your authority if you do not).
 
@@ -48,7 +48,7 @@ I'm still learning the ins and outs of this.
 
 ## Creating consistency
 
-One of my great regrets is that I did not use a very strict framework with the codebase that has a lot of clear documentation (I used express and laid down very little structure, but I should have used e.g. NestJS or Ruby On Rails or Spring Boot). Right now I'm considering how to transition to something that extremely clearly defined. Why?
+One of my great regrets is that I did not use a very strict framework with the codebase that has a lot of clear documentation (I used Express and laid down very little structure, but I should have used e.g. NestJS or Ruby On Rails or Spring Boot). Right now I'm considering how to transition to something that extremely clearly defined and tighten up the architecture. Why?
 
 Because we keep doing code reviews that bleed into architectural discussions and stylistic discussions. It's my observation that these are poisonous to productivity and getting PRs moving and merged.
 
@@ -71,10 +71,10 @@ I once worked on a team of 8 where **one single person was a hardcore TDD adhere
 
 Code reviews block the merging of code and flow of work. They should be done to ensure code quality but they need to be limited in scope due to how much they impede velocity, so put simply: minimize the stuff that can be argued about by having it decided before hand.
 
-I'm still evolving my thinking on this but I have internal debates all the time about pair programming Vs independent work + strict code reviews. You need a 2nd set of eyes on the code to ensure quality but you want it to be as efficient as possible. I'm still of an opinion that pair programming 100% of the time is an gross misuse of resources. But it's certainly not just 20% of the time...
+I'm still evolving my thinking on this but I have internal debates all the time about _pair programming_ Vs _independent work + strict code reviews_. You need a second set of eyes on the code to ensure quality but you want it to be as efficient as possible. I'm still of an opinion that pair programming 100% of the time is a gross misuse of resources. But it's certainly not a waste just 20% of the time...
 
 ## In summary
 
-As a leader you are responsible for creating the culture and organization in which your teams of engineers will swim every day. It's hard to create structure, expectations, clarity and consistency. You are by definition brining order to chaos and chaotic elements will creep in and continually need to be fought back against. You are fighting entropy and it's not easy.
+As a leader you are responsible for creating the culture and organization in which your teams of engineers will swim every day. It's hard to create structure, expectations, clarity, and consistency. You are by definition brining order to chaos and chaotic elements will creep in and continually need to be fought back against. You are fighting entropy and it's not easy.
 
-But expecting everyone to completely self-direct (especially in a new organization) is a fools errand. The only time this works is if you have personal relationships which each member and there is an existing loyalty and set of expectations. Building a hierarchy from scratch is whole lot harder. It's probably why a lot of startups that just seem to organically work have a "bro culture" because the founders just hired all their friends and there were already working relationships and expectations.
+But expecting everyone to completely self-direct (especially in a new organization) is a fools errand. The only time this works is if you have personal relationships which each member and there is an existing loyalty and set of expectations. Building a new hierarchy from scratch is whole lot harder.
