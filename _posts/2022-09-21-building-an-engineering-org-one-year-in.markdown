@@ -75,6 +75,6 @@ I'm still evolving my thinking on this but I have internal debates all the time 
 
 ## In summary
 
-As a leader you are responsible for creating the culture and organization in which your teams of engineers will swim every day. It's hard to create structure, expectations, clarity, and consistency. You are by definition brining order to chaos and chaotic elements will creep in and continually need to be fought back against. You are fighting entropy and it's not easy.
+As a leader you are responsible for creating the culture and organization in which your teams of engineers will swim every day. It's hard to create structure, expectations, clarity, and consistency. You are by definition bringing order to chaos and chaotic elements will creep in and continually need to be fought back against. You are fighting entropy and it's not easy.
 
 But expecting everyone to completely self-direct (especially in a new organization) is a fools errand. The only time this works is if you have personal relationships which each member and there is an existing loyalty and set of expectations. Building a new hierarchy from scratch is whole lot harder.
