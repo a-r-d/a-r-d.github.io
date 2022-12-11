@@ -1,7 +1,7 @@
 ---
 author: Aaron Decker
 comments: true
-date: 2022-08-14
+date: 2022-09-21
 layout: post
 slug: 2022-09-21-building-an-engineering-org-one-year-in
 title: Building a (software) engineering organization one year in.
