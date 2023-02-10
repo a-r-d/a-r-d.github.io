@@ -40,15 +40,15 @@ There is a balance here: we are not making medical devices or rockets, but we ar
     2. Do anything with money and people will try to scam / steal.
 7. **Prioritize visibility and metrics**. 
     1. Ship code with good visibility, when you ship new code verify it works and have ways to easily check that it’s functioning as expected.
-    2. Have alerts if things go wrong
-    3. Log generously so you can proactively solve issues when they crop up
+    2. Have alerts if things go wrong.
+    3. Log generously so you can proactively solve issues when they crop up.
     4. design system in such a way that you can debug and recover from issues and have some kind of understanding of what went wrong.
 8. **Ship features regularly**
-    1. Ship features that work
-        1. If your code doesn’t work, it should fail gracefully
-            1. If it can’t fail gracefully, it had better alert the engineering team
+    1. Ship features that work.
+        1. If your code doesn’t work, it should fail gracefully.
+            1. If it can’t fail gracefully, it had better alert the engineering team.
 9. **Prefer shipping incrementally and often to shipping big features all at once less often.**
-    1. We want to reduce the length of the feedback cycle, recognize issues immediately and reduce the risk associated with big sweeping changes all at once
+    1. We want to reduce the length of the feedback cycle, recognize issues immediately and reduce the risk associated with big sweeping changes all at once.
     2. Migrate incrementally, think about how you will interrupt existing customers, affect their expectations, and our promises to them.
     3. If we have to break a contract or expectation, it needs to be discussed with product and support teams to understand and anticipate blowback.
 
