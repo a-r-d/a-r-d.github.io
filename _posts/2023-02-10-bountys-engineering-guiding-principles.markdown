@@ -1,9 +1,9 @@
 ---
 author: Aaron Decker
 comments: true
-date: 2023-01-10
+date: 2023-02-10
 layout: post
-slug: 2023-01-10-bountys-engineering-guiding-principles
+slug: 2023-02-10-bountys-engineering-guiding-principles
 title: Bounty's Engineering Org Guiding Principles
 description: Some guidelines I wrote down to help introduce new engineers to how I want the Bounty team to operate and ship code for the business.
 ---
