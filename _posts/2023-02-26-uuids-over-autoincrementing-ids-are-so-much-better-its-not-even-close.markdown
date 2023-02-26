@@ -10,23 +10,27 @@ description: A year and a half ago we started building a startup and I chose to 
 
 Back in Nov 2021 when I started building [Bounty's backend architecture](https://www.bounty.co/) I chose to use UUIDs for all of our primary keys in our postgres database that powers the majority of the current application and the benefits have been remarkable.
 
+As recently as earlier in 2021 I had worked on large system dealing with money using integer Ids in a RDMS and it made me very nervous seeing all the things that could go wrong...
+
 ## First the drawbacks.
 
-For many years people have been taught in school to use Bigint autoincrementing Ids as primary keys. The first time I remember seeing something different was when I use Mongo for the first time back in 2013. They had this object id system that was a random string. I believe this was done so you could shard the database easily. It's hard to have multiple writers into a collection if they all have to coordinate who gets to increment the integer for the primary key next.
+For many years people have been taught in school to use `BigInt` autoincrementing Ids as primary keys. The first time I remember seeing something different was when I used Mongo for the first time back in 2013. They had this object id system that was a random string. I believe this was done so you could shard the database easily across writer instances. It's hard to have multiple writers into a collection if they all have to coordinate who gets to increment the integer for the primary key next so that was the solution.
 
 But there are drawbacks. A UUID looks like this: `7c82deda-9461-4128-af05-d8c3acd16c47`
 
-Obviously, it's larger than an integer, and takes some CPU time to generate it randomly. You also will need to have a `createAt` timestamp field and index that if you want to order by time, whereas with an autoincrementing integer primary key you are going be able to simply sort on the primary key.
+Obviously, it's larger than an integer, and takes some CPU time to generate it randomly. You also will need to have a `createAt` timestamp field and index that field if you want to order by time, whereas with an autoincrementing integer primary key you are going be able to simply sort on the primary key.
 
 But aside from the efficiency of an integer PK, thats where the benefits end imo.
 
-## Security benefit - no id traversal attacks
+## Security benefit - no id incrementing attacks
 
-One of the most common vulnerabilities in web applications is id traversal. You look at your browser and you see it say `/customer/12345/invoice/23399430` what happens if you modify this and hit `/customer/12345/invoice/23399431`? Well, if your developer didn't think about this you can see somebody's elses invoice.
+One of the most common vulnerabilities in web applications is object id incrementing. Officially, this vulnerability [is called "IDOR" - Insecure Direct Object Reference](https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html). 
+
+Example: You look at your browser and you see it say `/customer/12345/invoice/23399430` what happens if you modify this and hit `/customer/12345/invoice/23399431`? Well, if your developer didn't think about this you can see somebody's elses invoice.
 
 How about doing that with a UUID? You can't. The keyspace is too large to guess which others might exist.
 
-This vulnerability should never exist in the first place if you have careful programmers, but trust me it's all over the place in modern web apps.
+This vulnerability should never exist in the first place if you have careful programmers (should always check permissions on object access in APIs), but trust me it's all over the place in modern web apps.
 
 ## Operations benefit - no copy paste mistakes
 
@@ -34,7 +38,7 @@ We happen to have a lot of customers that do weird things and file support ticke
 
 Let me tell you - your ops team is copy pasting ids and doing stuff in your internal dashboards you made them (we have like 40 retool apps 😂) and they are going to make mistakes because they are human.
 
-It's totally possible to make mistake if they mix up `userId` value 10001 with `orderId` value 10001. But if it's UUIDs? No they can't no overlap.
+It's totally possible to make a mistake if they mix up `userId` value 10001 with `orderId` value 10001. But if it's UUIDs? No they can't no overlap.
 
 You need 2.71 quintillion UUID generations for `1ccccb76-206f-4abc-930b-09ee47764874` to collide with that same UUID in another table.
 
