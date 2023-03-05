@@ -8,7 +8,7 @@ title: UUIDs are so much better than autoincrementing ids and it's not even clos
 description: A year and a half ago we started building a startup and I chose to use UUIDs as primary keys and it turned out to be such a good choice.
 ---
 
-Back in Nov 2021 when I started building [Bounty's backend architecture](https://www.bounty.co/) I chose to use UUIDs for all of our primary keys in our postgres database that powers the majority of the current application and the benefits have been remarkable.
+Back in Nov 2021 when I started building [Bounty's backend architecture](https://www.bounty.co/) I chose to use UUIDs (V4) for all of our primary keys in our postgres database that powers the majority of the current application and the benefits have been remarkable.
 
 As recently as earlier in 2021 I had worked on large system dealing with money using integer Ids in a RDMS and it made me very nervous seeing all the things that could go wrong...
 
