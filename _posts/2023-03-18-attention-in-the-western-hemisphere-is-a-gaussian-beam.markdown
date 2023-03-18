@@ -12,9 +12,9 @@ I was recently reviewing some slides my brother put together for a class on lase
 
 If you don't know the concept, I'll simply show the slides here:
 
-![slide 1 gaussian beam](/images/blog/lasers/slide-1-gaussian-beam.png)
+![slide 1 gaussian beam](/images/blog/lasers/slide-1-gaussian-beam.png){: .center-image }
 
-![slide 2 gaussian beam](/images/blog/lasers/slide-2-gaussian-beam.png)
+![slide 2 gaussian beam](/images/blog/lasers/slide-2-gaussian-beam.png){: .center-image }
 
 ## Attention is a Gaussian Beam
 
@@ -22,7 +22,9 @@ This was making me think about how attention in the Western hemisphere feels to 
 
 It's a metaphor for how the media works, research funding at universities, regime politics, VC startup funding (now we only fund "AI" projects 🫠), etc. I'm not certain that it's limited to the Western hemisphere either, that's simply my experience.
 
-![I support the current thing group meme](/images/blog/memes/i-support-the-current-thing-npc-group.jpg)
+I will omit the recently experienced list of "current things" here, it's too exasperating for me type them all out here.
+
+![I support the current thing group meme](/images/blog/memes/i-support-the-current-thing-npc-group.jpg){: .center-image }
 
 ## Organization focus is a Gaussian Beam
 
@@ -36,4 +38,6 @@ You may have noticed there are a lot of for-profit organizations lately that voc
 
 I will simply leave you with this meme. Where will the Gaussian Beam be brought to focus next?
 
-![I support the current thing meme single](/images/blog/memes/i-support-the-current-thing-single.jpg)
+![I support the current thing meme single](/images/blog/memes/i-support-the-current-thing-single.jpeg){: .center-image }
+
+![gaussian beam surface plot](/images/blog/lasers/Gaussian-beam_intensity_surfaceplot.png){: .center-image }
