@@ -20,13 +20,13 @@ If you don't know the concept, I'll simply show the slides here:
 
 This was making me think about how attention in the Western hemisphere feels to me like a Gaussian Beam. There is only one true point of focus and when the "current thing" is moved into that focal point it is undeniable. The power is at it's maximum and every member of society is bombarded under the energetic intensity. But _there is only one beam_ and when it moves on the previous thing is left completely out of focus, illuminated only by the diffusion of the scattered light reflected off of the next current thing.
 
-![gaussian beam surface plot](/images/blog/lasers/Gaussian-beam_intensity_surfaceplot.png){: .center-image .max-w-700 }
+![gaussian beam surface plot](/images/blog/lasers/Gaussian-beam_intensity_surfaceplot.png){: .center-image .max-w-600 }
  
 It's a metaphor for how the media works, research funding at universities, regime politics, VC startup funding (now we only fund "AI" projects 🫠), etc. I'm not certain that it's limited to the Western hemisphere either, that's simply my experience.
 
 I will omit the recently experienced list of "current things" here, it's too exasperating for me type them all out here.
 
-![I support the current thing group meme](/images/blog/memes/i-support-the-current-thing-npc-group.jpg){: .center-image }
+![I support the current thing group meme](/images/blog/memes/i-support-the-current-thing-npc-group.jpg){: .center-image .max-w-500 }
 
 ## Organizational focus is a Gaussian Beam
 
@@ -40,4 +40,4 @@ You may have noticed there are a lot of for-profit organizations lately that voc
 
 I will simply leave you with this meme. Where will the Gaussian Beam be brought to focus next?
 
-![I support the current thing meme single](/images/blog/memes/i-support-the-current-thing-single.jpeg){: .center-image .max-w-600 }
+![I support the current thing meme single](/images/blog/memes/i-support-the-current-thing-single.jpeg){: .center-image .max-w-500 }
