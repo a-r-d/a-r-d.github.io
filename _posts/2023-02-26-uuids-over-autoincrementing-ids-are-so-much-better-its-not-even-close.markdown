@@ -18,7 +18,7 @@ For many years people have been taught in school to use `BigInt` autoincrementin
 
 But there are drawbacks. A UUID looks like this: `7c82deda-9461-4128-af05-d8c3acd16c47`
 
-Obviously, it's larger than an integer, and takes some CPU time to generate it randomly. You also will need to have a `createAt` timestamp field and index that field if you want to order by time, whereas with an autoincrementing integer primary key you are going be able to simply sort on the primary key.
+Obviously, it's larger than an integer, and takes some CPU time to generate it randomly. You also will need to have a `createdAt` timestamp field and index that field if you want to `order by` time, whereas with an autoincrementing integer primary key you are going be able to simply sort on the primary key.
 
 But aside from the efficiency of an integer PK, thats where the benefits end imo.
 
