@@ -38,7 +38,7 @@ That's basically the gist of things now. I don't make the rules I'm just telling
 
 ## You can't make people love you without making others hate you
 
-If you watch Elon Musk everything he does now evokes strong emotions. People love or hate basically everything he does.
+If you watch Elon Musk everything he does now arouses strong emotions. People love or hate basically everything he does.
 
 The simple fact that **some** people love a thing he did makes **others** hate it.
 
@@ -60,11 +60,11 @@ I'm not saying you need to make people hate you. I'm saying if they do, what of 
 
 ## Trump recognized this, you can't deny it
 
-If you look at Trump, he used the same playbook. The polarization he evokes is remarkable in its depth. Almost every person in the country has a visceral reaction of either love or hate. I think even a majority of people might have a negative reaction to him, but it doesn't matter. Not that many people vote, so you only need 60 to 70 million people out of the 300+ million to love you. That seems doable, and he did it.
+If you look at Trump, he used the same playbook. The polarization he elicits is remarkable in its depth. Almost every person in the country has a visceral reaction of either love or hate. I think even a majority of people might have a negative reaction to him, but it doesn't matter. Not that many people vote, so you only need 60 to 70 million people out of the 300+ million to love you. That seems doable, and he did it.
 
 I would even argue that this in fact the only way to succeed as a politician in the current era. You must be evocative and speak to a very specific audience who will love you. Broad appeal is meaningless (worse - it's boring), TV is dead, if you are aren't going viral on a controversy you are screwed.
 
-Case in point: I am watching [Vivek Ramaswamy's](https://twitter.com/VivekGRamaswamy) with interest since his campaign announcement one month ago, he is leaning deeply into controversial issues and quickly being talked about more than I would have expected. He's doing the Trump playbook (e.g. - he just said we should give a gun to every Taiwanese family 🤣).
+Case in point: I am watching [Vivek Ramaswamy](https://twitter.com/VivekGRamaswamy) with interest since his campaign announcement one month ago, he is leaning deeply into controversial issues and quickly being talked about more than I would have expected. He's doing the Trump playbook (e.g. - he just said we should give a gun to every Taiwanese family 🤣).
 
 ## The lesson
 
