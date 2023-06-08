@@ -14,9 +14,9 @@ I have been dabbling in machine learning for years now, and when I was doing cor
 
 ## What can you do with 10k TikTok videos?
 
-We still do human-in-the-loop reviews of the titktok videos. Right now it's not a large a expense and it's fairly low skilled but it's complex enough it's hard to make some algorithm to do it.
+We still do human-in-the-loop reviews of the titktok videos. Right now it's not a large expense and it's fairly low skilled but it's complex enough that it's hard to make some algorithm to do it without some incredible massive training set (multi modal GPT-4 will be a different story but it's not out yet).
 
-Ideally though, of course I would like to use machine learning to handle video reviews.
+Ideally though, of course I would like to use machine learning to handle video reviews, but it's not something I prioritized because I knew the current state of publicly accessible video analysis models is not good.
 
 I'm going to get to [saymore.ai](https://saymore.ai) eventually, but I need to explain how we got there.
 
@@ -44,7 +44,7 @@ OpenAI provides a special API designed for cheaply turning text into high dimens
 
 Specifically the "high dimensional semantic vectors" producd by the openAI `text-embedding-ada-002` model ([here](https://platform.openai.com/docs/guides/embeddings)) which allows a user to bulk submit sets of text and it returns vectors for each set of text with 1536 dimensions.
 
-When use with a vector database (e.g. [Pinecone](https://www.pinecone.io/) or [Weaviate](https://weaviate.io/)) you can do similarity searches by comparing vectors using cosine similarity (or some other strategy) and then you because these are semantic vectors (meaning relationships are based on the actual meaning of words and phrases) you are able do searches that pull out vectors that **mean** similar things.
+When used with a vector database (e.g. [Pinecone](https://www.pinecone.io/) or [Weaviate](https://weaviate.io/)) you can do similarity searches by comparing vectors using cosine similarity (or some other strategy) and then you because these are semantic vectors (meaning relationships are based on the actual meaning of words and phrases) you are able do searches that pull out vectors that **mean** similar things.
 
 Unlike simple keyword searches, doing searches on semantic vector datasets can be deeply satisfying in how it can pull back strikingly relevant results based on the meaning of words, rather than just dumbly matching keywords.
 
@@ -62,7 +62,7 @@ Okay, so I got this subscription. It's called Bokksu. It looks really, really, r
 
 ## Back to TikTok videos...
 
-So getting back to TikTok videos I actaully skipped a step I should tell you about. I also built a classifier using GPT-3.5-turbo to roughly classify my videos that looks something like this:
+So getting back to TikTok videos I actaully skipped a step I should tell you about. I also built a classifier using GPT-3.5-turbo to roughly classify my video transcript text that looks something like this:
 
 ```
 You are going to classify transcribed audio from TikTok data. I will pass you transcribed text that has been taken directly from tiktok videos and you will classify by categorizing using the rules defined below.
@@ -128,7 +128,7 @@ The output for the above transcript from that classifier looks like this:
 
 ## What else can you do with the vectors?
 
-So going back to the vectors, I have classified the transcripts and I know which ones contain "PRODUCT_FEEDBACK".
+So going back to the vectors, I have classified the transcripts and I know which ones contain "PRODUCT_FEEDBACK" or "RECOGNIZED_DESCRIPTION" which are both useful to my analysis.
 
 I can do now do what people are calling ["generative questioning and answering"](https://docs.pinecone.io/docs/examples) with my dataset. Meaning that I can ask a question, convert that to a vector and then semantically search for documents related to my question, and then feed the entire context into GPT to get some kind of analysis about my question from the relevant documents.
 
