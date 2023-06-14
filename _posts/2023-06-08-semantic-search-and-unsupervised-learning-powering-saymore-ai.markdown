@@ -290,6 +290,21 @@ The clusters could be explained as followes:
 
 ![optics clusters of feedbacks](/images/blog/saymore/optics-clusters-feedback.png)
 
+### Productionizing w/ GPT summaries
+
+Finally, I'm going to show you what it looks like productionized in Saymore.
+
+You can see the "name" field, which is the GPT summary. The prompt looks like this:
+
+```
+You will be asked to summarize the topics of the following groups of user feedbacks. Please provide a short name for each of groups between 1-6 words based on the content.
+You must return a single JSON formatted list of strings (Array<string>) with the same length as the number of groups. There are ${n} groups.
+```
+
+I get GPT to return JSON so I can easily parse and assign these to the correct cluster.
+
+![saymore cluster names](/images/blog/saymore/saymore-cluster-names.png)
+
 ## What else can you do with the semantic vectors of product feedback?
 
 [Saymore](https://saymore.ai), as a product is still in development. We are building an internal version now to dogfood and help us to improve Bounty, but I am so interested in applying this technology to different software applications.
