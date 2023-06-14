@@ -199,8 +199,99 @@ Here it is in pictures:
 
 ![asking for insights](/images/blog/saymore/saymore-responses-1.png)
 
+## Surfacing Trends
+
+One of the very frustrating things observing users attempting to interact with generative to Q&A is that they will try to ask questions like:
+
+1. What is the biggest complaint?
+2. What the is the most important feature to work on?
+3. What is the most frequently mentioned issue?
+
+Now, these are perfectly reasonable questions to ask, however they are in fact to a large degree **quantitative** questions and not **qualitative** questions.
+
+The problem here is that if you feed only a few relevant responses (snippets of text) into a system of this type you are not going to be able to answer a quantitive question in this manner, its just not the correct approach.
+
+What you really want to do is surface trends like so:
+
+![feedback trends](/images/blog/saymore/saymore-feedback-trend-mockup.png)
+
+## Using unsupervised learning (clustering)
+
+I will outline a process I have been doing to handle trying to surface trends in a more quantitive manner, which does help with the generative Q&A problem but it's just a start.
+
+1. Pull out every vector withing a time range / filter range
+2. Do PCA to reduce dimensionality on the vectors (I was trying like n=10)
+3. Run K-means (pick a number of clusters like n / 4 but vary based on your data)
+4. Do avg silhouette score of each cluster and rank by this (filter out low n clusters)
+5. Take the text of each cluster and feed it into GPT for classification, and ask it to "summarize"
+6. Display each summarized result with ranking of silhouette score descending
+
+This gives you something pretty close to a "trending" result.
+
+The iffy parts are the following: reducing dimensionality loses a lot of data, and picking the number of clusters for the data is very data dependent.
+
+Fortunatly, I did some experiments with different clustering algorithms and I found that some density based algorithsm like [OPTICS](https://en.wikipedia.org/wiki/OPTICS_algorithm) yielded some better results.
+
+Experimentally, they seem to be superior for this task because of the following reasons:
+
+- the algorithm chooses the number clusters based on your tuning of the sensitivity
+- they seem to tolerate high-dimensional data better so you dont need to do PCA.
+
+Doing PCA on high dimensional semantic vectors means you are tossing the majority of the data out, and given that semantic vectors store many complex relationships in the high dimensional space, I don't know how well this will work in production (although the K-Means version did reasonably well in my limited testing).
+
+## Looking at results of clustering
+
+What I'll do next is show you some results at various points of the steps above.
+
+### A K-Means cluster (using PCA & silhouette score)
+
+First, I will show you a clustering of results at step 4 and show you that it appears that generally related results have been clustered together. We could call this cluster "suggestions or improvements around compensation".
+
+![cluster of feedback improvements](/images/blog/saymore/saymore-pca-kmeans-cluster-improvements.png)
+
+I think I should show you another one, which grouped all of the feedback about Blendjet together on here. Where did this data come from? We collected it as an experiment inside of the Bounty creators app. Many of our users were confused and thought we were asking about the e-com brand (who is **our** customer) but thats a whole other conversation.
+
+The relevant parameters btw are:
+
+```python
+# 9 gives good results vs perf with a few hundred results.
+pca = PCA(n_components=9)
+embeddings = pca.fit_transform(embeddings)
+
+# Decide on the number of clusters (you may need to adjust this)
+num_clusters = math.floor(len(rows) / 5)
+
+# Perform k-means clustering
+kmeans = KMeans(n_clusters=num_clusters, random_state=0).fit(embeddings)
+
+```
+
+![cluster of blendjet people that are happy](/images/blog/saymore/pca-kmeans-blendjet-cluster.png)
+
+### Some results using OPTICS
+
+Next, I want to show you optics which does give interesting results.
+
+I think you will see from the below screenshot that the clusters are quite good, and you can see 111 unclustered documents (which is high but you can tune the tolerance here). The algorithm choses the number of clusters based on the parameters:
+
+```python
+# Apply OPTICS
+optics = OPTICS(min_samples=3, xi=0.0001, min_cluster_size=0.0001)
+optics.fit(embeddings)
+```
+
+The clusters could be explained as followes:
+
+1. complaints about returning products (Again, not our customers but 🤷)
+2. people explainging why they didnt post
+3. delivery issues (again we are running a platform so not much we can do 😢)
+4. feedback about Bounty itself
+5. people talking about running out of time to upload videos
+
+![optics clusters of feedbacks](/images/blog/saymore/optics-clusters-feedback.png)
+
 ## What else can you do with the semantic vectors of product feedback?
 
-I'll have another blog post up soon about more things you can do. There are ways to use unsupervised learning on the vectors to surface and visualize trends is all I will say for now.
+[Saymore](https://saymore.ai), as a product is still in development. We are building an internal version now to dogfood and help us to improve Bounty, but I am so interested in applying this technology to different software applications.
 
-[Saymore](https://saymore.ai), as a product is still in development. We are building an internal version now to dogfood and help us to improve Bounty, but I am so interested in applying this technology to so many different software applications. If you want some help with some of these machine learning / AI applications feel free to reach out!
+If you want some help with some of these machine learning / AI applications feel free to reach out! My contact info / LinkedIn is on the footer of this page or you can use the form on the front page.
