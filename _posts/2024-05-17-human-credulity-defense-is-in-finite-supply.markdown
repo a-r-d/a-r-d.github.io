@@ -28,9 +28,9 @@ Now, the correct and safe way to approach this is the following: when you read s
 <br />
 
 
-It also seems wrong to treat everything written as hostile (or simply false). It’s usually not, but so frequently it is you should not default to credulity. This is probably true for any kind of media, including books!
+It also seems wrong to treat everything written as hostile (or simply false). It’s usually not, but so frequently it is you should not default to trust and belief. This is probably true for any kind of media, including books!
 <br />
-
+<br />
 
 The thing I have noticed about short-form video in particular is the **rate** of consumption (Instagram Reels, YouTube Shorts, TikTok, Facebook Shorts). It’s not that the users are on social media. It’s that the users are on social media for hours at a time, watching 5-second videos and consuming thousands of pieces of content in a short period of time. You have probably seen people do it: sitting catatonic & watching videos, endlessly scrolling for hours at a time.
 <br />
@@ -38,7 +38,7 @@ The thing I have noticed about short-form video in particular is the **rate** of
 
 If you’ve read “Infinite Jest,” then “The Samizdat” must inevitably come to mind.
 <br />
-
+<br />
 
 My hypothesis is that the rate of consumption diminishes the human credulity filter.
 <br />
@@ -52,15 +52,15 @@ Put another way: **The faster you consume content, the less you are able to crit
 
 [Decision fatigue](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6119549/) is a very well-known phenomenon, so I believe this observation is not much more than a very specific manifestation of it.
 <br />
-
+<br />
 
 Couple decision fatigue with the known “illusory truth effect” mentioned above, and you have a potent effect of mental programming.
 <br />
-
+<br />
 
 I will not go into specific examples because no matter how I present them, they will be taken politically, but suffice it to say that this effect of indoctrination appears to be very real, and the way the algorithms work amplifies this with repetitive effects. I think it’s quite evident that certain groups of people are being exploited in various ways due to this kind of repetitive audio/visual programming, with the added benefit of the in-group programming supplied by social media.
 <br />
-
+<br />
 
 I believe the combination of these things:
 
@@ -74,11 +74,11 @@ I believe the combination of these things:
 
 This combination is so incredibly potent that it’s probably dangerous to spend just about any amount of time on these short-form video platforms. And that’s to say nothing of the effects on attention span, which are, if not well-studied, obviously observable at this point in time and clearly negative.
 <br />
-
+<br />
 
 Let me add to this by saying that although I have singled out the short-form video content platforms, this effect is observable on users of Twitter as well. Endlessly scrolling tweets in an echo chamber for hours on end, you can see the strange opinions and outlooks on life people have developed as heavy users of Twitter.
 <br />
-
+<br />
 
 Again, on Twitter as on TikTok, because of the sheer quantity of content consumed, I would contend there is no way to critically evaluate anything. The information simply flows directly into the user's brain and programs it with no filter. The indoctrination is inevitable. There is no defense to this other than to not engage. The human mind simply cannot filter so much information so quickly.
 
@@ -121,11 +121,11 @@ Could you change your own desires? My guess is yes, you can. Desire, as [Girard 
 
 People are doing a weak and maybe unconscious form of this already. There is finance-tok (fintok?) where people share tips on how to improve your finance and make money, and hustle-tok where people share silly videos of how hard they are hustling (you’ve seen them; they usually start at 5:30 am going to the gym and then something about doing sales calls).
 <br />
-
+<br />
 
 I’m not sure the medium needs to be short-form video, but it could be. You could curate these for people and feed them as they requested. It could also be as simple as a bombardment of push notifications throughout the day. Text absolutely works because the same effect can be observed on people on Twitter.
 <br />
-
+<br />
 
 Anyway, if you are building something like this, let me know.
 
