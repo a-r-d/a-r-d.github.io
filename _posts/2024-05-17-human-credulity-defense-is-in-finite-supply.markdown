@@ -19,6 +19,8 @@ How different it is to read this concept as a question vs. a statement. Do you f
 
 
 Reading a statement sort of programs your mind. The simple act of reading causes you to intake the information with credulity. Growing up, we read books and trusted the authors. We read with barriers down, and our teachers encouraged this in school.
+<br />
+<br />
 
 Of course, the effect is rather weak. You cannot push somebody to believe something they outright disbelieve. They will react strongly, and this reaction breaks the spell of words. Note that it is known that you can erode beliefs with repetition ([known as the illusory truth effect](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8116821/)), but we will come back to that further on.
 <br />
