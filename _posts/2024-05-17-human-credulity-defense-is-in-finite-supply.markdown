@@ -8,6 +8,7 @@ title: The human credulity defense is in finite supply.
 ---
 
 a. “Can you stay young by forgetting the past?”
+
 b. “You can stay mentally young forever with one simple trick: forget the past.”
 <br />
 <br />
