@@ -59,7 +59,7 @@ Imagine you wanted to change something about yourself. Anything. I’ll give a c
 2. You are eating unhealthy and want to stop.
 3. You are not going to the gym enough and want to train yourself to WANT to go more.
 4. You procrastinate on studying and you want to train yourself to WANT to study.
-   1. e.g. you are trying to learn a specific language but you are being lazy about it.
+5. You are trying to learn a specific language but you are being lazy about it.
 
 Could you change your own desires? My guess is yes, you can. Desire, as [Girard posited](https://en.wikipedia.org/wiki/Mimetic_theory), is memetic in nature. Why not program your own desires to be the person you want to be?
 
@@ -68,3 +68,8 @@ People are doing a weak and maybe unconscious form of this already. There is fin
 I’m not sure the medium needs to be short-form video, but it could be. You could curate these for people and feed them as they requested. It could also be as simple as a bombardment of push notifications throughout the day. Text absolutely works because the same effect can be observed on people on Twitter.
 
 Anyway, if you are building something like this, let me know.
+
+<video height="600" controls>
+  <source src='/images/blog/videos/kid-scrolling-and-watching.mp4' type="video/mp4">
+  Your browser does not support the video tag.
+</video>
