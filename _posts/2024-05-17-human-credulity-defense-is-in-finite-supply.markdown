@@ -7,9 +7,10 @@ slug: 2024-05-17-human-credulity-defense-is-in-finite-supply
 title: The human credulity defense is in finite supply.
 ---
 
-“Can you stay young by forgetting the past?”
-
-“You can stay mentally young forever with one simple trick: forget the past.”
+a. “Can you stay young by forgetting the past?”
+b. “You can stay mentally young forever with one simple trick: forget the past.”
+<br />
+<br />
 
 How different it is to read this concept as a question vs. a statement. Do you feel one version persuades you more?
 <br />
