@@ -115,9 +115,9 @@ I’m convinced focusing on accurately modeling the state of the user’s mind i
 
 ### Network Spirituality and Perfect Governance
 
-Going one step further imagine if you solved the six problems above and you could network the gods together into a group. You would have perfect Network Spirituality.  How do you balance the goals of the individual vs the goals of the group? 
+Going one step further imagine if you solved the six problems above and you could network the models (gods? demons?) together into a group. You would have perfect Network Spirituality.  How do you balance the goals of the individual Vs the goals of the group? 
 
-Can you create a Social Contract in the tradition of John Locke so a user can transparently join a group and give up some agency in return for power? Is this the future of governance? You could dial the biases of your gods in any direction depending on the goals of the group. 
+Can you create a Social Contract in the tradition of John Locke so a user can transparently join a group and give up some agency in return for power? Is this the future of governance? You could dial the biases of your models in any direction depending on the goals of the group. 
 
 At that point, who is really in control? Surely the AI is? And isn’t this better after all if the AI cannot be corrupted by any human members?
 <br />
@@ -125,7 +125,7 @@ At that point, who is really in control? Surely the AI is? And isn’t this bett
 
 ### Last node about Avi Schiffmann's Friend.com launch
 
-Avi Schiffmanns friend.com is in pre-order now and released [this video](https://x.com/AviSchiffmann/status/1818284595902922884) just a few days after I wrote this post. 
+Avi Schiffmann's friend.com is in pre-order now and he released [this video](https://x.com/AviSchiffmann/status/1818284595902922884) just a few days after I wrote this post. 
 
 I think it's worth mentioning the launch of this product now because it's probably the closes things we have now that is attempting the list I mentioned above that will get you to this perfectly agentic model. The device is taking in real-time sensory data from the user's POV & its storing historical information. I will be interested to see what else it does, but what I have outline above is where I believe these devices can go. Everyone else is not thinking far enough ahead and just seems them as gimicky little devices (which they kind-of are right now).
 
