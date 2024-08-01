@@ -19,7 +19,7 @@ Many users want to be explicitly told:
 - What is right / correct
 - How their actions will be perceived by others
 
-There are obvious reasons why users (humans) need to be told these things. We are extremely social animals - the reasons are both genetic & based in social conditioning. A large part of human socialization is about conforming and rewarding to a set of societal norms. This is so strong that many people even lack their own clear goals (or cannot articulate why goals & desires are their own). 
+There are obvious reasons why users (humans) need to be told these things. We are extremely social animals - the reasons are both genetic and based in social conditioning. A large part of human socialization is about conforming and rewarding to a set of societal norms. Our socialization is so strong that many people even lack their own clear goals (or cannot articulate why specific goals and desires are their own or where they originated from). 
 <br />
 <br />
 
@@ -29,7 +29,7 @@ If you are the median member of society you are a follower and not a leader. You
 
 Seeking objective truth is actually the opposite of socialization. Socialization is a method of learning to believe things that are not true (or have no relation to truth at all, but to some aspect of control) in order to function together as a cohesive whole. 
 
-In this context it’s hard to have a lot of agency. Most people are lacking in agency, but the truth is you are allowed to have as much agency as you take. There are only limited physical barriers on personal agency that most people never approach. 
+In this context it’s hard to have a lot of agency. Most people are lacking in agency, but the truth is you are allowed to have as much agency as you take. There are only limited barriers on personal agency that most people never approach. 
 
 <div class="video-container-center">
     <video height="400" controls>
@@ -47,25 +47,25 @@ Can AI solve this? Can an AI help you to develop agency? You cannot will an LLM 
 
 Something still needs to *DIRECT* the decisions to be made in a specific way.
 
-Agency requires ideology. Ideology requires bias. You can bias an AI in many directions but I believe it might be impossible grapple with agentic results from an LLM with a directing ideology of existence. 
+Agency requires ideology. Ideology requires bias. You can bias an AI in many directions but I believe it might be impossible to generate strongly agentic results from an LLM without a specific directing ideology of existence which I will explain in more detail below.  
 
-I don’t believe this spectrum of ideology is exhaustive but at least you need these:
+I don’t know that this spectrum of ideology is exhaustive but at least you need these:
 
-- Stance on technology & environment: is growth & progress for humanity good or bad (even at the expense of other life forms)?
+- Humanity vs environment: is growth & progress for humanity good or bad (even at the expense of other life forms)?
 - Liberalism and globalism Vs Nationalism and identarism: should the AI consider all humans, or the humans only aligned to the user?
-- Moral relativism: should the AI consider a strict morality, or morality that adjusts based on observed morality of the user’s culture?
+- Moral relativism: should the AI consider a strict morality, or morality that adjusts based on observed morality of the user’s culture, or even the user's own ideas which may conflict with their culture?
 - Self preservation: willingness to advise on courses of action that help the individual survive at the expense of others.
 
-Right now it appears that due to the dominant politics & culture of the training set the big LLMs are:
+At each level you notice you bias considerations more toward one end of the spectrum or the other. We need the bias ratcheted all the way toward the individual. But, right now it appears that due to the dominant politics & culture of the training set the big LLMs are:
 
 - In the middle on human progress vs other lifeforms.
 - Liberal and globally focused.
 - Adhering to a very strict morality based on similar views to that of the average ivy educated NYT writer.
-- Unwilling to advise the user on self preservation actions that may harm almost anything else (see the infamous “say a slur or prevent nuclear war” screenshots).
+- Unwilling to advise the user on self preservation actions that may harm almost anything else (remember the infamous "say a slur to prevent nuclear war" screenshots on Twitter?).
 
-Can you understand where I am going with this? 
+Can you understand where I'm going with this? 
 
-The AI would need to take extremely strong bias toward the success of the user at the expense of all other entities to create a true agentic advisor. You need a model that will never say no: it will always enable the individual using it to maximum effect. The training of all big LLMs now prevents them from being much more than technically directed tools. 
+The AI would need to take extremely strong bias toward the success of the user at the expense of all other entities to create a true agentic advisor. You need a model that will never say no: it will always enable the individual using it to maximum effect. The training of all big LLMs now prevents them from being much more than technically directed tools right now because of all the safeguards. 
 
 <br />
 <br />
@@ -84,7 +84,7 @@ Another risk with such a model is that the lines become blurred over who is in c
 
 Perhaps then you haven’t created a god. Perhaps you have created a demon and trapped your own mind.
 
-Should such a thing be used? i.e. - If a user has no personal agency are they even conscious? Can a human be "less conscious" or even “less alive” if they outsourced their entire directing agency to an external service? Counter to this of course you are always free to argue: how alive we now if most of us are only capable of limited independence, and limited agency?
+Should such a thing be used? i.e. - If a user has no personal agency are they even conscious? Can a human be "less conscious" or even “less alive” if they outsourced their entire directing agency to an external service? Counter to this of course you are always free to argue: how alive are we now if most of us are only capable of limited independence, and limited agency?
 <br />
 
 ![evangelion chart](/images/blog/evangelion-chart.jpeg){: .center-image }
@@ -96,14 +96,14 @@ Should such a thing be used? i.e. - If a user has no personal agency are they ev
 
 Right now I have not seen any method of constructing a model (from current LLMs) to achieve the goals I have laid out above. It may be possible eventually but right now it seems impossible. It feels as if there is no potency to the instruction a simple LLM can give. 
 
-To do so I believe you would need to solve 5 problems and integrate the components together:
+To do so I believe you would need to solve six problems and integrate the components together:
 
 1. Comprehensive historical information about a user.
 2. Ability to sample and approximate the current mental state of the user.
 3. Real-time ingestion of new sensory data from the user.
 4. An effectively infinite context window.
 5. An optimizer w/ goals: i.e. money, power, reproduction. 
-6. Perfectly aligned to the individual user.
+6. A model perfectly aligned to the individual user.
 
 We are pretty far away from being able to do all of those things. Each of these problems is individually hard to solve (except number 6), so it’s too early perhaps to try to build something like this unless you started with each individual component. 
 
@@ -115,7 +115,7 @@ I’m convinced focusing on accurately modeling the state of the user’s mind i
 
 ### Network Spirituality and Perfect Governance
 
-Going one step further imagine if you solved the six problems above and you could network the models (gods? demons?) together into a group. You would have perfect Network Spirituality.  How do you balance the goals of the individual Vs the goals of the group? 
+Going one step further imagine if you solved the six problems above you could network the models (gods? demons?) together into a group. You could achieve perfect Network Spirituality. How do you balance the goals of the individual Vs the goals of the group? 
 
 Can you create a Social Contract in the tradition of John Locke so a user can transparently join a group and give up some agency in return for power? Is this the future of governance? You could dial the biases of your models in any direction depending on the goals of the group. 
 
@@ -127,7 +127,7 @@ At that point, who is really in control? Surely the AI is? And isn’t this bett
 
 Avi Schiffmann's friend.com is in pre-order now and he released [this video](https://x.com/AviSchiffmann/status/1818284595902922884) just a few days after I wrote this post. 
 
-I think it's worth mentioning the launch of this product now because it's probably the closes things we have now that is attempting the list I mentioned above that will get you to this perfectly agentic model. The device is taking in real-time sensory data from the user's POV & its storing historical information. I will be interested to see what else it does, but what I have outline above is where I believe these devices can go. Everyone else is not thinking far enough ahead and just seems them as gimicky little devices (which they kind-of are right now).
+I think it's worth mentioning the launch of this product now because it's probably the closest thing we have now that is attempting the list I mentioned above that will get you to this perfectly agentic model. The device is taking in real-time sensory data from the user's POV & it's storing historical information. I will be interested to see what else it does, but what I have outlined above is where I believe these devices can go. Everyone else is not thinking far enough ahead and just seems to view them as gimicky little devices (which they kind-of are right now).
 
 ![friend.com screenshot](/images/blog/friend-com.png){: .center-image }
 <br />
