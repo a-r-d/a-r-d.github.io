@@ -3,8 +3,9 @@ author: Aaron Decker
 comments: true
 date: 2024-11-25
 layout: post
-slug: 2024-11-25-new-technologies-to-follow-2024
-title: New technologies to follow in 2024
+slug: 2024-11-25-new-technologies-and-promising-companies-2024
+title: New Technologies and Promising Companies for 2024
+description: A list of new technologies and promising companies for 2024. Assessing the current state of the market.
 ---
 
 __You know, the drill. As usual this is not investment advice.__ This is for entertainment purposes only and I make no claims about the accuracy of the information.

@@ -5,6 +5,7 @@ date: 2024-11-18
 layout: post
 slug: 2024-11-18-information-gradients-lead-to-technocapital-sinks
 title: Information Gradients Lead to Technocapital Sinks
+description: Find new technologies before they are discovered by the market.
 ---
 
 ![technocapital](/images/blog/dalle/technocapital-1.webp){: .center-image }

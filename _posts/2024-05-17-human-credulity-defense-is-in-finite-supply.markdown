@@ -5,6 +5,7 @@ date: 2024-05-17
 layout: post
 slug: 2024-05-17-human-credulity-defense-is-in-finite-supply
 title: The human credulity defense is in finite supply.
+description: The more content you consume, the less you are able to critically evaluate it.
 ---
 
 a. “Can you stay young by forgetting the past?”

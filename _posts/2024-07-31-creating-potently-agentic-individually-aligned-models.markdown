@@ -5,6 +5,7 @@ date: 2024-07-31
 layout: post
 slug: 2024-07-31-creating-potently-agentic-individually-aligned-models
 title: Creating Potently Agentic Individually Aligned Models
+description: Lack of agency is the biggest problem with people attempting to use AI tools.
 ---
 
 

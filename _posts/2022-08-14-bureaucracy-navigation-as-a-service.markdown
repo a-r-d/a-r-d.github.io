@@ -4,7 +4,7 @@ comments: true
 date: 2022-08-14
 layout: post
 slug: 2022-08-14-bureaucracy-navigation-as-a-services
-title: bureaucracy navigation as a service startup ideas
+title: Bureaucracy navigation as a service startup ideas
 description: Trying to define whole categories of software related to automating bureaucracy and why they are good businesses.
 ---
 
