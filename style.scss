@@ -377,6 +377,10 @@ nav {
   margin: 20px 0;
 }
 
-.article tr {
+article table tr {
   border-bottom: 1px solid #ddd;
+}
+
+article table {
+  margin-bottom: 20px;
 }
