@@ -8,7 +8,7 @@ title: Hallucination Yield or LLM Market Premium?
 description: Exploring the concept of "Hallucination Yield" in large language models like ChatGPT and its potential to create a market premium.
 ---
 
-![SMR](/images/llm.jpeg){: .center-image }
+![SMR](/images/blog/llm.jpeg){: .center-image }
 
 
 Alex Good (@goodalexander) on twitter, talks about this concept of a "hallucination yield". It's the idea that LLMs favor certain stocks or assets unreasonably based on their training data.
@@ -21,7 +21,7 @@ Ask ChatGPT about what sectors should do well under the new incoming Trump admin
 
 Want to see that chart?
 
-![SMR](/images/blog/charts/smr-nov-30-2024.pngs){: .center-image }
+![SMR](/images/blog/charts/smr-nov-30-2024.png){: .center-image }
 
 Now, NuScale Power is a real company. It's probably the most obvious one to recommend. But it's not the only one. It's not even a particularly good one based on various metrics (valuation, financials, etc).
 
@@ -38,7 +38,7 @@ I don't know that I would call this "hallucination yield". It's not that it's ha
 
 I think it's more likely that this is a form of market premium.
 
-LLM Market Premium - to me that is the correct term for this phenomenon. To take this into account you need to think about when this is going to have a lot of weight. What situations are going to be likely to see outsized market impact induced by LLMs?
+__LLM Market Premium__ - to me that is the correct term for this phenomenon. To take this into account you need to think about when this is going to have a lot of weight. What situations are going to be likely to see outsized market impact induced by LLMs?
 
 ## Greatest impact / how to use this.
 
