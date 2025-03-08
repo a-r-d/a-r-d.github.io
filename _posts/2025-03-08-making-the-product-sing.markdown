@@ -3,7 +3,7 @@ author: Aaron Decker
 comments: true
 date: 2025-03-08
 layout: post
-slug: 2025-03-08
+slug: 2025-03-08-making-the-product-sing
 title: Making the product sing
 description: your b2b saas needs to sing to users like never before. But also it's easier than ever before.
 ---
@@ -73,3 +73,7 @@ I'm not sure I ever want another technical employee for a long time.
 At some point (fingers crossed) yes we will have so much business we will get overwhelmed but what will a technical employee do for me?
 
 My preference would be for the AI agents to get much better and my job becomes 100% planning, design, and code review.
+
+After all, the only thing that matters is making the customer happy and coming back for more. 
+
+Who is better aligned to do that than myself, Bryan, and Claude Sonnet-3.7-thinking???
