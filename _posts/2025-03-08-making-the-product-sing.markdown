@@ -8,9 +8,7 @@ title: Making the product sing
 description: your b2b saas needs to sing to users like never before. But also it's easier than ever before.
 ---
 
-
 ![SMR](/images/blog/ai_convo_leadtruffle.PNG){: .center-image }
-
 
 I'm building a new product now and I'm focusing on customer experience like I've never been able to do before.
 
@@ -66,14 +64,14 @@ Ok too bad it's already complex... so at least the AI can help you do research o
 
 LLM's can help with everything: we deal in abstractions using text. LLM's are the golden hammer.
 
-## Employing engineers going forward.
+## Employing engineers in this new paradigm.
 
-I'm not sure I ever want another technical employee for a long time.
+Ideally I would like to never be forced to hire another technical employee. Every employee is a communications channel that comes with it's own problems. The goal is to have as few of them as possible, and every additional employee reduces coherence and weakens the centralized vision. It's an interfacing issue between my brain, my vision, the customers and the product as it is.
 
-At some point (fingers crossed) yes we will have so much business we will get overwhelmed but what will a technical employee do for me?
+At some point (fingers crossed) yes we will have so much business we will get overwhelmed. But is there a better way to deal with this?
 
-My preference would be for the AI agents to get much better and my job becomes 100% planning, design, and code review.
+My preference would be for the AI agents to get much better and my job becomes 100% planning, design, and code review. Eventually my entire job should be tuning the context that goes into the agents and distilling the output of activity in the application and conversations from customers.
 
-After all, the only thing that matters is making the customer happy and coming back for more. 
+I will continue to have so much more context than any employee or AI agent will ever have. Or perhaps, different and insightful context that only a human can have. As long as my customers are humans my job should be to take human intuition and feedback and put them into the context of my AI agents.
 
-Who is better aligned to do that than myself, Bryan, and Claude Sonnet-3.7-thinking???
+Is that what building looks like in the future?
