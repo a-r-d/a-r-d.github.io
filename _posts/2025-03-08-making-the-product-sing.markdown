@@ -18,7 +18,7 @@ I listen to what customers say: mention once it's on my radar. Two customers men
 
 I have my entire product's feature set written out in English with a mapping of every page and link and I iterate over it with o1 and r1.
 
-Bryan and I watch almost every conversation that comes in [LeadTruffle](https://leadtruffle.com) and we probably will continue to do so until there is so much volume we can't anymore.
+Bryan and I watch almost every conversation that comes in [LeadTruffle - our new AI first lead handling too for home services](https://leadtruffle.com) and we probably will continue to do so until there is so much volume we can't anymore.
 
 ## Just do the extra effort.
 
