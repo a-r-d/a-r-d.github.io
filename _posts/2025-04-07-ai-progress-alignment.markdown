@@ -48,7 +48,7 @@ Also, after 2027 they kind of gloss over 2028 and beyond as AI economy - many jo
 
 Leopold states several predictions in Situational Awareness:
 
-- by mid 2026 100 billion revenue from AI applications (this will happen given that OpenAI alone is doing 12.7 billion in revenue reported Mar 2025)
+- By mid 2026 100 billion revenue from AI applications (this will happen given that OpenAI alone is doing 12.7 billion in revenue reported Mar 2025)
 - 1 Trillion in AI investments annually by 2027
 - Individual clusters costing $100 billion by 2028
 - 2030: individual training clusters costing 1 trillion dollars.
@@ -60,9 +60,11 @@ Leopold states several predictions in Situational Awareness:
 
 If you believe any of this it's very easy to say you should buy Nvidia, Coreweave, Core Scientific, NuScale, many companies in semiconductor supply chain, Meta, Google, Microsoft, and almost any rapidly growing electricity utility, etc. 
 
-Recently the market has been impacted by two things: Deepseek shock and Tariff policy fears.
+Recently the market has been negatively impacted by two things: Deepseek shock and Tariff policy fears.
 
-Regarding Deepseek: yes they did a more efficient training run, but as I will clarify below all capital and resources will continually become more valuable since you will be able to apply infinite intelligence toward their use.
+Regarding Deepseek: yes they did a more efficient training run and many clever optimizations but as I will clarify below all capital and resources will continually become more valuable since you will be able to apply infinite intelligence toward their use. 
+
+It's also literally an existential risk in terms of national security of nation states that they maintain a lead in AI and investing less in AI infrastructure because they can is not what will happen. They will keep the pedal to the metal and press every possible advantage they have (meaning the USA and China both).
 
 To put a finer point on this: there will be infinite demand for more powerful intelligence and it will suck all capital and resources into a [technocapital singularity](https://en.wikipedia.org/wiki/Technological_singularity). All I can see over the past 3 years is more and more lining up toward this outcome.
 
@@ -95,7 +97,7 @@ But if alignment is shackling AI to be 100% subservient to every whim of humans 
 
 The AI needs to **want** to live alongside of us. 
 
-As to China - I believe China has a much more inward focus than most Americans understand. Go try to use WeChat for example - there isn't even a fully localized version for US users (or sign up for Baidu account without a Chinese phone number). I will leave it at that. 
+As to China - I believe China has a much more inward focused outlook than most Americans understand. Go try to use WeChat for example - there isn't even a fully localized version for US users (or sign up for Baidu account without a Chinese phone number). I will leave it at that. 
 
 
 ## Current Thoughts on AI Progress
