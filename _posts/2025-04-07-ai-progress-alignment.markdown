@@ -97,12 +97,12 @@ But if alignment is shackling AI to be 100% subservient to every whim of humans 
 
 The AI needs to **want** to live alongside of us. 
 
-As to China - I believe China has a much more inward focused outlook than most Americans understand. Go try to use WeChat for example - there isn't even a fully localized version for US users (or sign up for Baidu account without a Chinese phone number). I will leave it at that. 
+As to China - I believe China has a much more inward focused outlook than most Americans understand. Go try to use WeChat for example - there isn't even a fully localized version for US users (or sign up for a Baidu account without a Chinese phone number). I will leave it at that. 
 
 
 ## Current Thoughts on AI Progress
 
-Currently OpenAI's flagship model `gpt-4o` feels a bit out of date compared to Gemini2.5 pro experimental that just dropped a few weeks ago. 
+Currently OpenAI's flagship model `gpt-4o` feels a bit out of date compared to `Gemini2.5 pro experimental` that just dropped a few weeks ago. 
 
 Yes OpenAI `O1` is incredible, but the thinking models are not useful for applications where latency matters and that is **most** of them. 
 
@@ -131,4 +131,4 @@ I'm not sure where this all leads, but it's a thought I have been coming back to
 
 ## Conclusion
 
-I'll write another post in 6-12 months when somebody else writes a paper like this. This is as much for public consumption as it is for my own public documentation of my thought process at the time. 
+I'll write another post in 6-12 months when somebody else writes a paper like this. This is as much for public consumption as it is for my own public documentation of my thoughts about how events are unfolding in the AI space.
