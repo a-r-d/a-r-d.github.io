@@ -18,7 +18,7 @@ I listen to what customers say: mention once it's on my radar. Two customers men
 
 I have my entire product's feature set written out in English with a mapping of every page and link and I iterate over it with o1 and r1.
 
-Bryan and I watch almost every conversation that comes in [LeadTruffle - our new AI first lead handling too for home services](https://www.leadtruffle.co) and we probably will continue to do so until there is so much volume we can't anymore.
+Bryan and I watch almost every conversation that comes in [LeadTruffle - our new AI first lead handling tool for home services](https://www.leadtruffle.co) and we probably will continue to do so until there is so much volume we can't anymore.
 
 ## Just do the extra effort.
 
@@ -36,11 +36,11 @@ No it doesn't, you suck.
 
 You suck because your code is complex and has too many abstraction layers. You did some cargo cult event based monads or something.
 
-Your code is a reflection of your weak clarity of though in the design process.
+Your code is a reflection of your weak clarity of thought in the design process.
 
 You might not be weak on logic but you were weak on the implications of the style you used.
 
-If you can't see sharp edges in your minds eye and lay them out for another entity to understand how do you expect to employ anyone to help (AI or human)?
+If you can't see sharp edges in your mind's eye and lay them out for another entity to understand how do you expect to employ anyone to help (AI or human)?
 
 Pretend there is a gun to your head. Make it work. It's your problem if you can't use a powerful new tool.
 
@@ -62,11 +62,11 @@ Right, that's true. Why is your system so complex?
 
 Ok too bad it's already complex... so at least the AI can help you do research on solutioning or vendors or technology constraints.
 
-LLM's can help with everything: we deal in abstractions using text. LLM's are the golden hammer.
+LLMs can help with everything: we deal in abstractions using text. LLMs are the golden hammer.
 
 ## Employing engineers in this new paradigm.
 
-Ideally I would like to never be forced to hire another technical employee. Every employee is a communications channel that comes with it's own problems. The goal is to have as few of them as possible, and every additional employee reduces coherence and weakens the centralized vision. It's an interfacing issue between my brain, my vision, the customers and the product as it is.
+Ideally I would like to never be forced to hire another technical employee. Every employee is a communications channel that comes with its own problems. The goal is to have as few of them as possible, and every additional employee reduces coherence and weakens the centralized vision. It's an interfacing issue between my brain, my vision, the customers and the product as it is.
 
 At some point (fingers crossed) yes we will have so much business we will get overwhelmed. But is there a better way to deal with this?
 
