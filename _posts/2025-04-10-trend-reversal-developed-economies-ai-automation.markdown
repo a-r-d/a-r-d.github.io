@@ -34,7 +34,7 @@ As with many Asian countries Japan and Vietnam are both essentially ethnostates 
 
 ## Automation and the Return of Developed Economies
 
-What if I told you everything you read in the economist the past 10 years about the "global south" and developing economies vs developed was going to be flipped on it's head?
+What if I told you everything you read in the economist the past 10 years about the "global south" and developing economies vs developed was going to be flipped on its head?
 
 Picture this:
 

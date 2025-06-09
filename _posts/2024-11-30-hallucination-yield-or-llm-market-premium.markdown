@@ -34,7 +34,7 @@ It's going to invariably talk to you about Dogecoin.
 
 ## LLM Market Premium
 
-I don't know that I would call this "hallucination yield". It's not that it's hallucinating, its just that it's been trained on a lot of data and it's going to favor certain things.
+I don't know that I would call this "hallucination yield". It's not that it's hallucinating, it's just that it's been trained on a lot of data and it's going to favor certain things.
 
 I think it's more likely that this is a form of market premium.
 
