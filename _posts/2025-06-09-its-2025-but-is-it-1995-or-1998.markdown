@@ -4,7 +4,7 @@ comments: true
 date: 2025-06-09
 layout: post
 slug: 2025-06-09-its-2025-but-is-it-1995-or-1998
-title: Its 2025 But Is It 1995 or 1998?
+title: It's 2025 But Is It 1995 or 1998?
 description: Exploring parallels between today's AI boom and the dot-com era - are we in the early excitement phase or approaching a bubble burst?
 ---
 
@@ -15,9 +15,9 @@ I just watched Coreweave go up 5 or 10% every single day the last several weeks,
 
 The reason I mention this is because another wave of AI frenzy in capital markets has begun.
 
-History is path dependant and the path is set. We are sprinting toward AGI and ASI and the applications are growing every day.
+History is path dependent and the path is set. We are sprinting toward AGI and ASI and the applications are growing every day.
 
-A year ago (maybe more like 18 months ago) it felt like there were a lot of people not really taking this seriously. The phrase "stochastic parrot" was being perjoratively used to describe LLMs. Midjourney was good but you couldn't really achieve great adherence to your prompt.
+A year ago (maybe more like 18 months ago) it felt like there were a lot of people not really taking this seriously. The phrase "stochastic parrot" was being pejoratively used to describe LLMs. Midjourney was good but you couldn't really achieve great adherence to your prompt.
 
 Contrast that with today. Here is a video I generated in VEO 3 with an AI voice reading word for word the script I typed in (it's a commercial for my startup).
 
@@ -30,11 +30,11 @@ Contrast that with today. Here is a video I generated in VEO 3 with an AI voice 
 
 By the way that video was a one-shot. It used 20 credits and I think you get 1000 a month for 20 bucks. The high fidelity videos cost 100 credits, so they are about $2 a video.
 
-I'm going to guess VEO4 will output stuff actually good enough to run as ads. Imagine hollywood spending $1 million per film on AI generated shots instead of $50 million on hand made CGI.
+I'm going to guess VEO4 will output stuff actually good enough to run as ads. Imagine Hollywood spending $1 million per film on AI-generated shots instead of $50 million on handmade CGI.
 
-If at this point you think the demand for tokens is not going increase exponentially you fundamentally misunderstanding reality.
+If at this point you think the demand for tokens is not going to increase exponentially you are fundamentally misunderstanding reality.
 
-By the way, let's not forget about Studio Ghibli week in April when ChatGPT rolled out their new image model and created a [worldwide phenomena](https://www.reuters.com/technology/artificial-intelligence/ghibli-effect-chatgpt-usage-hits-record-after-rollout-viral-feature-2025-04-01/).
+By the way, let's not forget about Studio Ghibli week in April when ChatGPT rolled out their new image model and created a [worldwide phenomenon](https://www.reuters.com/technology/artificial-intelligence/ghibli-effect-chatgpt-usage-hits-record-after-rollout-viral-feature-2025-04-01/).
 
 ## Chain of thought & iterative agent demand
 
@@ -50,25 +50,25 @@ If the models could reason faster I would probably use this more and be willing 
 
 ## Autonomous Agents
 
-There is also a new crop of actually useful autonomous agents. With OpenAi's Codex product you can now connect your repo directly and give it a command to let it churn through tasks (and tokens), and come back to ready made pull request later.
+There is also a new crop of actually useful autonomous agents. With OpenAI's Codex product you can now connect your repo directly and give it a command to let it churn through tasks (and tokens), and come back to a ready-made pull request later.
 
-Claude Code & Codex are both headless. But there are other agent products like Anthropic Computer Use, Open AI operator, or Manus that control a virtual machine (or your computer) and iteratively screenshot the screen and take human input based actions on the computer.
+Claude Code & Codex are both headless. But there are other agent products like Anthropic Computer Use, OpenAI Operator, or Manus that control a virtual machine (or your computer) and iteratively screenshot the screen and take human input‑based actions on the computer.
 
-Once these computer controlling agent products get more capable the demand here will also be infinite. This is where you are actually going to replace office works.
+Once these computer‑controlling agent products get more capable the demand here will also be infinite. This is where you are actually going to replace office workers.
 
 Imagine people renting out offices full of computers where a minder walks up and down the aisle of dozens of AI controlled machines doing various tasks and intervening when they get stuck.
 
-Actually, that's totally unnecessary because it can all be done virtually and you flip between 20 agents to monitor from your own computer, but its a useful mental model of what is going on.
+Actually, that's totally unnecessary because it can all be done virtually and you flip between 20 agents to monitor from your own computer, but it's a useful mental model of what is going on.
 
 ## Deep research
 
 Another massive token user is deep research. All of the big AI model makers now have "deep research" or "deep search" style features where you give a task to collect information and come back in a few minutes have hundreds of web searches were performed on your behalf.
 
-Actually its more useful to understand that all current forms of purely algorithmic web scraping are obsolete compared how much more you can do with scraping using just a little bit of LLM intelligence in the mix.
+Actually it's more useful to understand that all current forms of purely algorithmic web scraping are obsolete compared with how much more you can do with scraping using just a little bit of LLM intelligence in the mix.
 
 ## AI Audio
 
-[I am rolling out an AI voice product to my customers now](https://www.leadtruffle.co). This is the first time I felt like the new voice models were actually good, and almost every time I show it to a customer they are impressed. It's just because the last time they tried it was six to twelve months ago if not longer adn the voice models got that good that fast.
+[I am rolling out an AI voice product to my customers now](https://www.leadtruffle.co). This is the first time I felt like the new voice models were actually good, and almost every time I show it to a customer they are impressed. It's just because the last time they tried it was six to twelve months ago if not longer and the voice models got that good that fast.
 
 ## Summarizing the big token uses
 
@@ -90,11 +90,11 @@ So to me, I would argue this is more like 1994 or 1995 than it is 1998. It feels
 
 There are just so damn many business applications to this stuff.
 
-I'm not sure if the dawn of the internet was like this but it feels like to me gulf between the AI pilled people who are taking advantage of these new capabilities is widening dramatically vs the people who are ignoring it all.
+I'm not sure if the dawn of the internet was like this, but it feels to me like the gulf between the AI‑pilled people who are taking advantage of these new capabilities is widening dramatically versus the people who are ignoring it all.
 
 I'm not sure if it's different this time because the use cases are more business oriented and less social. To me it is intuitive that social phenomena should always grow faster than those related to productivity. But the winners of productivity advancement should be able to capture massive economic benefits faster than laggards.
 
-I do think it's correct to worry about malinvestment in general with technology but whats particularly interesting is that relatively speaking we are now in a high interest rate environment and it doesn't seem to be deterring capital from flooding into AI and AI infrastructure.
+I do think it's correct to worry about malinvestment in general with technology, but what's particularly interesting is that, relatively speaking, we are now in a high interest rate environment and it doesn't seem to be deterring capital from flooding into AI and AI infrastructure.
 
 ## Feel the AGI
 
@@ -104,9 +104,9 @@ But it wasn't maybe until this week that I really felt how imminent everything w
 
 The fact that VEO3 just one shotted a video where the character perfectly read off the script was pretty insane to me.
 
-Using OpenAI's Codex agent for the first time recently also left a really big impression on my. These autonomous agent products are going to be huge.
+Using OpenAI's Codex agent for the first time recently also left a really big impression on me. These autonomous agent products are going to be huge.
 
-There will be a whole new proliferation of products around managing agents and queueing tasks and slicing up and dividing up work and comping up with and managing work.
+There will be a whole new proliferation of products around managing agents and queueing tasks, slicing up and dividing work, and coming up with and managing work.
 
 Maybe it will look like how we manage work today but maybe not.
 
