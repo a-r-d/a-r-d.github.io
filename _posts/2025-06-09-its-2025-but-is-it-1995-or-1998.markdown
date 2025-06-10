@@ -3,7 +3,7 @@ author: Aaron Decker
 comments: true
 date: 2025-06-09
 layout: post
-slug: 2025-04-11-its-2025-but-is-it-1995-or-1998
+slug: 2025-06-09-its-2025-but-is-it-1995-or-1998
 title: Its 2025 But Is It 1995 or 1998?
 description: Exploring parallels between today's AI boom and the dot-com era - are we in the early excitement phase or approaching a bubble burst?
 ---
@@ -11,7 +11,7 @@ description: Exploring parallels between today's AI boom and the dot-com era - a
 ![coreweave chart](/images/blog/charts/coreweave-june-9-2025.png){: .center-image }
 _Coreweave chart June 9th 2025_{: .center-image }
 
-I just watched Coreweave go up 5 or 10% every single the last several weeks, up 215% in a single month. It's probably the single highest beta Nvidia play you can put money into now on the public markets. If you are living under a rock they are a major HPC (high performance computing) datacenter company and their revenue growth last year was 420%. I shit you not - you read that right, 77.8 billion market cap, 1 billion in revenue and 400% revenue growth.
+I just watched Coreweave go up 5 or 10% every single day the last several weeks, up 215% in a single month. It's probably the single highest beta Nvidia play you can put money into now on the public markets. If you are living under a rock they are a major HPC (high performance computing) datacenter company and their revenue growth last year was 420%. I shit you not - you read that right, 77.8 billion market cap, 1 billion in revenue and 400% revenue growth.
 
 
 The reason I mention this is because another wave of AI frenzy in capital markets has begun.
@@ -40,7 +40,7 @@ When Deepseek R1 was released in January and for the first time we were able to 
 
 The Claude Sonnet 3.5 October 2024 update was a major game changer in the ability to code with AI, but it pales in comparison to chain of thought (COT).
 
-I almost exclusively use COT models to code now, and I find that it produces better output and fewer bugs because they are able to spend a few cycles of tokens double checking things. I am personally burning through millions of tokens per day using COT models for various coding tasks.
+I almost exclusively use COT models to code now, and I find that it produces better output and fewer bugs because they are able to spend a few cycles of tokens double checking things and avoiding obvious mistakes. I am personally burning through millions of tokens per day using COT models for various coding tasks.
 
 But even better now is the fact that "Agent mode" actually works well. You can ask it to do something and it take multiple actions iteratively. Each step is using a COT model so it can make a change, run a linter, run a command, check for errors, run another command, etc. 
 
