@@ -8,6 +8,9 @@ title: Hallucination Yield or LLM Market Premium?
 description: Exploring the concept of "Hallucination Yield" in large language models like ChatGPT and its potential to create a market premium.
 ---
 
+> **Note (June 2025):** I’ve spent a lot of time thinking about hallucination yield since writing this post. I even launched a [dedicated project](https://www.hallucinationyield.com/) to monitor mentions. The basic service will be free, but I’m planning a paid API tier because it’s costly to run so many queries against these LLMs to see which securities they favor.
+
+
 ![SMR](/images/blog/llm.jpeg){: .center-image }
 
 
