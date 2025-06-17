@@ -20,15 +20,15 @@ Since then the island has been transformed. It has become filled with resorts, a
 
 All it took was power and capital.
 
-The point of this intruction is to tie together a couple of things:
+The point of this introduction is to tie together a couple of things:
 
 1. Asia is building things and the speed at which it's happening is incredible. 
-2. The west as not been and as a kid who grew up in the 90s it feels like the west has horrifically decayed in the last 25 years. 
+2. The west has not been and as a kid who grew up in the 90s it feels like the west has horrifically decayed in the last 25 years.
 3. AI is what we need to kick us into building again.
 4. If you are blackpilled and p(doom) obsessed stop. The rest of the world is going to move on without you.
 
 
-## Hypersition
+## Hyperstition
 
 > Hyperstition, a term coined by Nick Land and Mark Fisher, describes ideas or narratives that become real through their widespread belief and dissemination. It's a blend of "hyper" (beyond or above) and "superstition," suggesting a belief system that, through its very existence, shapes reality. Essentially, hyperstitions are self-fulfilling prophecies or beliefs that, when widely adopted, can cause their own manifestation
 
@@ -41,7 +41,7 @@ By talking about bad outcomes obsessively you are not going to be able to build 
 If you build nothing and give up all power you ensure that you have no control over the outcomes of our possible futures.
 
 
-## Just relax and built GPT wrappers
+## Just relax and build GPT wrappers
 
 LLMs are such a generally useful new paradigm in the capabilities of computers you need to stop and rethink what you can do. 
 
@@ -57,15 +57,15 @@ _Openrouter token usage June 2025_{: .center-image }
 
 I listened to [Roko Mijic on Liron's Shapira's interview show Doom Debates recently](https://www.youtube.com/watch?v=AY4jD26RntE). Roko argued his p(doom) is negative 60%. 
 
-Meaning: western civilization is screwed for a number reasons and is experiencing a rapid decline in many measurable metrics. If we don't get AI it's almost certainly destined to be over. If we do get AI, we have a 60% probabiliy of pulling through it and creating a new golden age. 
+Meaning: western civilization is screwed for a number of reasons and is experiencing a rapid decline in many measurable metrics. If we don't get AI it's almost certainly destined to be over. If we do get AI, we have a 60% probability of pulling through it and creating a new golden age.
 
 I think this makes sense.
 
-There is something about the power production capabilities of a civilization and it's flourishing that are inextricably linked. 
+There is something about the power production capabilities of a civilization and its flourishing that are inextricably linked.
 
 Right now, AI is the thing that will drive us to produce more power and increase our quality of life, and help us move past the malaise and downward spiral the entire western hemisphere is trapped in. 
 
-You can just stop blackpilling and start building the AI powered future one token at a time.
+You can just stop blackpilling and start building the AI-powered future one token at a time.
 
 Go out and consume tokens. 
 
