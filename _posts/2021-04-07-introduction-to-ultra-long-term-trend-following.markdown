@@ -19,9 +19,9 @@ But if a long term can even be a trend that lasts a few years, what is __ultra l
 ![fractal pattern](/images/blog/mandelbrot_sequence_new.gif){: .center-image }
 _A Mandelbrot sequence_{: .center-image }
 
-So taking this supposition to it's conclusion you can zoom out even further and ride a 10 year, 20 year or 30 year trend. Trends probably exist on 100 year and 1000 year time frames as well (e.g. the span of an empire). The effective limit for this kind of investing is the human life span - but consider another assumption: technological progress is speeding up and big trends are getting shorter. 
+So taking this supposition to its conclusion you can zoom out even further and ride a 10 year, 20 year or 30 year trend. Trends probably exist on 100 year and 1000 year time frames as well (e.g. the span of an empire). The effective limit for this kind of investing is the human life span - but consider another assumption: technological progress is speeding up and big trends are getting shorter.
 
-Note: it's also possible that exploitable trends exist within intra-day, intra-hour, and even instra-second market time frames but for now I want to focus on ultra long term time frames.
+Note: it's also possible that exploitable trends exist within intra-day, intra-hour, and even intra-second market time frames but for now I want to focus on ultra long term time frames.
 
 ## Types of Ultra Long Term Trends
 
@@ -31,7 +31,7 @@ A __technological trend__ would be one spawned by a new technology such as the p
 
 A __societal trend__ would be a trend spawned by a change in human behavior. This may have an underlying root cause or it may be part of a repetitive cycle. An example would be decades long migration of people from the country to cities. This has been caused by both increasing automation used in agriculture and the consequences of the industrial revolution. It continues to this day although remote work & Covid-19 may have upset this trend.
 
-Another societal trend example would be the growth of Asian emergining markets and the stagnation of developed western economies such as Europe. These trends have traditionally been the domain of [macro investors](https://en.wikipedia.org/wiki/Global_macro). 
+Another societal trend example would be the growth of Asian emerging markets and the stagnation of developed western economies such as Europe. These trends have traditionally been the domain of [macro investors](https://en.wikipedia.org/wiki/Global_macro).
 
 For the remainder of this piece I will focus on technological trends, although doing ultra long term trend following on societal trends is also interesting.
 
@@ -49,7 +49,7 @@ To trend follow you need to be taking every bet in a systematic way. For this ap
 
 There is a lot going on here. But this is work you need to do for ultra long term trend following. You have to understand the map and where new landscape is developing.
 
-But here is what I want to point out: technology appears to be increasingly being developed and increasingly cross pollinating with other existing technologies to forge new ones. And I'm even leaving out a lot of stuff on here. 
+But here is what I want to point out: technology appears to be increasingly being developed and increasingly cross-pollinating with other existing technologies to forge new ones. And I'm even leaving out a lot of stuff on here.
 
 As an aside, I have some ideas on why it is increasing - I believe it is because human civilization recently developed the latest major "soft" technology. The first being __money__, the second being __written language__, and the third being __software__. [This concept is explained in more depth here](https://breakingsmart.com/en/season-1/a-new-soft-technology/).
 
@@ -64,7 +64,7 @@ But now, things are different. Because of computing technological trends are hap
 
 So taking these bets on emerging technologies is now easier: you can bet on multiple trends in a single lifetime because the length of technology trends has been reduced from 100 years to 20 or even 10 years. 
 
-And you have to take a lot of bets because many of them (most of them?) will not end up making you money. But the ones that do should reward you with huge multiples. __So maybe this is the first time in history you can do this strategy in a single life time__. 
+And you have to take a lot of bets because many of them (most of them?) will not end up making you money. But the ones that do should reward you with huge multiples. __So maybe this is the first time in history you can do this strategy in a single lifetime__.
 
 Probably the fastest one of these recently was cryptocurrency. The next iteration of trends in crypto appears to be applications on top of cryptocurrency: [decentralized finance](https://defipulse.com/). 
 
