@@ -5,10 +5,10 @@ date: 2018-02-06
 layout: post
 slug: my-first-attempt-at-systematic-trading-algorithms
 title: My First Attempt At Systematic Trading Algorithms
-description: My First Attempts at builiding a serious Systematic Trading Algorithm based on a long term trend following approach.
+description: My First Attempts at building a serious Systematic Trading Algorithm based on a long term trend following approach.
 ---
 
-![On a trail in maui](/images/blog/ridge-trail-1.jpg){: .center-image }
+![On a trail in Maui](/images/blog/ridge-trail-1.jpg){: .center-image }
 _Photo taken at Waihee Ridge Trail, Maui_{: .center-image }
 
 _note: I [republished this on HackerNoon.com](https://hackernoon.com/my-first-attempt-at-systematic-trading-algorithms-21a023d37d46)_
@@ -18,11 +18,11 @@ and interviews on systematic traders using trend following approaches. I was so 
 
 ## OK First, What is Trend Following?
 
-Trend following is an attempt to take a advantage of a feature of markets: they trend. This means over periods of time a market moves consistently in one direction, rather than fluctuating randomly. In the book Covel backs this up with hundreds of years of historical data across many markets to prove it.
+Trend following is an attempt to take an advantage of a feature of markets: they trend. This means over periods of time a market moves consistently in one direction, rather than fluctuating randomly. In the book Covel backs this up with hundreds of years of historical data across many markets to prove it.
 
 I think most people would agree that markets do trend. I think most people would also agree (if they really think about it) that the entire U.S. retirement industry is built on the presumption that US equities will continue to trend up forever. Covel actually brings this into question as well, which I think is laudable and worth thought.
 
-So trend following is different from the strategy you are using in your retirement account, which is probably simply buy and hold. A particularly nice advantage of trend following is that is limits downside risk. So in 2008 a trend following strategy would have given you a sell signal and you would drawdown (lose account value) only 20% instead of 50%. It would also indicate you should “short” the market (bet against it) and you would actually make money. Although, you can do a more simple long-only trend following strategy too.
+So trend following is different from the strategy you are using in your retirement account, which is probably simply buy and hold. A particularly nice advantage of trend following is that it limits downside risk. So in 2008 a trend following strategy would have given you a sell signal and you would drawdown (lose account value) only 20% instead of 50%. It would also indicate you should “short” the market (bet against it) and you would actually make money. Although, you can do a more simple long-only trend following strategy too.
 
 
 ## How does one "Trend Follow"?
@@ -50,7 +50,7 @@ My goal is to actually develop a good system that will trend trade several marke
 2. Never have a yearly drawdown more than 25% (S&P500 routinely sees 50% drawdowns)
 3. Have a [Sharpe Ratio](https://www.investopedia.com/terms/s/sharperatio.asp) of greater than 1 (outside of the scope of this post).
 4. Be exposed to many different markets (not just US equities primarily, which I am now)
-5. Have a strategy so general that is performs OK in nearly every market
+5. Have a strategy so general that it performs OK in nearly every market
 
 The last goal is very important. If you are familiar with data science or machine learning you will have heard of ["overfitting"](https://en.wikipedia.org/wiki/Overfitting). If my strategy is so optimized that all it can do is beat backtests it will likely fail in the future because I will have effectively data mined the historical information to over-optimize it. So avoiding overfitting is key!
 
@@ -63,7 +63,7 @@ As I mentioned before I am going to use moving averages. Specifically I will be 
 
 The above is a chart of Nvidia stock over the past couple of months. I plotted a short exponential moving average and longer simple moving average. You can clearly see the crossover points occur and the trend change direction. When the shorter period is on top you buy, when the longer period is on top you sell. I have the crossovers marked with _"BUY"_ and _"SELL"_, you can see how this would be profitable. It doesn't always work out that nicely, and the market doesn't always trend, but in trending markets this works well.
 
-To be clear I may not end up using these indicators. But the following are experiments using the the [Exponential Moving Average as an indicator](https://www.investopedia.com/terms/e/ema.asp) or "EMA" from here on out.
+To be clear I may not end up using these indicators. But the following are experiments using the [Exponential Moving Average as an indicator](https://www.investopedia.com/terms/e/ema.asp) or "EMA" from here on out.
 
 
 ## First Backtest: Moving Avg Crossover against ONLY SPY.
@@ -104,12 +104,12 @@ We will slightly modify the algorithm now. I am going to have the system hold [T
 
 #### Results: every metric is increased
 
-From simply holding treasury bonds while we are out of the market our returns are greatly enhanced. __Compounded annual return is up to 11.85% which beating returns for the S&P500__. This is starting to hint at the magic of trend following. What if we hold something else in a strong uptrend? What if we can measure the strength of the uptrend and always be in the strongest trends? Regardless, this simple 2 ETF strategy seems to work very well if the market is a trending market.
+From simply holding treasury bonds while we are out of the market our returns are greatly enhanced. __Compounded annual return is up to 11.85% which beats returns for the S&P500__. This is starting to hint at the magic of trend following. What if we hold something else in a strong uptrend? What if we can measure the strength of the uptrend and always be in the strongest trends? Regardless, this simple 2 ETF strategy seems to work very well if the market is a trending market.
 
 
 ## CVX, DE, CAT, F - Trend Trade
 
-We are going to try something different now. I am going to keep leverage metrics the same and the EMA cross signal the same 50 / 150. But we are going to trade a couple of cyclical stocks. Chevron (an oil company that drops when oil drops), Deere and Caterpiller are cyclical and tied to construction and agriculture, and finally [Ford which is the definition of a cyclical stock](https://www.investopedia.com/terms/c/cyclicalstock.asp).
+We are going to try something different now. I am going to keep leverage metrics the same and the EMA cross signal the same 50 / 150. But we are going to trade a couple of cyclical stocks. Chevron (an oil company that drops when oil drops), Deere and Caterpillar are cyclical and tied to construction and agriculture, and finally [Ford which is the definition of a cyclical stock](https://www.investopedia.com/terms/c/cyclicalstock.asp).
 
 #### Plain old buy and hold benchmark of these 4 stocks:
 
