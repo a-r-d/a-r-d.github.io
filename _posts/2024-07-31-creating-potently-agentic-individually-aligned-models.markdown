@@ -128,7 +128,7 @@ At that point, who is really in control? Surely the AI is? And isn’t this bett
 
 Avi Schiffmann's friend.com is in pre-order now and he released [this video](https://x.com/AviSchiffmann/status/1818284595902922884) just a few days after I wrote this post. 
 
-I think it's worth mentioning the launch of this product now because it's probably the closest thing we have now that is attempting the list I mentioned above that will get you to this perfectly agentic model. The device is taking in real-time sensory data from the user's POV & it's storing historical information. I will be interested to see what else it does, but what I have outlined above is where I believe these devices can go. Everyone else is not thinking far enough ahead and just seems to view them as gimicky little devices (which they kind-of are right now).
+I think it's worth mentioning the launch of this product now because it's probably the closest thing we have now that is attempting the list I mentioned above that will get you to this perfectly agentic model. The device is taking in real-time sensory data from the user's POV & it's storing historical information. I will be interested to see what else it does, but what I have outlined above is where I believe these devices can go. Everyone else is not thinking far enough ahead and just seems to view them as gimmicky little devices (which they kind-of are right now).
 
 ![friend.com screenshot](/images/blog/friend-com.png){: .center-image }
 <br />

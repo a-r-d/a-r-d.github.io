@@ -20,7 +20,7 @@ So to summarize: you have system with a process you don't understand fully but y
 
 I was thinking recently how this is a good way to think about the sales process with a large organization. Say there is a large company (take Coca Cola as an example) and you want to sell them your software for $50,000 a month.
 
-You know the possible end states - **Yes**, **No**, etc. But you don't initially know the decision makers who are capable of agreeing to this $10,000 a month sale, and you dont know all the boxes you need to check the the different departments to get to "Yes" state.
+You know the possible end states - **Yes**, **No**, etc. But you don't initially know the decision makers who are capable of agreeing to this $10,000 a month sale, and you don't know all the boxes you need to check with the different departments to get to the "Yes" state.
 
 Job titles vary greatly from one org to the next - e.g. maybe the CEO is actually very checked out of the day to day operations and talking to them won't get you anywhere for your sale. Perhaps the VP of marketing is the person to talk to!
 

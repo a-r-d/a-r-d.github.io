@@ -34,7 +34,7 @@ I was also thinking about how this further applies to organizations. They have a
 
 I think the same logic applies to government agencies. Their focus can be brought to bear on one big thing but in doing so it removes the focal point from other duties.
 
-You may have noticed there are a lot of for-profit organizations lately that vocally are changing their mission statements to things **other** than turning a profit. My point here is I think you should believe them at face value - if you say your top priority is something **other** than turning a profit and focusing on you business, you probably wont be turning a profit much longer.
+You may have noticed there are a lot of for-profit organizations lately that vocally are changing their mission statements to things **other** than turning a profit. My point here is I think you should believe them at face value - if you say your top priority is something **other** than turning a profit and focusing on your business, you probably won't be turning a profit much longer.
 
 ## Follow the focal point
 

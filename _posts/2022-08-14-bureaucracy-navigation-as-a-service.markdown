@@ -3,7 +3,7 @@ author: Aaron Decker
 comments: true
 date: 2022-08-14
 layout: post
-slug: 2022-08-14-bureaucracy-navigation-as-a-services
+slug: 2022-08-14-bureaucracy-navigation-as-a-service
 title: Bureaucracy navigation as a service startup ideas
 description: Trying to define whole categories of software related to automating bureaucracy and why they are good businesses.
 ---
@@ -32,7 +32,7 @@ As an aside, one of the funniest things to me about Europe is that instead of al
 
 ## Automating bureaucracy
 
-I have been thinking a lot lately about what it means to automate bureaucracy. It's clear that the longer governments exist and the more aggressively they intervene in the business world (such as what we've seen starting in 2020) the more this becomes a problem and ultimately it posses a risk to human civilizational progress.
+I have been thinking a lot lately about what it means to automate bureaucracy. It's clear that the longer governments exist and the more aggressively they intervene in the business world (such as what we've seen starting in 2020) the more this becomes a problem and ultimately it poses a risk to human civilizational progress.
 
 My personal theory is that the harder that governments make things for business owners on the compliance front, the more we can automate compliance. Eventually this becomes a simple cost of doing business that can be driven lower and lower due to automation.
 
@@ -60,7 +60,7 @@ I have heard that the two most complex parts of US law are the tax code and immi
 
 ## The advantages and disadvantages of these companies
 
-The advantage of software company that automates bureaucracy navigation is that it's almost like being a government employee. The work will exist as long as the government structure exists, and usually these exist a pretty long time.
+The advantage of a software company that automates bureaucracy navigation is that it's almost like being a government employee. The work will exist as long as the government structure exists, and usually these exist a pretty long time.
 
 The disadvantage of these types of companies is that you have to be careful of addressable market size. Can you automate small business permit compliance for sandwich shops in New York City? Yes, probably and will it be worth it? Well maybe... But how about sandwich shops in Cincinnati, OH? Almost certainly not. The market is just too small.
 

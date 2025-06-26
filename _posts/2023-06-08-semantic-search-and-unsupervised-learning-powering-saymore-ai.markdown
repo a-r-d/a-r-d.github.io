@@ -230,12 +230,12 @@ This gives you something pretty close to a "trending" result.
 
 The iffy parts are the following: reducing dimensionality loses a lot of data, and picking the number of clusters for the data is very data dependent.
 
-Fortunatly, I did some experiments with different clustering algorithms and I found that some density based algorithsm like [OPTICS](https://en.wikipedia.org/wiki/OPTICS_algorithm) yielded some better results.
+Fortunately, I did some experiments with different clustering algorithms and I found that some density based algorithms like [OPTICS](https://en.wikipedia.org/wiki/OPTICS_algorithm) yielded some better results.
 
 Experimentally, they seem to be superior for this task because of the following reasons:
 
-- the algorithm chooses the number clusters based on your tuning of the sensitivity
-- they seem to tolerate high-dimensional data better so you dont need to do PCA.
+- the algorithm chooses the number of clusters based on your tuning of the sensitivity
+- they seem to tolerate high-dimensional data better so you don't need to do PCA.
 
 Doing PCA on high dimensional semantic vectors means you are tossing the majority of the data out, and given that semantic vectors store many complex relationships in the high dimensional space, I don't know how well this will work in production (although the K-Means version did reasonably well in my limited testing).
 
