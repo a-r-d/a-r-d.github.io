@@ -54,7 +54,7 @@ The platforms you can do this with don't matter: Linkedin, Twitter, Facebook, in
 
 ### Do Great Work, Aim For Referrals
 
-If small-scale web development is becoming commoditized to the point where hosting companies, self-serve website builders, and $10 an hour overseas help is is now literally ubiquitous, how can you make any money?
+If small-scale web development is becoming commoditized to the point where hosting companies, self-serve website builders, and $10 an hour overseas help is now literally ubiquitous, how can you make any money?
 
 You must do what the rest can't: offer good, smart service that solves problems well and completely, preferably on the first attempt. Wix.com is not meant to do what the customer wants intelligently all by itself. It is a platform that lets you quickly throw stuff up on the web if you already know what you are doing. Overseas developers will never be able to communicate as effectively as somebody that lives in the same town and can meet face to face or quickly jump on the phone.
 

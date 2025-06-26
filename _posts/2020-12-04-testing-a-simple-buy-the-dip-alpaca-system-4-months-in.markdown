@@ -68,7 +68,7 @@ Yeah, I think it could but again this was more about just trying to get somethin
 
 I do think something like this would be very useful for accumulating thinly traded small cap or OTC stocks over a long period of time. 
 
-One thing I was thinking would be great to have something like this for is accumulating the various Fannie Mae / Freddie Mac preferred shares. There are a ton of ticker symbols for these on the pink sheets and they are thinly traded and sometimes make wild and irrational moves. Sometimes I think people will just randomly liquidate positions in these but really the only thing that matters for these shares the the progress of the lawsuits and [the recapitalization plan](https://www.wsj.com/articles/fannie-freddie-tap-wall-street-banks-to-advise-on-recapitalization-11592252631).
+One thing I was thinking would be great to have something like this for is accumulating the various Fannie Mae / Freddie Mac preferred shares. There are a ton of ticker symbols for these on the pink sheets and they are thinly traded and sometimes make wild and irrational moves. Sometimes I think people will just randomly liquidate positions in these but really the only thing that matters for these shares is the progress of the lawsuits and [the recapitalization plan](https://www.wsj.com/articles/fannie-freddie-tap-wall-street-banks-to-advise-on-recapitalization-11592252631).
 
 
 
